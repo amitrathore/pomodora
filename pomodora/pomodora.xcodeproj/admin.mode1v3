@@ -229,6 +229,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -275,8 +277,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>3</integer>
-									<integer>1</integer>
+									<integer>17</integer>
+									<integer>13</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -300,7 +302,7 @@
 							<real>248</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>-2 52 1286 1123 0 0 1920 1178 </string>
+						<string>0 55 1286 1123 0 0 1920 1178 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -311,8 +313,6 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -327,10 +327,6 @@
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
 										<string>MainViewController.m</string>
-										<key>_historyCapacity</key>
-										<integer>0</integer>
-										<key>bookmark</key>
-										<string>84F0CD1812F727CB00198A60</string>
 										<key>history</key>
 										<array>
 											<string>84F0CCAC12F6758A00198A60</string>
@@ -351,14 +347,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {1016, 884}}</string>
+								<string>{{0, 0}, {1016, 880}}</string>
 								<key>RubberWindowFrame</key>
-								<string>-2 52 1286 1123 0 0 1920 1178 </string>
+								<string>0 55 1286 1123 0 0 1920 1178 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>884pt</string>
+							<string>880pt</string>
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -371,14 +367,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 889}, {1016, 193}}</string>
+								<string>{{0, 885}, {1016, 197}}</string>
 								<key>RubberWindowFrame</key>
-								<string>-2 52 1286 1123 0 0 1920 1178 </string>
+								<string>0 55 1286 1123 0 0 1920 1178 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
 							<key>Proportion</key>
-							<string>193pt</string>
+							<string>197pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
@@ -397,9 +393,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>84F0CBFC12F65FE600198A60</string>
+				<string>84F0CD2712F72BCE00198A60</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>84F0CBFD12F65FE600198A60</string>
+				<string>84F0CD2812F72BCE00198A60</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -537,13 +533,11 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>1CD10A99069EF8BA00B06720</string>
 		<string>84F0CBFF12F65FE600198A60</string>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>/Users/admin/work/curry/pomodoro/pomodora/pomodora.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>-2 52 1286 1123 0 0 1920 1178 </string>
+	<string>0 55 1286 1123 0 0 1920 1178 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
@@ -564,7 +558,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>MainViewController.m</string>
+								<string></string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -622,7 +616,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>84F0CBFF12F65FE600198A60</string>
-				<string>84F0CC0012F65FE600198A60</string>
+				<string>84F0CD2512F72BCB00198A60</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
@@ -635,7 +629,7 @@
 			<key>WindowToolGUID</key>
 			<string>84F0CBFF12F65FE600198A60</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>FirstTimeWindowDisplayed</key>
