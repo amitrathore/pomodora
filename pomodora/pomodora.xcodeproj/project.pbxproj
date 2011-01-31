@@ -15,6 +15,7 @@
 		280E754E0DD40C5E005A515E /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 280E754B0DD40C5E005A515E /* MainView.xib */; };
 		280E754F0DD40C5E005A515E /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 280E754C0DD40C5E005A515E /* MainWindow.xib */; };
 		28193033112F806B00ECF9B4 /* pomodora.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 28193032112F806B00ECF9B4 /* pomodora.xcdatamodeld */; };
+		286736F912F6A03300B7864A /* pomodoro.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 286736F812F6A03300B7864A /* pomodoro.jpg */; };
 		2880DEA310926BF800CC57B2 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2880DEA210926BF800CC57B2 /* CoreData.framework */; };
 		288765590DF743DE002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765580DF743DE002DB57D /* CoreGraphics.framework */; };
 		289233AE0DB2D0DB0083E9F9 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */; };
@@ -30,6 +31,7 @@
 		280E754A0DD40C5E005A515E /* FlipsideView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlipsideView.xib; sourceTree = "<group>"; };
 		280E754B0DD40C5E005A515E /* MainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainView.xib; sourceTree = "<group>"; };
 		280E754C0DD40C5E005A515E /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		286736F812F6A03300B7864A /* pomodoro.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pomodoro.jpg; sourceTree = "<group>"; };
 		2880DEA010926BE500CC57B2 /* pomodora.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = pomodora.xcdatamodel; sourceTree = "<group>"; };
 		2880DEA210926BF800CC57B2 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		288765580DF743DE002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -119,6 +121,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				286736F812F6A03300B7864A /* pomodoro.jpg */,
 				28193032112F806B00ECF9B4 /* pomodora.xcdatamodeld */,
 				280E754A0DD40C5E005A515E /* FlipsideView.xib */,
 				280E754B0DD40C5E005A515E /* MainView.xib */,
@@ -192,6 +195,7 @@
 				280E754D0DD40C5E005A515E /* FlipsideView.xib in Resources */,
 				280E754E0DD40C5E005A515E /* MainView.xib in Resources */,
 				280E754F0DD40C5E005A515E /* MainWindow.xib in Resources */,
+				286736F912F6A03300B7864A /* pomodoro.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
