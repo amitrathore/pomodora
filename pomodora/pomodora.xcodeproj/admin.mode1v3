@@ -252,7 +252,7 @@
 						<dict>
 							<key>PBXSmartGroupTreeModuleColumnWidthsKey</key>
 							<array>
-								<real>186</real>
+								<real>248</real>
 							</array>
 							<key>PBXSmartGroupTreeModuleColumnsKey_v4</key>
 							<array>
@@ -266,8 +266,11 @@
 								<string>29B97314FDCFA39411CA2CEA</string>
 								<string>289233A00DB2D0730083E9F9</string>
 								<string>281C6CD70DB2D82200F60ACC</string>
+								<string>080E96DDFE201D6D7F000001</string>
+								<string>29B97315FDCFA39411CA2CEA</string>
 								<string>29B97317FDCFA39411CA2CEA</string>
 								<string>1C37FABC05509CD000000102</string>
+								<string>E2644B35053B69B200211256</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
@@ -278,7 +281,7 @@
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 0}, {186, 1064}}</string>
+							<string>{{0, 0}, {248, 1064}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -290,11 +293,11 @@
 					<key>GeometryConfiguration</key>
 					<dict>
 						<key>Frame</key>
-						<string>{{0, 0}, {203, 1082}}</string>
+						<string>{{0, 0}, {265, 1082}}</string>
 						<key>GroupTreeTableConfiguration</key>
 						<array>
 							<string>MainColumn</string>
-							<real>186</real>
+							<real>248</real>
 						</array>
 						<key>RubberWindowFrame</key>
 						<string>-2 52 1286 1123 0 0 1920 1178 </string>
@@ -302,7 +305,7 @@
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
 					<key>Proportion</key>
-					<string>203pt</string>
+					<string>265pt</string>
 				</dict>
 				<dict>
 					<key>Dock</key>
@@ -327,12 +330,16 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>84F0CCF812F6897C00198A60</string>
+										<string>84F0CD1812F727CB00198A60</string>
 										<key>history</key>
 										<array>
 											<string>84F0CCAC12F6758A00198A60</string>
-											<string>84F0CCDB12F6857800198A60</string>
-											<string>84F0CCE212F6860900198A60</string>
+											<string>84F0CCFE12F7242400198A60</string>
+											<string>84F0CCFF12F7242400198A60</string>
+											<string>84F0CD0012F7242400198A60</string>
+											<string>84F0CD0112F7242400198A60</string>
+											<string>84F0CD1612F727CB00198A60</string>
+											<string>84F0CD1712F727CB00198A60</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -344,7 +351,7 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {1078, 884}}</string>
+								<string>{{0, 0}, {1016, 884}}</string>
 								<key>RubberWindowFrame</key>
 								<string>-2 52 1286 1123 0 0 1920 1178 </string>
 							</dict>
@@ -364,7 +371,7 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 889}, {1078, 193}}</string>
+								<string>{{0, 889}, {1016, 193}}</string>
 								<key>RubberWindowFrame</key>
 								<string>-2 52 1286 1123 0 0 1920 1178 </string>
 							</dict>
@@ -375,7 +382,7 @@
 						</dict>
 					</array>
 					<key>Proportion</key>
-					<string>1078pt</string>
+					<string>1016pt</string>
 				</dict>
 			</array>
 			<key>Name</key>

@@ -23,7 +23,7 @@ NSTimer *interuptTimer;
 
 @implementation MainViewController
 
-@synthesize managedObjectContext, timerInfo, interruptButton;
+@synthesize managedObjectContext, interruptButton, timerButton;
 
 
 /*
@@ -60,7 +60,10 @@ NSTimer *interuptTimer;
 	NSLog(@"%s" , "Updating ..");
     if (timerValue > 0) {
         timerValue--;
-        timerInfo.text = [NSString stringWithFormat:@"%i",timerValue];
+		int minutes = (timerValue % 3600) / 60;
+        int seconds = (timerValue %3600) % 60;
+		
+		[timerButton setTitle:[NSString stringWithFormat:@"%02d:%02d", minutes, seconds] forState:UIControlStateNormal];
 	}
 } 
 
@@ -68,8 +71,9 @@ NSTimer *interuptTimer;
 	NSLog(@"%s" , "Interruoting ..");
     if (interuptTimerValue > 0) {
         interuptTimerValue--;
-        timerInfo.text = [NSString stringWithFormat:@"%i",interuptTimerValue];
-	}else{
+		[timerButton setTitle:[NSString stringWithFormat:@"00:%02d", interuptTimerValue] forState:UIControlStateNormal];
+
+  	}else{
 		status = STOPPED;
 		timerValue = 25 * 60;
 		interuptTimerValue = 45;

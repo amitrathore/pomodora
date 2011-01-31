@@ -14,12 +14,13 @@
 	
 	IBOutlet UILabel *timerInfo;
 	IBOutlet UIButton *interruptButton;
+	IBOutlet UIButton *timerButton;
 
 }
 
 @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
-@property (nonatomic, retain) UILabel *timerInfo;
 @property (nonatomic, retain) UIButton *interruptButton;
+@property (nonatomic, retain) UIButton *timerButton;
 
 - (IBAction)showInfo:(id)sender;
 - (IBAction)startTimer;
