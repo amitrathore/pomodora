@@ -1,618 +1,0 @@
-Tpomodora
-v7
-r0
-t318153019.912855
-cCheck dependencies
-cProcessInfoPlistFile /Users/amit/workspace/pomodora/pomodora/build/Debug-iphonesimulator/pomodora.app/Info.plist pomodora-Info.plist
-cCompileXIB /Users/amit/workspace/pomodora/pomodora/FlipsideView.xib
-cCompileXIB /Users/amit/workspace/pomodora/pomodora/MainView.xib
-cCompileXIB /Users/amit/workspace/pomodora/pomodora/MainWindow.xib
-cCpResource build/Debug-iphonesimulator/pomodora.app/pomodoro.jpg pomodoro.jpg
-cProcessPCH /var/folders/35/35L1PATSHQuhn2-PuL5yOU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/pomodora_Prefix-fwpxsdtiskiwbcfpqrgtsswriasa/pomodora_Prefix.pch.gch pomodora_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
-cDataModelVersionCompile /Users/amit/workspace/pomodora/pomodora/build/Debug-iphonesimulator/pomodora.app/pomodora.momd /Users/amit/workspace/pomodora/pomodora/pomodora.xcdatamodeld
-cCompileC build/pomodora.build/Debug-iphonesimulator/pomodora.build/Objects-normal/i386/main.o /Users/amit/workspace/pomodora/pomodora/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/pomodora.build/Debug-iphonesimulator/pomodora.build/Objects-normal/i386/pomodoraAppDelegate.o /Users/amit/workspace/pomodora/pomodora/Classes/pomodoraAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/pomodora.build/Debug-iphonesimulator/pomodora.build/Objects-normal/i386/MainViewController.o /Users/amit/workspace/pomodora/pomodora/Classes/MainViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/pomodora.build/Debug-iphonesimulator/pomodora.build/Objects-normal/i386/FlipsideViewController.o /Users/amit/workspace/pomodora/pomodora/Classes/FlipsideViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cLd /Users/amit/workspace/pomodora/pomodora/build/Debug-iphonesimulator/pomodora.app/pomodora normal i386
-cGenerateDSYMFile /Users/amit/workspace/pomodora/pomodora/build/Debug-iphonesimulator/pomodora.app.dSYM /Users/amit/workspace/pomodora/pomodora/build/Debug-iphonesimulator/pomodora.app/pomodora
-cTouch /Users/amit/workspace/pomodora/pomodora/build/Debug-iphonesimulator/pomodora.app
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk
-c000000004CC128950000000000000110
-t1287727253
-s272
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/CoreData.framework/CoreData
-c000000004CC122A000000000001D6CE0
-t1287725728
-s1928416
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.h
-c000000004CC12294000000000000046B
-t1287725716
-s1131
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-c000000004CC12246000000000029B310
-t1287725638
-s2732816
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/Foundation.framework/Foundation
-c000000004CC1226D000000000029D5D0
-t1287725677
-s2741712
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
-c000000004CC1225F0000000000001466
-t1287725663
-s5222
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
-c000000004CC1281F0000000000000AA1
-t1287727135
-s2721
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/UIKit
-c000000004CC12883000000000074D7B0
-t1287727235
-s7657392
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/include/Availability.h
-c000000004CB3FA080000000000001ADD
-t1286863368
-s6877
-
-N/Users/admin/work/curry/pomodoro/pomodora/Classes/FlipsideViewController.h
-c000000004D4628590000000000000230
-t1296443481
-s560
-i<UIKit/UIKit.h>
-
-N/Users/admin/work/curry/pomodoro/pomodora/Classes/FlipsideViewController.m
-c000000004D4628590000000000000455
-t1296443481
-s1109
-i"FlipsideViewController.h"
-
-N/Users/admin/work/curry/pomodoro/pomodora/Classes/MainViewController.h
-c000000004D464DDD00000000000002D0
-t1296453085
-s720
-i"FlipsideViewController.h"
-i<CoreData/CoreData.h>
-
-N/Users/admin/work/curry/pomodoro/pomodora/Classes/MainViewController.m
-c000000004D4651AE0000000000000DFD
-t1296454062
-s3581
-i"MainViewController.h"
-
-N/Users/admin/work/curry/pomodoro/pomodora/Classes/pomodoraAppDelegate.h
-c000000004D46285900000000000003F9
-t1296443481
-s1017
-i<UIKit/UIKit.h>
-i<CoreData/CoreData.h>
-
-N/Users/admin/work/curry/pomodoro/pomodora/Classes/pomodoraAppDelegate.m
-c000000004D4628590000000000001F04
-t1296443481
-s7940
-i"pomodoraAppDelegate.h"
-i"MainViewController.h"
-
-N/Users/admin/work/curry/pomodoro/pomodora/FlipsideView.xib
-c000000004D4628590000000000004C5F
-t1296443481
-s19551
-
-N/Users/admin/work/curry/pomodoro/pomodora/MainView.xib
-c000000004D464E11000000000000720C
-t1296453137
-s29196
-
-N/Users/admin/work/curry/pomodoro/pomodora/MainWindow.xib
-c000000004D46285900000000000050A1
-t1296443481
-s20641
-
-N/Users/admin/work/curry/pomodoro/pomodora/build/Debug-iphonesimulator/pomodora.app
-t1296454063
-s306
-
-N/Users/admin/work/curry/pomodoro/pomodora/build/Debug-iphonesimulator/pomodora.app.dSYM
-t1296454063
-s102
-
-N/Users/admin/work/curry/pomodoro/pomodora/build/Debug-iphonesimulator/pomodora.app/FlipsideView.nib
-t1296443538
-s1194
-
-N/Users/admin/work/curry/pomodoro/pomodora/build/Debug-iphonesimulator/pomodora.app/Info.plist
-t1296443538
-s595
-
-N/Users/admin/work/curry/pomodoro/pomodora/build/Debug-iphonesimulator/pomodora.app/MainView.nib
-t1296453196
-s2565
-
-N/Users/admin/work/curry/pomodoro/pomodora/build/Debug-iphonesimulator/pomodora.app/MainWindow.nib
-t1296443539
-s1150
-
-N/Users/admin/work/curry/pomodoro/pomodora/build/Debug-iphonesimulator/pomodora.app/PkgInfo
-t1296443538
-s8
-
-N/Users/admin/work/curry/pomodoro/pomodora/build/Debug-iphonesimulator/pomodora.app/pomodora
-t1296454063
-s27528
-
-N/Users/admin/work/curry/pomodoro/pomodora/build/Debug-iphonesimulator/pomodora.app/pomodora.momd
-t1296443539
-s136
-
-N/Users/admin/work/curry/pomodoro/pomodora/build/pomodora.build/Debug-iphonesimulator/pomodora.build/Objects-normal/i386/FlipsideViewController.o
-t1296443539
-s40844
-
-N/Users/admin/work/curry/pomodoro/pomodora/build/pomodora.build/Debug-iphonesimulator/pomodora.build/Objects-normal/i386/MainViewController.o
-t1296454063
-s53332
-
-N/Users/admin/work/curry/pomodoro/pomodora/build/pomodora.build/Debug-iphonesimulator/pomodora.build/Objects-normal/i386/main.o
-t1296443539
-s6308
-
-N/Users/admin/work/curry/pomodoro/pomodora/build/pomodora.build/Debug-iphonesimulator/pomodora.build/Objects-normal/i386/pomodora.LinkFileList
-c000000004D462892000000000000022B
-t1296443538
-s555
-
-N/Users/admin/work/curry/pomodoro/pomodora/build/pomodora.build/Debug-iphonesimulator/pomodora.build/Objects-normal/i386/pomodoraAppDelegate.o
-t1296453196
-s63448
-
-N/Users/admin/work/curry/pomodoro/pomodora/main.m
-c000000004D4628590000000000000168
-t1296443481
-s360
-i<UIKit/UIKit.h>
-
-N/Users/admin/work/curry/pomodoro/pomodora/pomodora.xcdatamodeld
-c000000004D4628590000000000000088
-t1296443481
-s136
-
-N/Users/admin/work/curry/pomodoro/pomodora/pomodora_Prefix.pch
-c000000004D4628590000000000000142
-t1296443481
-s322
-i<Availability.h>
-i<Foundation/Foundation.h>
-i<UIKit/UIKit.h>
-
-N/Users/amit/workspace/pomodora/pomodora/Classes/FlipsideViewController.h
-c000000004D4666380000000000000230
-t1296459320
-s560
-i<UIKit/UIKit.h>
-
-N/Users/amit/workspace/pomodora/pomodora/Classes/FlipsideViewController.m
-c000000004D4666380000000000000455
-t1296459320
-s1109
-i"FlipsideViewController.h"
-
-N/Users/amit/workspace/pomodora/pomodora/Classes/MainViewController.h
-c000000004D46663800000000000002D0
-t1296459320
-s720
-i"FlipsideViewController.h"
-i<CoreData/CoreData.h>
-
-N/Users/amit/workspace/pomodora/pomodora/Classes/MainViewController.m
-c000000004D4666380000000000000DFD
-t1296459320
-s3581
-i"MainViewController.h"
-
-N/Users/amit/workspace/pomodora/pomodora/Classes/pomodoraAppDelegate.h
-c000000004D46663800000000000003F9
-t1296459320
-s1017
-i<UIKit/UIKit.h>
-i<CoreData/CoreData.h>
-
-N/Users/amit/workspace/pomodora/pomodora/Classes/pomodoraAppDelegate.m
-c000000004D4666380000000000001F04
-t1296459320
-s7940
-i"pomodoraAppDelegate.h"
-i"MainViewController.h"
-
-N/Users/amit/workspace/pomodora/pomodora/FlipsideView.xib
-c000000004D4666380000000000004C5F
-t1296459320
-s19551
-
-N/Users/amit/workspace/pomodora/pomodora/MainView.xib
-c000000004D4669AA0000000000007CD4
-t1296460202
-s31956
-
-N/Users/amit/workspace/pomodora/pomodora/MainWindow.xib
-c000000004D46663800000000000050A1
-t1296459320
-s20641
-
-N/Users/amit/workspace/pomodora/pomodora/build/Debug-iphonesimulator/pomodora.app
-t1296460219
-s340
-
-N/Users/amit/workspace/pomodora/pomodora/build/Debug-iphonesimulator/pomodora.app.dSYM
-t1296459430
-s102
-
-N/Users/amit/workspace/pomodora/pomodora/build/Debug-iphonesimulator/pomodora.app/FlipsideView.nib
-t1296459320
-s1194
-
-N/Users/amit/workspace/pomodora/pomodora/build/Debug-iphonesimulator/pomodora.app/Info.plist
-t1296459428
-s595
-
-N/Users/amit/workspace/pomodora/pomodora/build/Debug-iphonesimulator/pomodora.app/MainView.nib
-t1296460219
-s2851
-
-N/Users/amit/workspace/pomodora/pomodora/build/Debug-iphonesimulator/pomodora.app/MainWindow.nib
-t1296459320
-s1150
-
-N/Users/amit/workspace/pomodora/pomodora/build/Debug-iphonesimulator/pomodora.app/PkgInfo
-t1296459428
-s8
-
-N/Users/amit/workspace/pomodora/pomodora/build/Debug-iphonesimulator/pomodora.app/pomodora
-t1296459430
-s27512
-
-N/Users/amit/workspace/pomodora/pomodora/build/Debug-iphonesimulator/pomodora.app/pomodora.momd
-t1296459429
-s136
-
-N/Users/amit/workspace/pomodora/pomodora/build/Debug-iphonesimulator/pomodora.app/pomodoro.jpg
-t1296460219
-s4952
-
-N/Users/amit/workspace/pomodora/pomodora/build/pomodora.build/Debug-iphonesimulator/pomodora.build/Objects-normal/i386/FlipsideViewController.o
-t1296459430
-s40840
-
-N/Users/amit/workspace/pomodora/pomodora/build/pomodora.build/Debug-iphonesimulator/pomodora.build/Objects-normal/i386/MainViewController.o
-t1296459430
-s53324
-
-N/Users/amit/workspace/pomodora/pomodora/build/pomodora.build/Debug-iphonesimulator/pomodora.build/Objects-normal/i386/main.o
-t1296459429
-s6304
-
-N/Users/amit/workspace/pomodora/pomodora/build/pomodora.build/Debug-iphonesimulator/pomodora.build/Objects-normal/i386/pomodora.LinkFileList
-c000000004D4666A40000000000000223
-t1296459428
-s547
-
-N/Users/amit/workspace/pomodora/pomodora/build/pomodora.build/Debug-iphonesimulator/pomodora.build/Objects-normal/i386/pomodoraAppDelegate.o
-t1296459430
-s63444
-
-N/Users/amit/workspace/pomodora/pomodora/main.m
-c000000004D4666390000000000000168
-t1296459321
-s360
-i<UIKit/UIKit.h>
-
-N/Users/amit/workspace/pomodora/pomodora/pomodora.xcdatamodeld
-c000000004D4666390000000000000088
-t1296459321
-s136
-
-N/Users/amit/workspace/pomodora/pomodora/pomodora_Prefix.pch
-c000000004D4666390000000000000142
-t1296459321
-s322
-i<Availability.h>
-i<Foundation/Foundation.h>
-i<UIKit/UIKit.h>
-
-N/Users/amit/workspace/pomodora/pomodora/pomodoro.jpg
-c000000004D4668980000000000001358
-t1296459928
-s4952
-
-N/var/folders/+e/+eeVZjm3E+y-FujQq60a8U+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/pomodora_Prefix-dwedkjaqcqrzaqhbzmextoupffmp/pomodora_Prefix.pch.gch
-t1296443539
-s15453392
-
-N/var/folders/35/35L1PATSHQuhn2-PuL5yOU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/pomodora_Prefix-fwpxsdtiskiwbcfpqrgtsswriasa/pomodora_Prefix.pch.gch
-t1296459429
-s15453392
-
-Npomodora-Info.plist
-c000000004D466639000000000000038D
-t1296459321
-s909
-
-CCheck dependencies
-r0
-lSLF07#2@18"Check dependencies318153019#318153019#0(0"0(0#1#0"8607086240#0"0#
-
-CCompileC build/pomodora.build/Debug-iphonesimulator/pomodora.build/Objects-normal/i386/FlipsideViewController.o /Users/admin/work/curry/pomodoro/pomodora/Classes/FlipsideViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s318136339.867562
-e318136339.923122
-r1
-xCompileC
-xbuild/pomodora.build/Debug-iphonesimulator/pomodora.build/Objects-normal/i386/FlipsideViewController.o
-x/Users/admin/work/curry/pomodoro/pomodora/Classes/FlipsideViewController.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@82"Compile /Users/admin/work/curry/pomodoro/pomodora/Classes/FlipsideViewController.m318136339#318136339#0(0"0(0#0#74"/Users/admin/work/curry/pomodoro/pomodora/Classes/FlipsideViewController.m8603996736#2081"    cd /Users/admin/work/curry/pomodoro/pomodora    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/opt/local/bin:/usr/local/git/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/local/bin:$PATH"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/admin/work/curry/pomodoro/pomodora/build/pomodora.build/Debug-iphonesimulator/pomodora.build/pomodora-generated-files.hmap -I/Users/admin/work/curry/pomodoro/pomodora/build/pomodora.build/Debug-iphonesimulator/pomodora.build/pomodora-own-target-headers.hmap -I/Users/admin/work/curry/pomodoro/pomodora/build/pomodora.build/Debug-iphonesimulator/pomodora.build/pomodora-all-target-headers.hmap -iquote /Users/admin/work/curry/pomodoro/pomodora/build/pomodora.build/Debug-iphonesimulator/pomodora.build/pomodora-project-headers.hmap -F/Users/admin/work/curry/pomodoro/pomodora/build/Debug-iphonesimulator -I/Users/admin/work/curry/pomodoro/pomodora/build/Debug-iphonesimulator/include -I/Users/admin/work/curry/pomodoro/pomodora/build/pomodora.build/Debug-iphonesimulator/pomodora.build/DerivedSources/i386 -I/Users/admin/work/curry/pomodoro/pomodora/build/pomodora.build/Debug-iphonesimulator/pomodora.build/DerivedSources -include /var/folders/+e/+eeVZjm3E+y-FujQq60a8U+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/pomodora_Prefix-dwedkjaqcqrzaqhbzmextoupffmp/pomodora_Prefix.pch -c /Users/admin/work/curry/pomodoro/pomodora/Classes/FlipsideViewController.m -o /Users/admin/work/curry/pomodoro/pomodora/build/pomodora.build/Debug-iphonesimulator/pomodora.build/Objects-normal/i386/FlipsideViewController.o0#
-
-CCompileC build/pomodora.build/Debug-iphonesimulator/pomodora.build/Objects-normal/i386/FlipsideViewController.o /Users/amit/workspace/pomodora/pomodora/Classes/FlipsideViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s318152230.022637
-e318152230.133872
-r1
-xCompileC
-xbuild/pomodora.build/Debug-iphonesimulator/pomodora.build/Objects-normal/i386/FlipsideViewController.o
-x/Users/amit/workspace/pomodora/pomodora/Classes/FlipsideViewController.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@80"Compile /Users/amit/workspace/pomodora/pomodora/Classes/FlipsideViewController.m318152230#318152230#0(0"0(0#0#72"/Users/amit/workspace/pomodora/pomodora/Classes/FlipsideViewController.m8600822656#1989"    cd /Users/amit/workspace/pomodora/pomodora    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/amit/workspace/pomodora/pomodora/build/pomodora.build/Debug-iphonesimulator/pomodora.build/pomodora-generated-files.hmap -I/Users/amit/workspace/pomodora/pomodora/build/pomodora.build/Debug-iphonesimulator/pomodora.build/pomodora-own-target-headers.hmap -I/Users/amit/workspace/pomodora/pomodora/build/pomodora.build/Debug-iphonesimulator/pomodora.build/pomodora-all-target-headers.hmap -iquote /Users/amit/workspace/pomodora/pomodora/build/pomodora.build/Debug-iphonesimulator/pomodora.build/pomodora-project-headers.hmap -F/Users/amit/workspace/pomodora/pomodora/build/Debug-iphonesimulator -I/Users/amit/workspace/pomodora/pomodora/build/Debug-iphonesimulator/include -I/Users/amit/workspace/pomodora/pomodora/build/pomodora.build/Debug-iphonesimulator/pomodora.build/DerivedSources/i386 -I/Users/amit/workspace/pomodora/pomodora/build/pomodora.build/Debug-iphonesimulator/pomodora.build/DerivedSources -include /var/folders/35/35L1PATSHQuhn2-PuL5yOU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/pomodora_Prefix-fwpxsdtiskiwbcfpqrgtsswriasa/pomodora_Prefix.pch -c /Users/amit/workspace/pomodora/pomodora/Classes/FlipsideViewController.m -o /Users/amit/workspace/pomodora/pomodora/build/pomodora.build/Debug-iphonesimulator/pomodora.build/Objects-normal/i386/FlipsideViewController.o0#
-
-CCompileC build/pomodora.build/Debug-iphonesimulator/pomodora.build/Objects-normal/i386/MainViewController.o /Users/admin/work/curry/pomodoro/pomodora/Classes/MainViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s318146863.030679
-e318146863.234469
-r1
-xCompileC
-xbuild/pomodora.build/Debug-iphonesimulator/pomodora.build/Objects-normal/i386/MainViewController.o
-x/Users/admin/work/curry/pomodoro/pomodora/Classes/MainViewController.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@78"Compile /Users/admin/work/curry/pomodoro/pomodora/Classes/MainViewController.m318146863#318146863#0(0"0(0#0#70"/Users/admin/work/curry/pomodoro/pomodora/Classes/MainViewController.m8629173184#2073"    cd /Users/admin/work/curry/pomodoro/pomodora    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/opt/local/bin:/usr/local/git/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/local/bin:$PATH"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/admin/work/curry/pomodoro/pomodora/build/pomodora.build/Debug-iphonesimulator/pomodora.build/pomodora-generated-files.hmap -I/Users/admin/work/curry/pomodoro/pomodora/build/pomodora.build/Debug-iphonesimulator/pomodora.build/pomodora-own-target-headers.hmap -I/Users/admin/work/curry/pomodoro/pomodora/build/pomodora.build/Debug-iphonesimulator/pomodora.build/pomodora-all-target-headers.hmap -iquote /Users/admin/work/curry/pomodoro/pomodora/build/pomodora.build/Debug-iphonesimulator/pomodora.build/pomodora-project-headers.hmap -F/Users/admin/work/curry/pomodoro/pomodora/build/Debug-iphonesimulator -I/Users/admin/work/curry/pomodoro/pomodora/build/Debug-iphonesimulator/include -I/Users/admin/work/curry/pomodoro/pomodora/build/pomodora.build/Debug-iphonesimulator/pomodora.build/DerivedSources/i386 -I/Users/admin/work/curry/pomodoro/pomodora/build/pomodora.build/Debug-iphonesimulator/pomodora.build/DerivedSources -include /var/folders/+e/+eeVZjm3E+y-FujQq60a8U+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/pomodora_Prefix-dwedkjaqcqrzaqhbzmextoupffmp/pomodora_Prefix.pch -c /Users/admin/work/curry/pomodoro/pomodora/Classes/MainViewController.m -o /Users/admin/work/curry/pomodoro/pomodora/build/pomodora.build/Debug-iphonesimulator/pomodora.build/Objects-normal/i386/MainViewController.o0#
-
-CCompileC build/pomodora.build/Debug-iphonesimulator/pomodora.build/Objects-normal/i386/MainViewController.o /Users/amit/workspace/pomodora/pomodora/Classes/MainViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s318152229.858202
-e318152230.030733
-r1
-xCompileC
-xbuild/pomodora.build/Debug-iphonesimulator/pomodora.build/Objects-normal/i386/MainViewController.o
-x/Users/amit/workspace/pomodora/pomodora/Classes/MainViewController.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@76"Compile /Users/amit/workspace/pomodora/pomodora/Classes/MainViewController.m318152229#318152230#0(0"0(0#0#68"/Users/amit/workspace/pomodora/pomodora/Classes/MainViewController.m8608244096#1981"    cd /Users/amit/workspace/pomodora/pomodora    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/amit/workspace/pomodora/pomodora/build/pomodora.build/Debug-iphonesimulator/pomodora.build/pomodora-generated-files.hmap -I/Users/amit/workspace/pomodora/pomodora/build/pomodora.build/Debug-iphonesimulator/pomodora.build/pomodora-own-target-headers.hmap -I/Users/amit/workspace/pomodora/pomodora/build/pomodora.build/Debug-iphonesimulator/pomodora.build/pomodora-all-target-headers.hmap -iquote /Users/amit/workspace/pomodora/pomodora/build/pomodora.build/Debug-iphonesimulator/pomodora.build/pomodora-project-headers.hmap -F/Users/amit/workspace/pomodora/pomodora/build/Debug-iphonesimulator -I/Users/amit/workspace/pomodora/pomodora/build/Debug-iphonesimulator/include -I/Users/amit/workspace/pomodora/pomodora/build/pomodora.build/Debug-iphonesimulator/pomodora.build/DerivedSources/i386 -I/Users/amit/workspace/pomodora/pomodora/build/pomodora.build/Debug-iphonesimulator/pomodora.build/DerivedSources -include /var/folders/35/35L1PATSHQuhn2-PuL5yOU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/pomodora_Prefix-fwpxsdtiskiwbcfpqrgtsswriasa/pomodora_Prefix.pch -c /Users/amit/workspace/pomodora/pomodora/Classes/MainViewController.m -o /Users/amit/workspace/pomodora/pomodora/build/pomodora.build/Debug-iphonesimulator/pomodora.build/Objects-normal/i386/MainViewController.o0#
-
-CCompileC build/pomodora.build/Debug-iphonesimulator/pomodora.build/Objects-normal/i386/main.o /Users/admin/work/curry/pomodoro/pomodora/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s318136339.682828
-e318136339.773965
-r1
-xCompileC
-xbuild/pomodora.build/Debug-iphonesimulator/pomodora.build/Objects-normal/i386/main.o
-x/Users/admin/work/curry/pomodoro/pomodora/main.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@56"Compile /Users/admin/work/curry/pomodoro/pomodora/main.m318136339#318136339#0(0"0(0#0#48"/Users/admin/work/curry/pomodoro/pomodora/main.m8615678848#2037"    cd /Users/admin/work/curry/pomodoro/pomodora    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/opt/local/bin:/usr/local/git/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/local/bin:$PATH"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/admin/work/curry/pomodoro/pomodora/build/pomodora.build/Debug-iphonesimulator/pomodora.build/pomodora-generated-files.hmap -I/Users/admin/work/curry/pomodoro/pomodora/build/pomodora.build/Debug-iphonesimulator/pomodora.build/pomodora-own-target-headers.hmap -I/Users/admin/work/curry/pomodoro/pomodora/build/pomodora.build/Debug-iphonesimulator/pomodora.build/pomodora-all-target-headers.hmap -iquote /Users/admin/work/curry/pomodoro/pomodora/build/pomodora.build/Debug-iphonesimulator/pomodora.build/pomodora-project-headers.hmap -F/Users/admin/work/curry/pomodoro/pomodora/build/Debug-iphonesimulator -I/Users/admin/work/curry/pomodoro/pomodora/build/Debug-iphonesimulator/include -I/Users/admin/work/curry/pomodoro/pomodora/build/pomodora.build/Debug-iphonesimulator/pomodora.build/DerivedSources/i386 -I/Users/admin/work/curry/pomodoro/pomodora/build/pomodora.build/Debug-iphonesimulator/pomodora.build/DerivedSources -include /var/folders/+e/+eeVZjm3E+y-FujQq60a8U+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/pomodora_Prefix-dwedkjaqcqrzaqhbzmextoupffmp/pomodora_Prefix.pch -c /Users/admin/work/curry/pomodoro/pomodora/main.m -o /Users/admin/work/curry/pomodoro/pomodora/build/pomodora.build/Debug-iphonesimulator/pomodora.build/Objects-normal/i386/main.o0#
-
-CCompileC build/pomodora.build/Debug-iphonesimulator/pomodora.build/Objects-normal/i386/main.o /Users/amit/workspace/pomodora/pomodora/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s318152229.667477
-e318152229.858064
-r1
-xCompileC
-xbuild/pomodora.build/Debug-iphonesimulator/pomodora.build/Objects-normal/i386/main.o
-x/Users/amit/workspace/pomodora/pomodora/main.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@54"Compile /Users/amit/workspace/pomodora/pomodora/main.m318152229#318152229#0(0"0(0#0#46"/Users/amit/workspace/pomodora/pomodora/main.m8602577376#1945"    cd /Users/amit/workspace/pomodora/pomodora    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/amit/workspace/pomodora/pomodora/build/pomodora.build/Debug-iphonesimulator/pomodora.build/pomodora-generated-files.hmap -I/Users/amit/workspace/pomodora/pomodora/build/pomodora.build/Debug-iphonesimulator/pomodora.build/pomodora-own-target-headers.hmap -I/Users/amit/workspace/pomodora/pomodora/build/pomodora.build/Debug-iphonesimulator/pomodora.build/pomodora-all-target-headers.hmap -iquote /Users/amit/workspace/pomodora/pomodora/build/pomodora.build/Debug-iphonesimulator/pomodora.build/pomodora-project-headers.hmap -F/Users/amit/workspace/pomodora/pomodora/build/Debug-iphonesimulator -I/Users/amit/workspace/pomodora/pomodora/build/Debug-iphonesimulator/include -I/Users/amit/workspace/pomodora/pomodora/build/pomodora.build/Debug-iphonesimulator/pomodora.build/DerivedSources/i386 -I/Users/amit/workspace/pomodora/pomodora/build/pomodora.build/Debug-iphonesimulator/pomodora.build/DerivedSources -include /var/folders/35/35L1PATSHQuhn2-PuL5yOU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/pomodora_Prefix-fwpxsdtiskiwbcfpqrgtsswriasa/pomodora_Prefix.pch -c /Users/amit/workspace/pomodora/pomodora/main.m -o /Users/amit/workspace/pomodora/pomodora/build/pomodora.build/Debug-iphonesimulator/pomodora.build/Objects-normal/i386/main.o0#
-
-CCompileC build/pomodora.build/Debug-iphonesimulator/pomodora.build/Objects-normal/i386/pomodoraAppDelegate.o /Users/admin/work/curry/pomodoro/pomodora/Classes/pomodoraAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s318145996.561501
-e318145996.680841
-r1
-xCompileC
-xbuild/pomodora.build/Debug-iphonesimulator/pomodora.build/Objects-normal/i386/pomodoraAppDelegate.o
-x/Users/admin/work/curry/pomodoro/pomodora/Classes/pomodoraAppDelegate.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@79"Compile /Users/admin/work/curry/pomodoro/pomodora/Classes/pomodoraAppDelegate.m318145996#318145996#0(0"0(0#0#71"/Users/admin/work/curry/pomodoro/pomodora/Classes/pomodoraAppDelegate.m8617338240#2075"    cd /Users/admin/work/curry/pomodoro/pomodora    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/opt/local/bin:/usr/local/git/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/local/bin:$PATH"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/admin/work/curry/pomodoro/pomodora/build/pomodora.build/Debug-iphonesimulator/pomodora.build/pomodora-generated-files.hmap -I/Users/admin/work/curry/pomodoro/pomodora/build/pomodora.build/Debug-iphonesimulator/pomodora.build/pomodora-own-target-headers.hmap -I/Users/admin/work/curry/pomodoro/pomodora/build/pomodora.build/Debug-iphonesimulator/pomodora.build/pomodora-all-target-headers.hmap -iquote /Users/admin/work/curry/pomodoro/pomodora/build/pomodora.build/Debug-iphonesimulator/pomodora.build/pomodora-project-headers.hmap -F/Users/admin/work/curry/pomodoro/pomodora/build/Debug-iphonesimulator -I/Users/admin/work/curry/pomodoro/pomodora/build/Debug-iphonesimulator/include -I/Users/admin/work/curry/pomodoro/pomodora/build/pomodora.build/Debug-iphonesimulator/pomodora.build/DerivedSources/i386 -I/Users/admin/work/curry/pomodoro/pomodora/build/pomodora.build/Debug-iphonesimulator/pomodora.build/DerivedSources -include /var/folders/+e/+eeVZjm3E+y-FujQq60a8U+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/pomodora_Prefix-dwedkjaqcqrzaqhbzmextoupffmp/pomodora_Prefix.pch -c /Users/admin/work/curry/pomodoro/pomodora/Classes/pomodoraAppDelegate.m -o /Users/admin/work/curry/pomodoro/pomodora/build/pomodora.build/Debug-iphonesimulator/pomodora.build/Objects-normal/i386/pomodoraAppDelegate.o0#
-
-CCompileC build/pomodora.build/Debug-iphonesimulator/pomodora.build/Objects-normal/i386/pomodoraAppDelegate.o /Users/amit/workspace/pomodora/pomodora/Classes/pomodoraAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s318152229.822820
-e318152230.022505
-r1
-xCompileC
-xbuild/pomodora.build/Debug-iphonesimulator/pomodora.build/Objects-normal/i386/pomodoraAppDelegate.o
-x/Users/amit/workspace/pomodora/pomodora/Classes/pomodoraAppDelegate.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@77"Compile /Users/amit/workspace/pomodora/pomodora/Classes/pomodoraAppDelegate.m318152229#318152230#0(0"0(0#0#69"/Users/amit/workspace/pomodora/pomodora/Classes/pomodoraAppDelegate.m8604144768#1983"    cd /Users/amit/workspace/pomodora/pomodora    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/amit/workspace/pomodora/pomodora/build/pomodora.build/Debug-iphonesimulator/pomodora.build/pomodora-generated-files.hmap -I/Users/amit/workspace/pomodora/pomodora/build/pomodora.build/Debug-iphonesimulator/pomodora.build/pomodora-own-target-headers.hmap -I/Users/amit/workspace/pomodora/pomodora/build/pomodora.build/Debug-iphonesimulator/pomodora.build/pomodora-all-target-headers.hmap -iquote /Users/amit/workspace/pomodora/pomodora/build/pomodora.build/Debug-iphonesimulator/pomodora.build/pomodora-project-headers.hmap -F/Users/amit/workspace/pomodora/pomodora/build/Debug-iphonesimulator -I/Users/amit/workspace/pomodora/pomodora/build/Debug-iphonesimulator/include -I/Users/amit/workspace/pomodora/pomodora/build/pomodora.build/Debug-iphonesimulator/pomodora.build/DerivedSources/i386 -I/Users/amit/workspace/pomodora/pomodora/build/pomodora.build/Debug-iphonesimulator/pomodora.build/DerivedSources -include /var/folders/35/35L1PATSHQuhn2-PuL5yOU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/pomodora_Prefix-fwpxsdtiskiwbcfpqrgtsswriasa/pomodora_Prefix.pch -c /Users/amit/workspace/pomodora/pomodora/Classes/pomodoraAppDelegate.m -o /Users/amit/workspace/pomodora/pomodora/build/pomodora.build/Debug-iphonesimulator/pomodora.build/Objects-normal/i386/pomodoraAppDelegate.o0#
-
-CCompileXIB /Users/admin/work/curry/pomodoro/pomodora/FlipsideView.xib
-s318136338.275131
-e318136338.674427
-r1
-xCompileXIB
-x/Users/admin/work/curry/pomodoro/pomodora/FlipsideView.xib
-lSLF07#2@27"CompileXIB FlipsideView.xib318136338#318136338#0(0"0(0#0#58"/Users/admin/work/curry/pomodoro/pomodora/FlipsideView.xib8604258784#654"    cd /Users/admin/work/curry/pomodoro/pomodora    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/opt/local/bin:/usr/local/git/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/local/bin:$PATH"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/admin/work/curry/pomodoro/pomodora/build/Debug-iphonesimulator/pomodora.app/FlipsideView.nib /Users/admin/work/curry/pomodoro/pomodora/FlipsideView.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
-
-CCompileXIB /Users/admin/work/curry/pomodoro/pomodora/MainView.xib
-s318145996.151190
-e318145996.561173
-r1
-xCompileXIB
-x/Users/admin/work/curry/pomodoro/pomodora/MainView.xib
-lSLF07#2@23"CompileXIB MainView.xib318145996#318145996#0(0"0(0#0#54"/Users/admin/work/curry/pomodoro/pomodora/MainView.xib8621167232#646"    cd /Users/admin/work/curry/pomodoro/pomodora    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/opt/local/bin:/usr/local/git/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/local/bin:$PATH"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/admin/work/curry/pomodoro/pomodora/build/Debug-iphonesimulator/pomodora.app/MainView.nib /Users/admin/work/curry/pomodoro/pomodora/MainView.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
-
-CCompileXIB /Users/admin/work/curry/pomodoro/pomodora/MainWindow.xib
-s318136338.674504
-e318136339.016962
-r1
-xCompileXIB
-x/Users/admin/work/curry/pomodoro/pomodora/MainWindow.xib
-lSLF07#2@25"CompileXIB MainWindow.xib318136338#318136339#0(0"0(0#0#56"/Users/admin/work/curry/pomodoro/pomodora/MainWindow.xib8599482432#650"    cd /Users/admin/work/curry/pomodoro/pomodora    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/opt/local/bin:/usr/local/git/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/local/bin:$PATH"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/admin/work/curry/pomodoro/pomodora/build/Debug-iphonesimulator/pomodora.app/MainWindow.nib /Users/admin/work/curry/pomodoro/pomodora/MainWindow.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
-
-CCompileXIB /Users/amit/workspace/pomodora/pomodora/FlipsideView.xib
-r0
-
-CCompileXIB /Users/amit/workspace/pomodora/pomodora/MainView.xib
-s318153019.191096
-e318153019.906296
-r1
-xCompileXIB
-x/Users/amit/workspace/pomodora/pomodora/MainView.xib
-lSLF07#2@23"CompileXIB MainView.xib318153019#318153019#0(0"0(0#0#52"/Users/amit/workspace/pomodora/pomodora/MainView.xib8606314592#570"    cd /Users/amit/workspace/pomodora/pomodora    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/amit/workspace/pomodora/pomodora/build/Debug-iphonesimulator/pomodora.app/MainView.nib /Users/amit/workspace/pomodora/pomodora/MainView.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
-
-CCompileXIB /Users/amit/workspace/pomodora/pomodora/MainWindow.xib
-r0
-
-CCpResource build/Debug-iphonesimulator/pomodora.app/pomodoro.jpg pomodoro.jpg
-s318153019.193024
-e318153019.213158
-r1
-xCpResource
-xbuild/Debug-iphonesimulator/pomodora.app/pomodoro.jpg
-xpomodoro.jpg
-lSLF07#2@17"Copy pomodoro.jpg318153019#318153019#0(0"0(0#0#52"/Users/amit/workspace/pomodora/pomodora/pomodoro.jpg32933040433463412#474"    cd /Users/amit/workspace/pomodora/pomodora    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/amit/workspace/pomodora/pomodora/pomodoro.jpg /Users/amit/workspace/pomodora/pomodora/build/Debug-iphonesimulator/pomodora.app0#
-
-CDataModelVersionCompile /Users/admin/work/curry/pomodoro/pomodora/build/Debug-iphonesimulator/pomodora.app/pomodora.momd /Users/admin/work/curry/pomodoro/pomodora/pomodora.xcdatamodeld
-s318136339.681967
-e318136339.757498
-r1
-xDataModelVersionCompile
-x/Users/admin/work/curry/pomodoro/pomodora/build/Debug-iphonesimulator/pomodora.app/pomodora.momd
-x/Users/admin/work/curry/pomodoro/pomodora/pomodora.xcdatamodeld
-lSLF07#2@100"DataModelVersionCompile build/Debug-iphonesimulator/pomodora.app/pomodora.momd pomodora.xcdatamodeld318136339#318136339#0(0"0(0#0#63"/Users/admin/work/curry/pomodoro/pomodora/pomodora.xcdatamodeld8615870848#468"    cd /Users/admin/work/curry/pomodoro/pomodora    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/opt/local/bin:/usr/local/git/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/local/bin:$PATH"    /Developer/usr/bin/momc -XD_MOMC_TARGET_VERSION=10.6 /Users/admin/work/curry/pomodoro/pomodora/pomodora.xcdatamodeld /Users/admin/work/curry/pomodoro/pomodora/build/Debug-iphonesimulator/pomodora.app/pomodora.momd0#
-
-CDataModelVersionCompile /Users/amit/workspace/pomodora/pomodora/build/Debug-iphonesimulator/pomodora.app/pomodora.momd /Users/amit/workspace/pomodora/pomodora/pomodora.xcdatamodeld
-s318152229.665864
-e318152229.821929
-r1
-xDataModelVersionCompile
-x/Users/amit/workspace/pomodora/pomodora/build/Debug-iphonesimulator/pomodora.app/pomodora.momd
-x/Users/amit/workspace/pomodora/pomodora/pomodora.xcdatamodeld
-lSLF07#2@100"DataModelVersionCompile build/Debug-iphonesimulator/pomodora.app/pomodora.momd pomodora.xcdatamodeld318152229#318152229#0(0"0(0#0#61"/Users/amit/workspace/pomodora/pomodora/pomodora.xcdatamodeld8603112928#392"    cd /Users/amit/workspace/pomodora/pomodora    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/momc -XD_MOMC_TARGET_VERSION=10.6 /Users/amit/workspace/pomodora/pomodora/pomodora.xcdatamodeld /Users/amit/workspace/pomodora/pomodora/build/Debug-iphonesimulator/pomodora.app/pomodora.momd0#
-
-CGenerateDSYMFile /Users/admin/work/curry/pomodoro/pomodora/build/Debug-iphonesimulator/pomodora.app.dSYM /Users/admin/work/curry/pomodoro/pomodora/build/Debug-iphonesimulator/pomodora.app/pomodora
-s318146863.257887
-e318146863.276442
-r1
-xGenerateDSYMFile
-x/Users/admin/work/curry/pomodoro/pomodora/build/Debug-iphonesimulator/pomodora.app.dSYM
-x/Users/admin/work/curry/pomodoro/pomodora/build/Debug-iphonesimulator/pomodora.app/pomodora
-lSLF07#2@112"GenerateDSYMFile build/Debug-iphonesimulator/pomodora.app.dSYM build/Debug-iphonesimulator/pomodora.app/pomodora318146863#318146863#0(0"0(0#0#91"/Users/admin/work/curry/pomodoro/pomodora/build/Debug-iphonesimulator/pomodora.app/pomodora8626998240#465"    cd /Users/admin/work/curry/pomodoro/pomodora    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/opt/local/bin:/usr/local/git/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/local/bin:$PATH"    /Developer/usr/bin/dsymutil /Users/admin/work/curry/pomodoro/pomodora/build/Debug-iphonesimulator/pomodora.app/pomodora -o /Users/admin/work/curry/pomodoro/pomodora/build/Debug-iphonesimulator/pomodora.app.dSYM0#
-
-CGenerateDSYMFile /Users/amit/workspace/pomodora/pomodora/build/Debug-iphonesimulator/pomodora.app.dSYM /Users/amit/workspace/pomodora/pomodora/build/Debug-iphonesimulator/pomodora.app/pomodora
-s318152230.217536
-e318152230.256966
-r1
-xGenerateDSYMFile
-x/Users/amit/workspace/pomodora/pomodora/build/Debug-iphonesimulator/pomodora.app.dSYM
-x/Users/amit/workspace/pomodora/pomodora/build/Debug-iphonesimulator/pomodora.app/pomodora
-lSLF07#2@112"GenerateDSYMFile build/Debug-iphonesimulator/pomodora.app.dSYM build/Debug-iphonesimulator/pomodora.app/pomodora318152230#318152230#0(0"0(0#0#89"/Users/amit/workspace/pomodora/pomodora/build/Debug-iphonesimulator/pomodora.app/pomodora8604150816#389"    cd /Users/amit/workspace/pomodora/pomodora    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/amit/workspace/pomodora/pomodora/build/Debug-iphonesimulator/pomodora.app/pomodora -o /Users/amit/workspace/pomodora/pomodora/build/Debug-iphonesimulator/pomodora.app.dSYM0#
-
-CLd /Users/admin/work/curry/pomodoro/pomodora/build/Debug-iphonesimulator/pomodora.app/pomodora normal i386
-s318146863.234551
-e318146863.257796
-r1
-xLd
-x/Users/admin/work/curry/pomodoro/pomodora/build/Debug-iphonesimulator/pomodora.app/pomodora
-xnormal
-xi386
-lSLF07#2@96"Link /Users/admin/work/curry/pomodoro/pomodora/build/Debug-iphonesimulator/pomodora.app/pomodora318146863#318146863#0(0"0(0#0#0"8603972608#1010"    cd /Users/admin/work/curry/pomodoro/pomodora    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/opt/local/bin:/usr/local/git/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/local/bin:$PATH"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -L/Users/admin/work/curry/pomodoro/pomodora/build/Debug-iphonesimulator -F/Users/admin/work/curry/pomodoro/pomodora/build/Debug-iphonesimulator -filelist /Users/admin/work/curry/pomodoro/pomodora/build/pomodora.build/Debug-iphonesimulator/pomodora.build/Objects-normal/i386/pomodora.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -framework CoreData -o /Users/admin/work/curry/pomodoro/pomodora/build/Debug-iphonesimulator/pomodora.app/pomodora0#
-
-CLd /Users/amit/workspace/pomodora/pomodora/build/Debug-iphonesimulator/pomodora.app/pomodora normal i386
-s318152230.133993
-e318152230.217399
-r1
-xLd
-x/Users/amit/workspace/pomodora/pomodora/build/Debug-iphonesimulator/pomodora.app/pomodora
-xnormal
-xi386
-lSLF07#2@94"Link /Users/amit/workspace/pomodora/pomodora/build/Debug-iphonesimulator/pomodora.app/pomodora318152230#318152230#0(0"0(0#0#0"8604376448#930"    cd /Users/amit/workspace/pomodora/pomodora    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -L/Users/amit/workspace/pomodora/pomodora/build/Debug-iphonesimulator -F/Users/amit/workspace/pomodora/pomodora/build/Debug-iphonesimulator -filelist /Users/amit/workspace/pomodora/pomodora/build/pomodora.build/Debug-iphonesimulator/pomodora.build/Objects-normal/i386/pomodora.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -framework CoreData -o /Users/amit/workspace/pomodora/pomodora/build/Debug-iphonesimulator/pomodora.app/pomodora0#
-
-CProcessInfoPlistFile /Users/admin/work/curry/pomodoro/pomodora/build/Debug-iphonesimulator/pomodora.app/Info.plist pomodora-Info.plist
-s318136338.270832
-e318136338.275055
-r1
-xProcessInfoPlistFile
-x/Users/admin/work/curry/pomodoro/pomodora/build/Debug-iphonesimulator/pomodora.app/Info.plist
-xpomodora-Info.plist
-lSLF07#2@27"Process pomodora-Info.plist318136338#318136338#0(0"0(0#0#61"/Users/admin/work/curry/pomodoro/pomodora/pomodora-Info.plist8605948544#561"    cd /Users/admin/work/curry/pomodoro/pomodora    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/opt/local/bin:/usr/local/git/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/local/bin:$PATH"    builtin-infoPlistUtility pomodora-Info.plist -genpkginfo /Users/admin/work/curry/pomodoro/pomodora/build/Debug-iphonesimulator/pomodora.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/admin/work/curry/pomodoro/pomodora/build/Debug-iphonesimulator/pomodora.app/Info.plist0#
-
-CProcessInfoPlistFile /Users/amit/workspace/pomodora/pomodora/build/Debug-iphonesimulator/pomodora.app/Info.plist pomodora-Info.plist
-s318152228.724280
-e318152228.743884
-r1
-xProcessInfoPlistFile
-x/Users/amit/workspace/pomodora/pomodora/build/Debug-iphonesimulator/pomodora.app/Info.plist
-xpomodora-Info.plist
-lSLF07#2@27"Process pomodora-Info.plist318152228#318152228#0(0"0(0#0#59"/Users/amit/workspace/pomodora/pomodora/pomodora-Info.plist29273878621126700#485"    cd /Users/amit/workspace/pomodora/pomodora    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility pomodora-Info.plist -genpkginfo /Users/amit/workspace/pomodora/pomodora/build/Debug-iphonesimulator/pomodora.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/amit/workspace/pomodora/pomodora/build/Debug-iphonesimulator/pomodora.app/Info.plist0#
-
-CProcessPCH /var/folders/+e/+eeVZjm3E+y-FujQq60a8U+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/pomodora_Prefix-dwedkjaqcqrzaqhbzmextoupffmp/pomodora_Prefix.pch.gch pomodora_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
-s318136339.017064
-e318136339.681855
-r1
-xProcessPCH
-x/var/folders/+e/+eeVZjm3E+y-FujQq60a8U+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/pomodora_Prefix-dwedkjaqcqrzaqhbzmextoupffmp/pomodora_Prefix.pch.gch
-xpomodora_Prefix.pch
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@30"Precompile pomodora_Prefix.pch318136339#318136339#0(0"0(0#0#61"/Users/admin/work/curry/pomodoro/pomodora/pomodora_Prefix.pch8600205952#1925"    cd /Users/admin/work/curry/pomodoro/pomodora    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/opt/local/bin:/usr/local/git/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/local/bin:$PATH"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/admin/work/curry/pomodoro/pomodora/build/pomodora.build/Debug-iphonesimulator/pomodora.build/pomodora-generated-files.hmap -I/Users/admin/work/curry/pomodoro/pomodora/build/pomodora.build/Debug-iphonesimulator/pomodora.build/pomodora-own-target-headers.hmap -I/Users/admin/work/curry/pomodoro/pomodora/build/pomodora.build/Debug-iphonesimulator/pomodora.build/pomodora-all-target-headers.hmap -iquote /Users/admin/work/curry/pomodoro/pomodora/build/pomodora.build/Debug-iphonesimulator/pomodora.build/pomodora-project-headers.hmap -F/Users/admin/work/curry/pomodoro/pomodora/build/Debug-iphonesimulator -I/Users/admin/work/curry/pomodoro/pomodora/build/Debug-iphonesimulator/include -I/Users/admin/work/curry/pomodoro/pomodora/build/pomodora.build/Debug-iphonesimulator/pomodora.build/DerivedSources/i386 -I/Users/admin/work/curry/pomodoro/pomodora/build/pomodora.build/Debug-iphonesimulator/pomodora.build/DerivedSources -c /Users/admin/work/curry/pomodoro/pomodora/pomodora_Prefix.pch -o /var/folders/+e/+eeVZjm3E+y-FujQq60a8U+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/pomodora_Prefix-dwedkjaqcqrzaqhbzmextoupffmp/pomodora_Prefix.pch.gch0#
-
-CProcessPCH /var/folders/35/35L1PATSHQuhn2-PuL5yOU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/pomodora_Prefix-fwpxsdtiskiwbcfpqrgtsswriasa/pomodora_Prefix.pch.gch pomodora_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
-s318152228.744179
-e318152229.665742
-r1
-xProcessPCH
-x/var/folders/35/35L1PATSHQuhn2-PuL5yOU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/pomodora_Prefix-fwpxsdtiskiwbcfpqrgtsswriasa/pomodora_Prefix.pch.gch
-xpomodora_Prefix.pch
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@30"Precompile pomodora_Prefix.pch318152228#318152229#0(0"0(0#0#59"/Users/amit/workspace/pomodora/pomodora/pomodora_Prefix.pch8606568416#1835"    cd /Users/amit/workspace/pomodora/pomodora    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/amit/workspace/pomodora/pomodora/build/pomodora.build/Debug-iphonesimulator/pomodora.build/pomodora-generated-files.hmap -I/Users/amit/workspace/pomodora/pomodora/build/pomodora.build/Debug-iphonesimulator/pomodora.build/pomodora-own-target-headers.hmap -I/Users/amit/workspace/pomodora/pomodora/build/pomodora.build/Debug-iphonesimulator/pomodora.build/pomodora-all-target-headers.hmap -iquote /Users/amit/workspace/pomodora/pomodora/build/pomodora.build/Debug-iphonesimulator/pomodora.build/pomodora-project-headers.hmap -F/Users/amit/workspace/pomodora/pomodora/build/Debug-iphonesimulator -I/Users/amit/workspace/pomodora/pomodora/build/Debug-iphonesimulator/include -I/Users/amit/workspace/pomodora/pomodora/build/pomodora.build/Debug-iphonesimulator/pomodora.build/DerivedSources/i386 -I/Users/amit/workspace/pomodora/pomodora/build/pomodora.build/Debug-iphonesimulator/pomodora.build/DerivedSources -c /Users/amit/workspace/pomodora/pomodora/pomodora_Prefix.pch -o /var/folders/35/35L1PATSHQuhn2-PuL5yOU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/pomodora_Prefix-fwpxsdtiskiwbcfpqrgtsswriasa/pomodora_Prefix.pch.gch0#
-
-CTouch /Users/admin/work/curry/pomodoro/pomodora/build/Debug-iphonesimulator/pomodora.app
-s318146863.276530
-e318146863.278602
-r1
-xTouch
-x/Users/admin/work/curry/pomodoro/pomodora/build/Debug-iphonesimulator/pomodora.app
-lSLF07#2@88"Touch /Users/admin/work/curry/pomodoro/pomodora/build/Debug-iphonesimulator/pomodora.app318146863#318146863#0(0"0(0#0#0"8615620576#355"    cd /Users/admin/work/curry/pomodoro/pomodora    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/opt/local/bin:/usr/local/git/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/local/bin:$PATH"    /usr/bin/touch -c /Users/admin/work/curry/pomodoro/pomodora/build/Debug-iphonesimulator/pomodora.app0#
-
-CTouch /Users/amit/workspace/pomodora/pomodora/build/Debug-iphonesimulator/pomodora.app
-s318153019.907263
-e318153019.912775
-r1
-xTouch
-x/Users/amit/workspace/pomodora/pomodora/build/Debug-iphonesimulator/pomodora.app
-lSLF07#2@86"Touch /Users/amit/workspace/pomodora/pomodora/build/Debug-iphonesimulator/pomodora.app318153019#318153019#0(0"0(0#0#0"8605819136#281"    cd /Users/amit/workspace/pomodora/pomodora    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/amit/workspace/pomodora/pomodora/build/Debug-iphonesimulator/pomodora.app0#
-
