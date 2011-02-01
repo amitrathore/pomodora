@@ -23,15 +23,21 @@ NSTimer *interuptTimer;
 
 @implementation MainViewController
 
-@synthesize managedObjectContext, interruptButton, timerButton;
+@synthesize 
+	managedObjectContext, 
+	interruptButton, 
+	timerButton,
+	stopButton;
 
 
-/*
+
  // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
+	[interruptButton setHidden:YES]; 
+	[stopButton setHidden:YES]; 
     [super viewDidLoad];
 }
- */
+
 
  // Implement viewWillAppear: to do additional setup before the view is presented. You might, for example, fetch objects from the managed object context if necessary.
 - (void)viewWillAppear:(BOOL)animated {
@@ -85,6 +91,9 @@ NSTimer *interuptTimer;
 	
 	NSLog(@"%s" ,"Starting ...");
 	
+	[interruptButton setHidden:NO]; 
+	[stopButton setHidden:NO]; 
+	
 	status = STARTED;
 	
 	interuptTimerValue = 45;
@@ -98,6 +107,9 @@ NSTimer *interuptTimer;
 }
 
 - (IBAction)stopTimer {
+	
+	[interruptButton setHidden:YES]; 
+	[stopButton setHidden:YES]; 
 	
 	if (status == STARTED) {
 		[timer invalidate];

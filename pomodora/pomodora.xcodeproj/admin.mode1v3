@@ -229,8 +229,6 @@
 			<key>Layout</key>
 			<array>
 				<dict>
-					<key>BecomeActive</key>
-					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -273,11 +271,14 @@
 								<string>29B97317FDCFA39411CA2CEA</string>
 								<string>1C37FABC05509CD000000102</string>
 								<string>E2644B35053B69B200211256</string>
+								<string>1CC0EA4004350EF90044410B</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>26</integer>
+									<integer>17</integer>
+									<integer>13</integer>
+									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
@@ -311,6 +312,8 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -328,16 +331,18 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>8476B6D512F7FDC0003802D1</string>
+										<string>8476B6F512F803D7003802D1</string>
 										<key>history</key>
 										<array>
 											<string>84F0CCAC12F6758A00198A60</string>
 											<string>84F0CCFE12F7242400198A60</string>
 											<string>84F0CCFF12F7242400198A60</string>
 											<string>84F0CD0012F7242400198A60</string>
-											<string>84F0CD0112F7242400198A60</string>
-											<string>84F0CD1612F727CB00198A60</string>
-											<string>84F0CD3412F7D1A400198A60</string>
+											<string>8476B6E612F802DF003802D1</string>
+											<string>8476B6E712F802DF003802D1</string>
+											<string>8476B6E812F802DF003802D1</string>
+											<string>8476B6E912F802DF003802D1</string>
+											<string>8476B6EA12F802DF003802D1</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
