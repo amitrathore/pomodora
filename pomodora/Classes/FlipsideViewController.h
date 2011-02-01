@@ -13,7 +13,11 @@
 
 @interface FlipsideViewController : UIViewController {
 	id <FlipsideViewControllerDelegate> delegate;
+	
+	IBOutlet UITextField *weekGoal;
 }
+
+@property (nonatomic, retain) UITextField *weekGoal;
 
 @property (nonatomic, assign) id <FlipsideViewControllerDelegate> delegate;
 - (IBAction)done:(id)sender;

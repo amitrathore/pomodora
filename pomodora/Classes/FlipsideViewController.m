@@ -11,7 +11,9 @@
 
 @implementation FlipsideViewController
 
-@synthesize delegate;
+@synthesize 
+	delegate,
+	weekGoal;
 
 
 - (void)viewDidLoad {

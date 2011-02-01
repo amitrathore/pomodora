@@ -2,16 +2,17 @@
 {
 	1D3623240D0F684500981E51 /* pomodoraAppDelegate.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {955, 852}}";
+			sepNavIntBoundsRect = "{{0, 0}, {955, 821}}";
 			sepNavSelRange = "{0, 0}";
 			sepNavVisRange = "{0, 1017}";
 		};
 	};
 	1D3623250D0F684500981E51 /* pomodoraAppDelegate.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {2708, 3791}}";
+			sepNavIntBoundsRect = "{{0, 0}, {2244, 3723}}";
 			sepNavSelRange = "{0, 0}";
 			sepNavVisRange = "{0, 1430}";
+			sepNavWindowFrame = "{{38, 436}, {1205, 716}}";
 		};
 	};
 	1D6058900D05DD3D006BFB54 /* pomodora */ = {
@@ -23,13 +24,13 @@
 	289233A80DB2D0DB0083E9F9 /* MainViewController.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {955, 821}}";
-			sepNavSelRange = "{718, 0}";
+			sepNavSelRange = "{484, 0}";
 			sepNavVisRange = "{0, 840}";
 		};
 	};
 	289233A90DB2D0DB0083E9F9 /* MainViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1340, 3026}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1340, 3060}}";
 			sepNavSelRange = "{2567, 0}";
 			sepNavVisRange = "{2240, 1021}";
 			sepNavWindowFrame = "{{61, 415}, {1205, 716}}";
@@ -37,9 +38,17 @@
 	};
 	289233AC0DB2D0DB0083E9F9 /* FlipsideViewController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1017, 829}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{0, 560}";
+			sepNavIntBoundsRect = "{{0, 0}, {955, 821}}";
+			sepNavSelRange = "{647, 0}";
+			sepNavVisRange = "{0, 649}";
+		};
+	};
+	289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {955, 1003}}";
+			sepNavSelRange = "{259, 0}";
+			sepNavVisRange = "{32, 1041}";
+			sepNavWindowFrame = "{{15, 457}, {1205, 716}}";
 		};
 	};
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
@@ -126,6 +135,13 @@
 			8476B6EB12F802DF003802D1 /* PBXTextBookmark */ = 8476B6EB12F802DF003802D1 /* PBXTextBookmark */;
 			8476B6F012F80386003802D1 /* PBXTextBookmark */ = 8476B6F012F80386003802D1 /* PBXTextBookmark */;
 			8476B6F512F803D7003802D1 /* PBXTextBookmark */ = 8476B6F512F803D7003802D1 /* PBXTextBookmark */;
+			8476B6F912F80DA0003802D1 /* PBXTextBookmark */ = 8476B6F912F80DA0003802D1 /* PBXTextBookmark */;
+			8476B6FA12F80DA0003802D1 /* PBXTextBookmark */ = 8476B6FA12F80DA0003802D1 /* PBXTextBookmark */;
+			8476B6FB12F80DA0003802D1 /* PBXTextBookmark */ = 8476B6FB12F80DA0003802D1 /* PBXTextBookmark */;
+			8476B6FC12F80DA0003802D1 /* PBXTextBookmark */ = 8476B6FC12F80DA0003802D1 /* PBXTextBookmark */;
+			8476B6FD12F80DA0003802D1 /* PBXTextBookmark */ = 8476B6FD12F80DA0003802D1 /* PBXTextBookmark */;
+			8476B6FE12F80DA0003802D1 /* PBXTextBookmark */ = 8476B6FE12F80DA0003802D1 /* PBXTextBookmark */;
+			8476B6FF12F80DA0003802D1 /* PBXTextBookmark */ = 8476B6FF12F80DA0003802D1 /* PBXTextBookmark */;
 			84F0CCAC12F6758A00198A60 = 84F0CCAC12F6758A00198A60 /* PBXTextBookmark */;
 			84F0CCFE12F7242400198A60 = 84F0CCFE12F7242400198A60 /* PBXTextBookmark */;
 			84F0CCFF12F7242400198A60 = 84F0CCFF12F7242400198A60 /* PBXTextBookmark */;
@@ -237,6 +253,76 @@
 		rType = 0;
 		vrLen = 1021;
 		vrLoc = 2240;
+	};
+	8476B6F912F80DA0003802D1 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */;
+		name = "MainViewController.m: 112";
+		rLen = 0;
+		rLoc = 2567;
+		rType = 0;
+		vrLen = 1021;
+		vrLoc = 2240;
+	};
+	8476B6FA12F80DA0003802D1 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.m */;
+		name = "FlipsideViewController.m: 16";
+		rLen = 0;
+		rLoc = 259;
+		rType = 0;
+		vrLen = 1041;
+		vrLoc = 32;
+	};
+	8476B6FB12F80DA0003802D1 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 289233AC0DB2D0DB0083E9F9 /* FlipsideViewController.h */;
+		name = "FlipsideViewController.h: 29";
+		rLen = 0;
+		rLoc = 647;
+		rType = 0;
+		vrLen = 649;
+		vrLoc = 0;
+	};
+	8476B6FC12F80DA0003802D1 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623240D0F684500981E51 /* pomodoraAppDelegate.h */;
+		name = "pomodoraAppDelegate.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1017;
+		vrLoc = 0;
+	};
+	8476B6FD12F80DA0003802D1 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* pomodoraAppDelegate.m */;
+		name = "pomodoraAppDelegate.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1430;
+		vrLoc = 0;
+	};
+	8476B6FE12F80DA0003802D1 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 289233A80DB2D0DB0083E9F9 /* MainViewController.h */;
+		name = "MainViewController.h: 22";
+		rLen = 75;
+		rLoc = 488;
+		rType = 0;
+		vrLen = 840;
+		vrLoc = 0;
+	};
+	8476B6FF12F80DA0003802D1 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 289233A80DB2D0DB0083E9F9 /* MainViewController.h */;
+		name = "MainViewController.h: 19";
+		rLen = 0;
+		rLoc = 484;
+		rType = 0;
+		vrLen = 840;
+		vrLoc = 0;
 	};
 	84F0CBEF12F65FD900198A60 /* pomodora */ = {
 		isa = PBXExecutable;

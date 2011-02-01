@@ -276,8 +276,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>17</integer>
-									<integer>13</integer>
+									<integer>2</integer>
+									<integer>1</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -319,7 +319,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>MainViewController.m</string>
+								<string>MainViewController.h</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -327,22 +327,23 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>MainViewController.m</string>
+										<string>MainViewController.h</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>8476B6F512F803D7003802D1</string>
+										<string>8476B6FF12F80DA0003802D1</string>
 										<key>history</key>
 										<array>
-											<string>84F0CCAC12F6758A00198A60</string>
 											<string>84F0CCFE12F7242400198A60</string>
 											<string>84F0CCFF12F7242400198A60</string>
-											<string>84F0CD0012F7242400198A60</string>
-											<string>8476B6E612F802DF003802D1</string>
 											<string>8476B6E712F802DF003802D1</string>
 											<string>8476B6E812F802DF003802D1</string>
-											<string>8476B6E912F802DF003802D1</string>
-											<string>8476B6EA12F802DF003802D1</string>
+											<string>8476B6F912F80DA0003802D1</string>
+											<string>8476B6FA12F80DA0003802D1</string>
+											<string>8476B6FB12F80DA0003802D1</string>
+											<string>8476B6FC12F80DA0003802D1</string>
+											<string>8476B6FD12F80DA0003802D1</string>
+											<string>8476B6FE12F80DA0003802D1</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
