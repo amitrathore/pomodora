@@ -9,10 +9,10 @@
 #import "MainViewController.h"
 
 int timerValue = 25 * 60;
-int interuptTimerValue = 45;
+int pauseTimerValue = 45;
 
 NSTimer *timer;
-NSTimer *interuptTimer;
+NSTimer *pauseTimer;
 
 @implementation MainViewController
 
@@ -68,17 +68,17 @@ NSTimer *interuptTimer;
 	}
 } 
 
-- (void)updateInteruptTimer {
-	NSLog(@"%s" , "Interruoting ..");
-    if (interuptTimerValue > 0) {
-        interuptTimerValue--;
-		[timerButton setTitle:[NSString stringWithFormat:@"00:%02d", interuptTimerValue] forState:UIControlStateNormal];
+- (void)updatePauseTimer {
+	NSLog(@"%s" , "Interrupting ..");
+    if (pauseTimerValue > 0) {
+        pauseTimerValue--;
+		[timerButton setTitle:[NSString stringWithFormat:@"00:%02d", pauseTimerValue] forState:UIControlStateNormal];
 
   	}else{
 		[user stopPomodoro];
 		timerValue = 25 * 60;
-		interuptTimerValue = 45;
-		[interuptTimer invalidate];
+		pauseTimerValue = 45;
+		[pauseTimer invalidate];
 	}
 }
 
@@ -91,7 +91,7 @@ NSTimer *interuptTimer;
 	
 	[user startPomodoro];
 	
-	interuptTimerValue = 45;
+	pauseTimerValue = 45;
 		
 	timer = [NSTimer scheduledTimerWithTimeInterval:1 
 													 target:self 
@@ -111,7 +111,7 @@ NSTimer *interuptTimer;
 	if ([user isRunningPomodoro]) {
 		[timer invalidate];
 	}else if ([user isPausedPomodoro]) {
-		[interuptTimer invalidate];
+		[pauseTimer invalidate];
 	}
 	
 	[user stopPomodoro];
@@ -125,9 +125,9 @@ NSTimer *interuptTimer;
 	if ([user isRunningPomodoro]) {
 		[user pausePomodoro];
 		
-		interuptTimer	= [NSTimer scheduledTimerWithTimeInterval:1 
+		pauseTimer	= [NSTimer scheduledTimerWithTimeInterval:1 
 														 target:self 
-													   selector:@selector(updateInteruptTimer) 
+													   selector:@selector(updatePauseTimer) 
 													   userInfo:nil
 														repeats:YES];
 		
@@ -136,9 +136,9 @@ NSTimer *interuptTimer;
 		
 	}
 	else {
-		[interuptTimer invalidate];
+		[pauseTimer invalidate];
 		[self startTimer];
-		[pauseButton setTitle:@"Interrupt" forState:UIControlStateNormal];
+		[pauseButton setTitle:@"Pause" forState:UIControlStateNormal];
 	}
 	
 }
