@@ -24,7 +24,6 @@ NSTimer *pauseTimer;
 	stopButton;
 
 
-
  // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
 	[pauseButton setHidden:YES]; 
@@ -57,6 +56,38 @@ NSTimer *pauseTimer;
     [controller release];
 }
 
+- (void)resetTimerInfo {
+	if ([user isPausedPomodoro]) {
+		NSLog(@"%s" , "Invaliding PauseTimer ..");
+		[pauseTimer invalidate];
+		NSLog(@"%s" , "Invalided PauseTimer ..");
+	}
+	
+	if ([user isRunningPomodoro]) {
+		NSLog(@"%s" , "Invaliding Timer ..");
+		[timer invalidate];
+		NSLog(@"%s" , "Invalided Timer ..");
+	}
+	timerValue = 25 * 60;
+	pauseTimerValue = 45;
+	
+	[pauseButton setHidden:YES]; 
+	[pauseButton setTitle:@"Pause" forState:UIControlStateNormal];
+	
+	[stopButton setHidden:YES]; 
+	
+	[timerButton setTitle:@"Start" forState:UIControlStateNormal];
+	[timerButton setEnabled:YES];
+}
+
+- (void)startTimerInfo {
+	pauseTimerValue = 45;	
+	
+	[pauseButton setHidden:NO]; 
+	[stopButton setHidden:NO]; 
+    [timerButton setEnabled:NO];
+}
+
 - (void)updateTimer {
 	NSLog(@"%s" , "Updating ..");
     if (timerValue > 0) {
@@ -65,7 +96,11 @@ NSTimer *pauseTimer;
         int seconds = (timerValue %3600) % 60;
 		
 		[timerButton setTitle:[NSString stringWithFormat:@"%02d:%02d", minutes, seconds] forState:UIControlStateNormal];
+	}else {
+		[self resetTimerInfo];	
+		[user finishPomodoro];
 	}
+
 } 
 
 - (void)updatePauseTimer {
@@ -73,49 +108,26 @@ NSTimer *pauseTimer;
     if (pauseTimerValue > 0) {
         pauseTimerValue--;
 		[timerButton setTitle:[NSString stringWithFormat:@"00:%02d", pauseTimerValue] forState:UIControlStateNormal];
-
   	}else{
+		[self resetTimerInfo];
 		[user stopPomodoro];
-		timerValue = 25 * 60;
-		pauseTimerValue = 45;
-		[pauseTimer invalidate];
 	}
 }
 
 - (IBAction)startTimer {
-	
-	NSLog(@"%s" ,"Starting ...");
-	
-	[pauseButton setHidden:NO]; 
-	[stopButton setHidden:NO]; 
-	
-	[user startPomodoro];
-	
-	pauseTimerValue = 45;
-		
+	NSLog(@"%s" ,"Starting ...");		
+	[user startPomodoro];	
+	[self startTimerInfo];		
 	timer = [NSTimer scheduledTimerWithTimeInterval:1 
 													 target:self 
 												   selector:@selector(updateTimer) 
 												   userInfo:nil
 												   repeats:YES];
-	 
 }
 
 - (IBAction)stopTimer {
-	
-	[pauseButton setHidden:YES]; 
-	[stopButton setHidden:YES]; 
-	
-	[timerButton setTitle:@"Start" forState:UIControlStateNormal];
-	
-	if ([user isRunningPomodoro]) {
-		[timer invalidate];
-	}else if ([user isPausedPomodoro]) {
-		[pauseTimer invalidate];
-	}
-	
+	[self resetTimerInfo];	
 	[user stopPomodoro];
-	timerValue = 25 * 60;
 }
 
 
@@ -169,6 +181,9 @@ NSTimer *pauseTimer;
 
 - (void)dealloc {
     [managedObjectContext release];
+	[pauseButton release];
+	[timerButton release];
+	[stopButton release];
 	[user release];
     [super dealloc];
 }
