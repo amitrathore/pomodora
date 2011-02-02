@@ -120,7 +120,7 @@ NSTimer *interuptTimer;
 
 
 
-- (IBAction)interuptTimer {
+- (IBAction)pauseTimer {
 	
 	if ([user isRunningPomodoro]) {
 		[user pausePomodoro];

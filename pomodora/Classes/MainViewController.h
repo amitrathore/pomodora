@@ -30,6 +30,6 @@
 - (IBAction)showInfo:(id)sender;
 - (IBAction)startTimer;
 - (IBAction)stopTimer;
-- (IBAction)interuptTimer;
+- (IBAction)pauseTimer;
 
 @end
