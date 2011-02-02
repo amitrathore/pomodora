@@ -19,7 +19,7 @@ NSTimer *interuptTimer;
 @synthesize 
 	managedObjectContext, 
 	user,
-	interruptButton, 
+	pauseButton, 
 	timerButton,
 	stopButton;
 
@@ -27,7 +27,7 @@ NSTimer *interuptTimer;
 
  // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
-	[interruptButton setHidden:YES]; 
+	[pauseButton setHidden:YES]; 
 	[stopButton setHidden:YES]; 
     [super viewDidLoad];
 }
@@ -86,7 +86,7 @@ NSTimer *interuptTimer;
 	
 	NSLog(@"%s" ,"Starting ...");
 	
-	[interruptButton setHidden:NO]; 
+	[pauseButton setHidden:NO]; 
 	[stopButton setHidden:NO]; 
 	
 	[user startPomodoro];
@@ -103,7 +103,7 @@ NSTimer *interuptTimer;
 
 - (IBAction)stopTimer {
 	
-	[interruptButton setHidden:YES]; 
+	[pauseButton setHidden:YES]; 
 	[stopButton setHidden:YES]; 
 	
 	[timerButton setTitle:@"Start" forState:UIControlStateNormal];
@@ -132,13 +132,13 @@ NSTimer *interuptTimer;
 														repeats:YES];
 		
 		[timer invalidate];
-		[interruptButton setTitle:@"Resume" forState:UIControlStateNormal];
+		[pauseButton setTitle:@"Resume" forState:UIControlStateNormal];
 		
 	}
 	else {
 		[interuptTimer invalidate];
 		[self startTimer];
-		[interruptButton setTitle:@"Interrupt" forState:UIControlStateNormal];
+		[pauseButton setTitle:@"Interrupt" forState:UIControlStateNormal];
 	}
 	
 }

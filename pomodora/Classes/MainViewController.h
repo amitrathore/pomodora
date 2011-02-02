@@ -15,7 +15,7 @@
     User *user;
 	
 	IBOutlet UILabel *timerInfo;
-	IBOutlet UIButton *interruptButton;
+	IBOutlet UIButton *pauseButton;
 	IBOutlet UIButton *timerButton;
 	IBOutlet UIButton *stopButton;
 
@@ -23,7 +23,7 @@
 
 @property (nonatomic, retain) User *user;
 @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
-@property (nonatomic, retain) UIButton *interruptButton;
+@property (nonatomic, retain) UIButton *pauseButton;
 @property (nonatomic, retain) UIButton *timerButton;
 @property (nonatomic, retain) UIButton *stopButton;
 
