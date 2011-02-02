@@ -7,10 +7,12 @@
 //
 
 #import "FlipsideViewController.h"
+#import "User.h"
 #import <CoreData/CoreData.h>
 
 @interface MainViewController : UIViewController <FlipsideViewControllerDelegate> {
-    NSManagedObjectContext *managedObjectContext;	    
+    NSManagedObjectContext *managedObjectContext;	
+    User *user;
 	
 	IBOutlet UILabel *timerInfo;
 	IBOutlet UIButton *interruptButton;
@@ -19,6 +21,7 @@
 
 }
 
+@property (nonatomic, retain) User *user;
 @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
 @property (nonatomic, retain) UIButton *interruptButton;
 @property (nonatomic, retain) UIButton *timerButton;

@@ -11,13 +11,6 @@
 int timerValue = 25 * 60;
 int interuptTimerValue = 45;
 
-int STOPPED = 0;
-int STARTED = 1;
-int INTERRUPTED =2;
-
-int status = 0 ;  
-
-
 NSTimer *timer;
 NSTimer *interuptTimer;
 
@@ -25,6 +18,7 @@ NSTimer *interuptTimer;
 
 @synthesize 
 	managedObjectContext, 
+	user,
 	interruptButton, 
 	timerButton,
 	stopButton;
@@ -41,6 +35,7 @@ NSTimer *interuptTimer;
 
  // Implement viewWillAppear: to do additional setup before the view is presented. You might, for example, fetch objects from the managed object context if necessary.
 - (void)viewWillAppear:(BOOL)animated {
+	[self setUser:[[User alloc] init]];
     [super viewWillAppear:animated];
 }
 
@@ -80,7 +75,7 @@ NSTimer *interuptTimer;
 		[timerButton setTitle:[NSString stringWithFormat:@"00:%02d", interuptTimerValue] forState:UIControlStateNormal];
 
   	}else{
-		status = STOPPED;
+		[user stopPomodoro];
 		timerValue = 25 * 60;
 		interuptTimerValue = 45;
 		[interuptTimer invalidate];
@@ -94,7 +89,7 @@ NSTimer *interuptTimer;
 	[interruptButton setHidden:NO]; 
 	[stopButton setHidden:NO]; 
 	
-	status = STARTED;
+	[user startPomodoro];
 	
 	interuptTimerValue = 45;
 		
@@ -111,13 +106,15 @@ NSTimer *interuptTimer;
 	[interruptButton setHidden:YES]; 
 	[stopButton setHidden:YES]; 
 	
-	if (status == STARTED) {
+	[timerButton setTitle:@"Start" forState:UIControlStateNormal];
+	
+	if ([user isRunningPomodoro]) {
 		[timer invalidate];
-	}else if (status == INTERRUPTED) {
+	}else if ([user isPausedPomodoro]) {
 		[interuptTimer invalidate];
 	}
 	
-	status = STOPPED;
+	[user stopPomodoro];
 	timerValue = 25 * 60;
 }
 
@@ -125,8 +122,8 @@ NSTimer *interuptTimer;
 
 - (IBAction)interuptTimer {
 	
-	if (status == STARTED) {
-		status = INTERRUPTED;
+	if ([user isRunningPomodoro]) {
+		[user pausePomodoro];
 		
 		interuptTimer	= [NSTimer scheduledTimerWithTimeInterval:1 
 														 target:self 
@@ -172,6 +169,7 @@ NSTimer *interuptTimer;
 
 - (void)dealloc {
     [managedObjectContext release];
+	[user release];
     [super dealloc];
 }
 
