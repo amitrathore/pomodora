@@ -26,6 +26,7 @@ NSTimer *pauseTimer;
 
  // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
+		NSLog(@"%s" , "view did load ..");
 	[pauseButton setHidden:YES]; 
 	[stopButton setHidden:YES]; 
     [super viewDidLoad];
@@ -34,13 +35,14 @@ NSTimer *pauseTimer;
 
  // Implement viewWillAppear: to do additional setup before the view is presented. You might, for example, fetch objects from the managed object context if necessary.
 - (void)viewWillAppear:(BOOL)animated {
+	NSLog(@"%s" , "appear ..");
 	[self setUser:[[User alloc] init]];
     [super viewWillAppear:animated];
 }
 
 
 - (void)flipsideViewControllerDidFinish:(FlipsideViewController *)controller {
-    
+		NSLog(@"%@ =  %i" , user , user.currentWeekGoal);
     [self dismissModalViewControllerAnimated:YES];
 }
 
@@ -51,22 +53,18 @@ NSTimer *pauseTimer;
     controller.delegate = self;
     
     controller.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
-    [self presentModalViewController:controller animated:YES];
+	[self presentModalViewController:controller animated:YES];
     
     [controller release];
 }
 
 - (void)resetTimerInfo {
 	if ([user isPausedPomodoro]) {
-		NSLog(@"%s" , "Invaliding PauseTimer ..");
 		[pauseTimer invalidate];
-		NSLog(@"%s" , "Invalided PauseTimer ..");
 	}
 	
 	if ([user isRunningPomodoro]) {
-		NSLog(@"%s" , "Invaliding Timer ..");
 		[timer invalidate];
-		NSLog(@"%s" , "Invalided Timer ..");
 	}
 	timerValue = 25 * 60;
 	pauseTimerValue = 45;
@@ -156,6 +154,11 @@ NSTimer *pauseTimer;
 }
 
 
+- (void)setWeeklyGoal:(int)goal{
+	NSLog(@"%s = %i" ,"Calling set weekly goal ...", goal);
+	user.currentWeekGoal = goal;
+}
+
 - (void)didReceiveMemoryWarning {
     // Releases the view if it doesn't have a superview.
     [super didReceiveMemoryWarning];
@@ -185,6 +188,8 @@ NSTimer *pauseTimer;
 	[timerButton release];
 	[stopButton release];
 	[user release];
+	[timer release];
+	[pauseTimer release];
     [super dealloc];
 }
 

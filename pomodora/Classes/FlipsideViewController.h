@@ -14,10 +14,11 @@
 @interface FlipsideViewController : UIViewController {
 	id <FlipsideViewControllerDelegate> delegate;
 	
-	IBOutlet UITextField *weekGoal;
+	IBOutlet UITextField *weekGoalTxtBox;
 }
 
-@property (nonatomic, retain) UITextField *weekGoal;
+
+@property (nonatomic, retain) UITextField *weekGoalTxtBox;
 
 @property (nonatomic, assign) id <FlipsideViewControllerDelegate> delegate;
 - (IBAction)done:(id)sender;
@@ -26,5 +27,6 @@
 
 @protocol FlipsideViewControllerDelegate
 - (void)flipsideViewControllerDidFinish:(FlipsideViewController *)controller;
+- (void)setWeeklyGoal:(int)goal;
 @end
 

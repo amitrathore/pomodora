@@ -13,7 +13,7 @@
 
 @synthesize 
 	delegate,
-	weekGoal;
+	weekGoalTxtBox;
 
 
 - (void)viewDidLoad {
@@ -23,6 +23,9 @@
 
 
 - (IBAction)done:(id)sender {
+	NSLog(@"Weekly Goal : %@", [weekGoalTxtBox text]);
+	int goalValue = [[weekGoalTxtBox text] intValue];
+	[self.delegate setWeeklyGoal:goalValue];
 	[self.delegate flipsideViewControllerDidFinish:self];	
 }
 
