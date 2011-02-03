@@ -28,5 +28,6 @@
 @protocol FlipsideViewControllerDelegate
 - (void)flipsideViewControllerDidFinish:(FlipsideViewController *)controller;
 - (void)setWeeklyGoal:(int)goal;
+- (int)getWeeklyGoal;
 @end
 

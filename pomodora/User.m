@@ -15,6 +15,15 @@
 			state,
 			userStats;	
 	
+- (id)init { 
+
+	if (self = [super init]) { 
+		currentWeekGoal = 15;
+	} 
+	
+	return self;
+}
+
 - (BOOL)startPomodoro{
 	[self setState:1];
 	return YES;

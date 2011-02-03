@@ -36,7 +36,9 @@ NSTimer *pauseTimer;
  // Implement viewWillAppear: to do additional setup before the view is presented. You might, for example, fetch objects from the managed object context if necessary.
 - (void)viewWillAppear:(BOOL)animated {
 	NSLog(@"%s" , "appear ..");
-	[self setUser:[[User alloc] init]];
+	if (![self user]) {
+		[self setUser:[[User alloc] init]];
+	}
     [super viewWillAppear:animated];
 }
 
@@ -155,8 +157,12 @@ NSTimer *pauseTimer;
 
 
 - (void)setWeeklyGoal:(int)goal{
-	NSLog(@"%s = %i" ,"Calling set weekly goal ...", goal);
 	user.currentWeekGoal = goal;
+}
+
+- (int)getWeeklyGoal {
+	NSLog(@"Goal in user :%d", [self.user currentWeekGoal]);
+	return user.currentWeekGoal;
 }
 
 - (void)didReceiveMemoryWarning {

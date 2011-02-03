@@ -18,8 +18,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-	weekGoalTxtBox.delegate = self;
     self.view.backgroundColor = [UIColor viewFlipsideBackgroundColor];      
+	weekGoalTxtBox.delegate = self;	
+	NSLog(@"Goal from user : %d", [self.delegate getWeeklyGoal]);
+	weekGoalTxtBox.text = [NSString stringWithFormat:@"%d", [self.delegate getWeeklyGoal]];
 }
 
 

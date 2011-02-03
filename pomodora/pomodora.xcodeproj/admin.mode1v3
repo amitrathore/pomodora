@@ -270,7 +270,9 @@
 								<string>080E96DDFE201D6D7F000001</string>
 								<string>29B97315FDCFA39411CA2CEA</string>
 								<string>29B97317FDCFA39411CA2CEA</string>
+								<string>28193032112F806B00ECF9B4</string>
 								<string>29B97323FDCFA39411CA2CEA</string>
+								<string>1C37FAAC04509CD000000102</string>
 								<string>1C37FABC05509CD000000102</string>
 								<string>E2644B35053B69B200211256</string>
 								<string>1CC0EA4004350EF90044410B</string>
@@ -278,8 +280,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>8</integer>
-									<integer>7</integer>
+									<integer>1</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -321,7 +322,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>FlipsideViewController.h</string>
+								<string>User.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -329,24 +330,25 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>FlipsideViewController.h</string>
+										<string>User.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>8447A05A12FA5A0200DCC0F2</string>
+										<string>8447A0A212FA903000DCC0F2</string>
 										<key>history</key>
 										<array>
 											<string>84F0CCFF12F7242400198A60</string>
 											<string>8476B6E712F802DF003802D1</string>
-											<string>8476B6E812F802DF003802D1</string>
-											<string>84479FD712FA4B9600DCC0F2</string>
 											<string>84479FD912FA4B9600DCC0F2</string>
 											<string>84479FDA12FA4B9600DCC0F2</string>
 											<string>84479FFC12FA50B200DCC0F2</string>
-											<string>8447A00312FA515400DCC0F2</string>
-											<string>8447A01412FA520D00DCC0F2</string>
-											<string>8447A04F12FA598000DCC0F2</string>
-											<string>8447A05012FA598000DCC0F2</string>
+											<string>8447A06512FA875D00DCC0F2</string>
+											<string>8447A06612FA875D00DCC0F2</string>
+											<string>8447A06712FA875D00DCC0F2</string>
+											<string>8447A08612FA8C0000DCC0F2</string>
+											<string>8447A09012FA8C6E00DCC0F2</string>
+											<string>8447A0A112FA903000DCC0F2</string>
+											<string>8447A08F12FA8C6E00DCC0F2</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -549,8 +551,8 @@
 		<string>84479F7512FA02A700DCC0F2</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>84479E7612F945F100DCC0F2</string>
-		<string>84F0CBFF12F65FE600198A60</string>
 		<string>1C78EAAD065D492600B07095</string>
+		<string>84F0CBFF12F65FE600198A60</string>
 		<string>/Users/admin/work/curry/pomodoro/pomodora/pomodora.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -646,7 +648,7 @@
 			<key>WindowToolGUID</key>
 			<string>84F0CBFF12F65FE600198A60</string>
 			<key>WindowToolIsVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>FirstTimeWindowDisplayed</key>
