@@ -39,15 +39,15 @@
 	289233AC0DB2D0DB0083E9F9 /* FlipsideViewController.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {955, 938}}";
-			sepNavSelRange = "{695, 0}";
-			sepNavVisRange = "{0, 695}";
+			sepNavSelRange = "{680, 0}";
+			sepNavVisRange = "{0, 720}";
 		};
 	};
 	289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {955, 1054}}";
-			sepNavSelRange = "{497, 0}";
-			sepNavVisRange = "{145, 1128}";
+			sepNavIntBoundsRect = "{{0, 0}, {1004, 1122}}";
+			sepNavSelRange = "{929, 0}";
+			sepNavVisRange = "{91, 1437}";
 			sepNavWindowFrame = "{{15, 457}, {1205, 716}}";
 		};
 	};
@@ -270,6 +270,19 @@
 			8447A02512FA529900DCC0F2 /* PBXTextBookmark */ = 8447A02512FA529900DCC0F2 /* PBXTextBookmark */;
 			8447A02612FA529900DCC0F2 /* PBXTextBookmark */ = 8447A02612FA529900DCC0F2 /* PBXTextBookmark */;
 			8447A02B12FA52CE00DCC0F2 /* PBXTextBookmark */ = 8447A02B12FA52CE00DCC0F2 /* PBXTextBookmark */;
+			8447A02E12FA572500DCC0F2 /* PBXTextBookmark */ = 8447A02E12FA572500DCC0F2 /* PBXTextBookmark */;
+			8447A02F12FA572500DCC0F2 /* PBXTextBookmark */ = 8447A02F12FA572500DCC0F2 /* PBXTextBookmark */;
+			8447A03012FA572500DCC0F2 /* PBXTextBookmark */ = 8447A03012FA572500DCC0F2 /* PBXTextBookmark */;
+			8447A03112FA573200DCC0F2 /* PBXTextBookmark */ = 8447A03112FA573200DCC0F2 /* PBXTextBookmark */;
+			8447A03812FA578800DCC0F2 /* PBXTextBookmark */ = 8447A03812FA578800DCC0F2 /* PBXTextBookmark */;
+			8447A03D12FA58EA00DCC0F2 /* PBXTextBookmark */ = 8447A03D12FA58EA00DCC0F2 /* PBXTextBookmark */;
+			8447A04812FA595D00DCC0F2 /* PBXTextBookmark */ = 8447A04812FA595D00DCC0F2 /* PBXTextBookmark */;
+			8447A04912FA595D00DCC0F2 /* PBXTextBookmark */ = 8447A04912FA595D00DCC0F2 /* PBXTextBookmark */;
+			8447A04A12FA595D00DCC0F2 /* PBXTextBookmark */ = 8447A04A12FA595D00DCC0F2 /* PBXTextBookmark */;
+			8447A04F12FA598000DCC0F2 /* PBXTextBookmark */ = 8447A04F12FA598000DCC0F2 /* PBXTextBookmark */;
+			8447A05012FA598000DCC0F2 /* PBXTextBookmark */ = 8447A05012FA598000DCC0F2 /* PBXTextBookmark */;
+			8447A05112FA598000DCC0F2 /* PBXTextBookmark */ = 8447A05112FA598000DCC0F2 /* PBXTextBookmark */;
+			8447A05A12FA5A0200DCC0F2 /* PBXTextBookmark */ = 8447A05A12FA5A0200DCC0F2 /* PBXTextBookmark */;
 			8476B6D512F7FDC0003802D1 = 8476B6D512F7FDC0003802D1 /* PBXTextBookmark */;
 			8476B6E612F802DF003802D1 = 8476B6E612F802DF003802D1 /* PBXTextBookmark */;
 			8476B6E712F802DF003802D1 = 8476B6E712F802DF003802D1 /* PBXBookmark */;
@@ -1153,7 +1166,7 @@
 		fRef = 289233AC0DB2D0DB0083E9F9 /* FlipsideViewController.h */;
 		name = "FlipsideViewController.h: 29";
 		rLen = 0;
-		rLoc = 693;
+		rLoc = 718;
 		rType = 0;
 		vrLen = 649;
 		vrLoc = 0;
@@ -1223,7 +1236,7 @@
 		fRef = 289233AC0DB2D0DB0083E9F9 /* FlipsideViewController.h */;
 		name = "FlipsideViewController.h: 15";
 		rLen = 30;
-		rLoc = 278;
+		rLoc = 303;
 		rType = 0;
 		vrLen = 650;
 		vrLoc = 0;
@@ -1233,7 +1246,7 @@
 		fRef = 289233AC0DB2D0DB0083E9F9 /* FlipsideViewController.h */;
 		name = "FlipsideViewController.h: 17";
 		rLen = 8;
-		rLoc = 345;
+		rLoc = 370;
 		rType = 0;
 		vrLen = 650;
 		vrLoc = 0;
@@ -1262,7 +1275,7 @@
 		fRef = 289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.m */;
 		name = "FlipsideViewController.m: 26";
 		rLen = 0;
-		rLoc = 571;
+		rLoc = 604;
 		rType = 0;
 		vrLen = 1156;
 		vrLoc = 0;
@@ -1282,7 +1295,7 @@
 		fRef = 289233AC0DB2D0DB0083E9F9 /* FlipsideViewController.h */;
 		name = "FlipsideViewController.h: 30";
 		rLen = 0;
-		rLoc = 688;
+		rLoc = 713;
 		rType = 0;
 		vrLen = 683;
 		vrLoc = 0;
@@ -1331,7 +1344,7 @@
 		fRef = 289233AC0DB2D0DB0083E9F9 /* FlipsideViewController.h */;
 		name = "FlipsideViewController.h: 17";
 		rLen = 0;
-		rLoc = 353;
+		rLoc = 378;
 		rType = 0;
 		vrLen = 683;
 		vrLoc = 0;
@@ -1351,7 +1364,7 @@
 		fRef = 289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.m */;
 		name = "FlipsideViewController.m: 27";
 		rLen = 0;
-		rLoc = 569;
+		rLoc = 602;
 		rType = 0;
 		vrLen = 1194;
 		vrLoc = 3;
@@ -1361,7 +1374,7 @@
 		fRef = 289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.m */;
 		name = "FlipsideViewController.m: 27";
 		rLen = 0;
-		rLoc = 571;
+		rLoc = 604;
 		rType = 0;
 		vrLen = 1166;
 		vrLoc = 32;
@@ -1371,7 +1384,7 @@
 		fRef = 289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.m */;
 		name = "FlipsideViewController.m: 27";
 		rLen = 0;
-		rLoc = 571;
+		rLoc = 604;
 		rType = 0;
 		vrLen = 1166;
 		vrLoc = 32;
@@ -1401,7 +1414,7 @@
 		fRef = 289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.m */;
 		name = "FlipsideViewController.m: 27";
 		rLen = 0;
-		rLoc = 571;
+		rLoc = 604;
 		rType = 0;
 		vrLen = 1195;
 		vrLoc = 3;
@@ -1421,7 +1434,7 @@
 		fRef = 289233AC0DB2D0DB0083E9F9 /* FlipsideViewController.h */;
 		name = "FlipsideViewController.h: 33";
 		rLen = 0;
-		rLoc = 695;
+		rLoc = 720;
 		rType = 0;
 		vrLen = 695;
 		vrLoc = 0;
@@ -1441,7 +1454,7 @@
 		fRef = 289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.m */;
 		name = "FlipsideViewController.m: 20";
 		rLen = 0;
-		rLoc = 315;
+		rLoc = 348;
 		rType = 0;
 		vrLen = 1229;
 		vrLoc = 32;
@@ -1451,7 +1464,7 @@
 		fRef = 289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.m */;
 		name = "FlipsideViewController.m: 20";
 		rLen = 0;
-		rLoc = 315;
+		rLoc = 348;
 		rType = 0;
 		vrLen = 1218;
 		vrLoc = 45;
@@ -1461,7 +1474,7 @@
 		fRef = 289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.m */;
 		name = "FlipsideViewController.m: 26";
 		rLen = 0;
-		rLoc = 452;
+		rLoc = 485;
 		rType = 0;
 		vrLen = 1177;
 		vrLoc = 91;
@@ -1471,10 +1484,140 @@
 		fRef = 289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.m */;
 		name = "FlipsideViewController.m: 27";
 		rLen = 0;
-		rLoc = 497;
+		rLoc = 530;
 		rType = 0;
 		vrLen = 1128;
 		vrLoc = 145;
+	};
+	8447A02E12FA572500DCC0F2 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 289233AC0DB2D0DB0083E9F9 /* FlipsideViewController.h */;
+		name = "FlipsideViewController.h: 14";
+		rLen = 0;
+		rLoc = 296;
+		rType = 0;
+		vrLen = 720;
+		vrLoc = 0;
+	};
+	8447A02F12FA572500DCC0F2 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.m */;
+		name = "FlipsideViewController.m: 27";
+		rLen = 0;
+		rLoc = 530;
+		rType = 0;
+		vrLen = 1182;
+		vrLoc = 91;
+	};
+	8447A03012FA572500DCC0F2 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.m */;
+		name = "FlipsideViewController.m: 21";
+		rLen = 0;
+		rLoc = 348;
+		rType = 0;
+		vrLen = 1184;
+		vrLoc = 91;
+	};
+	8447A03112FA573200DCC0F2 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.m */;
+		name = "FlipsideViewController.m: 21";
+		rLen = 0;
+		rLoc = 348;
+		rType = 0;
+		vrLen = 1210;
+		vrLoc = 91;
+	};
+	8447A03812FA578800DCC0F2 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.m */;
+		name = "FlipsideViewController.m: 33";
+		rLen = 0;
+		rLoc = 934;
+		rType = 0;
+		vrLen = 1399;
+		vrLoc = 148;
+	};
+	8447A03D12FA58EA00DCC0F2 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.m */;
+		name = "FlipsideViewController.m: 33";
+		rLen = 0;
+		rLoc = 934;
+		rType = 0;
+		vrLen = 1419;
+		vrLoc = 149;
+	};
+	8447A04812FA595D00DCC0F2 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 289233AC0DB2D0DB0083E9F9 /* FlipsideViewController.h */;
+		name = "FlipsideViewController.h: 14";
+		rLen = 0;
+		rLoc = 296;
+		rType = 0;
+		vrLen = 695;
+		vrLoc = 0;
+	};
+	8447A04912FA595D00DCC0F2 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.m */;
+		name = "FlipsideViewController.m: 31";
+		rLen = 0;
+		rLoc = 934;
+		rType = 0;
+		vrLen = 1214;
+		vrLoc = 91;
+	};
+	8447A04A12FA595D00DCC0F2 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.m */;
+		name = "FlipsideViewController.m: 20";
+		rLen = 0;
+		rLoc = 348;
+		rType = 0;
+		vrLen = 1181;
+		vrLoc = 91;
+	};
+	8447A04F12FA598000DCC0F2 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.m */;
+		name = "FlipsideViewController.m: 36";
+		rLen = 0;
+		rLoc = 929;
+		rType = 0;
+		vrLen = 1437;
+		vrLoc = 91;
+	};
+	8447A05012FA598000DCC0F2 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 289233AC0DB2D0DB0083E9F9 /* FlipsideViewController.h */;
+		name = "FlipsideViewController.h: 14";
+		rLen = 0;
+		rLoc = 296;
+		rType = 0;
+		vrLen = 695;
+		vrLoc = 0;
+	};
+	8447A05112FA598000DCC0F2 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 289233AC0DB2D0DB0083E9F9 /* FlipsideViewController.h */;
+		name = "FlipsideViewController.h: 20";
+		rLen = 0;
+		rLoc = 389;
+		rType = 0;
+		vrLen = 720;
+		vrLoc = 0;
+	};
+	8447A05A12FA5A0200DCC0F2 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 289233AC0DB2D0DB0083E9F9 /* FlipsideViewController.h */;
+		name = "FlipsideViewController.h: 29";
+		rLen = 0;
+		rLoc = 680;
+		rType = 0;
+		vrLen = 720;
+		vrLoc = 0;
 	};
 	8476B6D512F7FDC0003802D1 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -1586,7 +1729,7 @@
 		fRef = 289233AC0DB2D0DB0083E9F9 /* FlipsideViewController.h */;
 		name = "FlipsideViewController.h: 29";
 		rLen = 0;
-		rLoc = 693;
+		rLoc = 718;
 		rType = 0;
 		vrLen = 649;
 		vrLoc = 0;

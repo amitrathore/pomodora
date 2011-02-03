@@ -11,7 +11,7 @@
 @protocol FlipsideViewControllerDelegate;
 
 
-@interface FlipsideViewController : UIViewController {
+@interface FlipsideViewController : UIViewController  < UITextFieldDelegate > {
 	id <FlipsideViewControllerDelegate> delegate;
 	
 	IBOutlet UITextField *weekGoalTxtBox;

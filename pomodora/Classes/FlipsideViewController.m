@@ -18,6 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+	weekGoalTxtBox.delegate = self;
     self.view.backgroundColor = [UIColor viewFlipsideBackgroundColor];      
 }
 
@@ -27,6 +28,12 @@
 	int goalValue = [[weekGoalTxtBox text] intValue];
 	[self.delegate setWeeklyGoal:goalValue];
 	[self.delegate flipsideViewControllerDidFinish:self];	
+}
+
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
+{
+    NSString *newString = [textField.text stringByReplacingCharactersInRange:range withString:string];
+    return !([newString length] > 2);
 }
 
 
