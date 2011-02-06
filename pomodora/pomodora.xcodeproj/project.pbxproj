@@ -20,7 +20,8 @@
 		288765590DF743DE002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765580DF743DE002DB57D /* CoreGraphics.framework */; };
 		289233AE0DB2D0DB0083E9F9 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */; };
 		289233B00DB2D0DB0083E9F9 /* FlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.m */; };
-		84479E1F12F8EF6B00DCC0F2 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 84479E1E12F8EF6B00DCC0F2 /* User.m */; };
+		8447A11012FD005700DCC0F2 /* Stat.m in Sources */ = {isa = PBXBuildFile; fileRef = 8447A10D12FD005700DCC0F2 /* Stat.m */; };
+		8447A11112FD005700DCC0F2 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 8447A10F12FD005700DCC0F2 /* User.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,8 +43,10 @@
 		289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FlipsideViewController.m; path = Classes/FlipsideViewController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* pomodora_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pomodora_Prefix.pch; sourceTree = "<group>"; };
-		84479E1D12F8EF6B00DCC0F2 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
-		84479E1E12F8EF6B00DCC0F2 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		8447A10C12FD005700DCC0F2 /* Stat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stat.h; sourceTree = "<group>"; };
+		8447A10D12FD005700DCC0F2 /* Stat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stat.m; sourceTree = "<group>"; };
+		8447A10E12FD005700DCC0F2 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		8447A10F12FD005700DCC0F2 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* pomodora-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "pomodora-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,7 +104,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				84479E1C12F8EF1D00DCC0F2 /* Model */,
+				8447A17412FE395300DCC0F2 /* Models */,
 				289233A00DB2D0730083E9F9 /* Main View */,
 				281C6CD70DB2D82200F60ACC /* Flipside View */,
 				080E96DDFE201D6D7F000001 /* Application Delegate */,
@@ -146,13 +149,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		84479E1C12F8EF1D00DCC0F2 /* Model */ = {
+		8447A17412FE395300DCC0F2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				84479E1D12F8EF6B00DCC0F2 /* User.h */,
-				84479E1E12F8EF6B00DCC0F2 /* User.m */,
+				8447A10C12FD005700DCC0F2 /* Stat.h */,
+				8447A10D12FD005700DCC0F2 /* Stat.m */,
+				8447A10E12FD005700DCC0F2 /* User.h */,
+				8447A10F12FD005700DCC0F2 /* User.m */,
 			);
-			name = Model;
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,7 +229,8 @@
 				289233AE0DB2D0DB0083E9F9 /* MainViewController.m in Sources */,
 				289233B00DB2D0DB0083E9F9 /* FlipsideViewController.m in Sources */,
 				28193033112F806B00ECF9B4 /* pomodora.xcdatamodeld in Sources */,
-				84479E1F12F8EF6B00DCC0F2 /* User.m in Sources */,
+				8447A11012FD005700DCC0F2 /* Stat.m in Sources */,
+				8447A11112FD005700DCC0F2 /* User.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

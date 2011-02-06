@@ -2,25 +2,33 @@
 //  User.h
 //  pomodora
 //
-//  Created by Siva Jagadeesan on 2/1/11.
+//  Created by Siva Jagadeesan on 2/4/11.
+//  Copyright 2011 Thoughtworks. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <CoreData/CoreData.h>
 
+@class Stat;
 
-@interface User : NSObject {
-
-	//instance variables
-	NSString *name;
-	int currentWeekGoal;
-	NSDictionary *userStats;
+@interface User :  NSManagedObject  
+{
 	int state;
-}	
+}
 
-@property (retain) NSString *name;
-@property int currentWeekGoal;
-@property int state;
-@property (retain) NSDictionary *userStats;
+@property (nonatomic, assign) int state;
+
+@property (nonatomic, retain) NSString * name;
+@property (nonatomic, retain) NSNumber * currentWeekGoal;
+@property (nonatomic, retain) NSSet* stats;
+
+@end
+
+
+@interface User (CoreDataGeneratedAccessors)
+- (void)addStatsObject:(Stat *)value;
+- (void)removeStatsObject:(Stat *)value;
+- (void)addStats:(NSSet *)value;
+- (void)removeStats:(NSSet *)value;
 
 //method declaration
 - (BOOL)finishPomodoro;
@@ -33,3 +41,4 @@
 - (BOOL)isPausedPomodoro;
 
 @end
+

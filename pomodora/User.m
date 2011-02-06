@@ -1,28 +1,22 @@
-//
+// 
 //  User.m
 //  pomodora
 //
-//  Created by Siva Jagadeesan on 2/1/11.
+//  Created by Siva Jagadeesan on 2/4/11.
 //  Copyright 2011 Thoughtworks. All rights reserved.
 //
 
 #import "User.h"
 
-@implementation User
+#import "Stat.h"
 
-@synthesize name,
-			currentWeekGoal,
-			state,
-			userStats;	
-	
-- (id)init { 
+@implementation User 
 
-	if (self = [super init]) { 
-		currentWeekGoal = 15;
-	} 
-	
-	return self;
-}
+@dynamic name;
+@dynamic currentWeekGoal;
+@dynamic stats;
+
+@synthesize state;
 
 - (BOOL)startPomodoro{
 	[self setState:1];
@@ -57,6 +51,5 @@
 - (BOOL)isPausedPomodoro{
 	return [self state] == 2;
 }
-
 
 @end

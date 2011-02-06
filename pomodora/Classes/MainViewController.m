@@ -26,7 +26,6 @@ NSTimer *pauseTimer;
 
  // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
-		NSLog(@"%s" , "view did load ..");
 	[pauseButton setHidden:YES]; 
 	[stopButton setHidden:YES]; 
     [super viewDidLoad];
@@ -36,15 +35,15 @@ NSTimer *pauseTimer;
  // Implement viewWillAppear: to do additional setup before the view is presented. You might, for example, fetch objects from the managed object context if necessary.
 - (void)viewWillAppear:(BOOL)animated {
 	NSLog(@"%s" , "appear ..");
-	if (![self user]) {
-		[self setUser:[[User alloc] init]];
+	if (![self user]) {	
+		NSLog(@"%s" , "Loading user ..");
+		[self setUser:[self loadUser]];
 	}
     [super viewWillAppear:animated];
 }
 
 
 - (void)flipsideViewControllerDidFinish:(FlipsideViewController *)controller {
-		NSLog(@"%@ =  %i" , user , user.currentWeekGoal);
     [self dismissModalViewControllerAnimated:YES];
 }
 
@@ -157,12 +156,11 @@ NSTimer *pauseTimer;
 
 
 - (void)setWeeklyGoal:(int)goal{
-	user.currentWeekGoal = goal;
+	user.currentWeekGoal = (NSNumber *)[NSNumber numberWithInt:goal];
 }
 
 - (int)getWeeklyGoal {
-	NSLog(@"Goal in user :%d", [self.user currentWeekGoal]);
-	return user.currentWeekGoal;
+	return [[user currentWeekGoal] intValue];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -177,6 +175,38 @@ NSTimer *pauseTimer;
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
 }
+
+
+- (User *)loadUser {
+	
+	NSEntityDescription *entityDescription = [NSEntityDescription
+											  entityForName:@"User" inManagedObjectContext:managedObjectContext];
+	NSFetchRequest *request = [[[NSFetchRequest alloc] init] autorelease];
+	[request setEntity:entityDescription];
+	
+	NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc]
+										initWithKey:@"name" ascending:YES];
+	[request setSortDescriptors:[NSArray arrayWithObject:sortDescriptor]];
+	[sortDescriptor release];
+	
+	NSError *error = nil;
+	NSArray *array = [managedObjectContext executeFetchRequest:request error:&error];
+	if (array == nil || ([array count] == 0)) 
+	{
+		NSLog(@"%s" , "User is getting created for the first time");
+		User *newUser = (User *)[NSEntityDescription
+												insertNewObjectForEntityForName:@"User"
+												inManagedObjectContext:managedObjectContext];
+		
+		[newUser setName:@"Default User"];
+		return newUser;
+	}
+	NSLog(@"%s" , "Giving exisiting user");
+
+	return (User *)[array objectAtIndex:0 ];
+	
+}
+
 
 
 /*
