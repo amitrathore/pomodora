@@ -25,6 +25,7 @@
 
 
 @interface User (CoreDataGeneratedAccessors)
+
 - (void)addStatsObject:(Stat *)value;
 - (void)removeStatsObject:(Stat *)value;
 - (void)addStats:(NSSet *)value;
@@ -39,6 +40,10 @@
 
 - (BOOL)isRunningPomodoro;
 - (BOOL)isPausedPomodoro;
+
+// Class methods 
+
++ (User *)findOrCreateUser:(NSManagedObjectContext *)managedObjectContext;
 
 @end
 

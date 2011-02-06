@@ -32,7 +32,4 @@
 - (IBAction)stopTimer;
 - (IBAction)pauseTimer;
 
-- (User *)loadUser;
-
-
 @end

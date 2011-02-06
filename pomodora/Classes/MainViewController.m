@@ -37,7 +37,7 @@ NSTimer *pauseTimer;
 	NSLog(@"%s" , "appear ..");
 	if (![self user]) {	
 		NSLog(@"%s" , "Loading user ..");
-		[self setUser:[self loadUser]];
+		[self setUser:[User findOrCreateUser:managedObjectContext]];
 	}
     [super viewWillAppear:animated];
 }
@@ -175,38 +175,6 @@ NSTimer *pauseTimer;
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
 }
-
-
-- (User *)loadUser {
-	
-	NSEntityDescription *entityDescription = [NSEntityDescription
-											  entityForName:@"User" inManagedObjectContext:managedObjectContext];
-	NSFetchRequest *request = [[[NSFetchRequest alloc] init] autorelease];
-	[request setEntity:entityDescription];
-	
-	NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc]
-										initWithKey:@"name" ascending:YES];
-	[request setSortDescriptors:[NSArray arrayWithObject:sortDescriptor]];
-	[sortDescriptor release];
-	
-	NSError *error = nil;
-	NSArray *array = [managedObjectContext executeFetchRequest:request error:&error];
-	if (array == nil || ([array count] == 0)) 
-	{
-		NSLog(@"%s" , "User is getting created for the first time");
-		User *newUser = (User *)[NSEntityDescription
-												insertNewObjectForEntityForName:@"User"
-												inManagedObjectContext:managedObjectContext];
-		
-		[newUser setName:@"Default User"];
-		return newUser;
-	}
-	NSLog(@"%s" , "Giving exisiting user");
-
-	return (User *)[array objectAtIndex:0 ];
-	
-}
-
 
 
 /*

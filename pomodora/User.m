@@ -7,7 +7,6 @@
 //
 
 #import "User.h"
-
 #import "Stat.h"
 
 @implementation User 
@@ -17,6 +16,40 @@
 @dynamic stats;
 
 @synthesize state;
+
+//Class Methods
+
++ (User *)findOrCreateUser:(NSManagedObjectContext *)managedObjectContext {
+	
+	NSEntityDescription *entityDescription = [NSEntityDescription
+											  entityForName:@"User" inManagedObjectContext:managedObjectContext];
+	NSFetchRequest *request = [[[NSFetchRequest alloc] init] autorelease];
+	[request setEntity:entityDescription];
+	
+	NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc]
+										initWithKey:@"name" ascending:YES];
+	[request setSortDescriptors:[NSArray arrayWithObject:sortDescriptor]];
+	[sortDescriptor release];
+	
+	NSError *error = nil;
+	NSArray *array = [managedObjectContext executeFetchRequest:request error:&error];
+	if (array == nil || ([array count] == 0)) 
+	{
+		NSLog(@"%s" , "User is getting created for the first time");
+		User *newUser = (User *)[NSEntityDescription
+								 insertNewObjectForEntityForName:@"User"
+								 inManagedObjectContext:managedObjectContext];
+		
+		[newUser setName:@"Default User"];
+		return newUser;
+	}
+	NSLog(@"%s" , "Giving exisiting user");
+	
+	return (User *)[array objectAtIndex:0 ];
+	
+}
+
+//Instance Methods
 
 - (BOOL)startPomodoro{
 	[self setState:1];
