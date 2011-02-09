@@ -13,9 +13,9 @@
 {
 }
 
-@property (nonatomic, retain) NSDate * statDate;
-@property (nonatomic, retain) NSNumber * state;
-@property (nonatomic, retain) NSNumber * value;
+@property (nonatomic, retain) NSDate * date;
+@property (nonatomic, retain) NSNumber * noCompleted;
+@property (nonatomic, retain) NSNumber * noStarted;
 @property (nonatomic, retain) NSManagedObject * user;
 
 @end
