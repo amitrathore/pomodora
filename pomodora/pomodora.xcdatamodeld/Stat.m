@@ -20,4 +20,35 @@
 @dynamic noOfResumes;
 @dynamic user;
 
+- (void)incrementCompleted {
+	self.noCompleted++;
+}
+
+- (void)incrementAborted {
+	self.noAborted++;
+}
+
+- (void)incrementInterruptions{
+	self.noOfInterruptions++;
+}
+
+- (void)incrementStarts {
+	self.noStarted++;
+}
+
+- (void)incrementResumes {
+	self.noOfInterruptions++;
+}
+
++ (Stat *)findOrCreateStat:(NSManagedObjectContext *)moc {
+	Stat * newStat = (Stat *)[NSEntityDescription
+							  insertNewObjectForEntityForName:@"Stat"
+							  inManagedObjectContext:moc];
+	
+	[newStat setDate:[NSDate date]];
+	
+	
+	return newStat;
+}
+
 @end

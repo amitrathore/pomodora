@@ -135,7 +135,6 @@
 			isa = PBXGroup;
 			children = (
 				286736F812F6A03300B7864A /* pomodoro.jpg */,
-				28193032112F806B00ECF9B4 /* pomodora.xcdatamodeld */,
 				280E754A0DD40C5E005A515E /* FlipsideView.xib */,
 				280E754B0DD40C5E005A515E /* MainView.xib */,
 				280E754C0DD40C5E005A515E /* MainWindow.xib */,
@@ -163,6 +162,7 @@
 				84D3A1CC130235D80001C5CA /* User.h */,
 				84D3A1CD130235D80001C5CA /* User.m */,
 				84D3A1CE130235D80001C5CA /* Pomodoro.h */,
+				28193032112F806B00ECF9B4 /* pomodora.xcdatamodeld */,
 				84D3A1CF130235D80001C5CA /* Pomodoro.m */,
 				84D3A1D0130235D80001C5CA /* Event.h */,
 				84D3A1D1130235D80001C5CA /* Event.m */,

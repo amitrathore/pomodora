@@ -14,18 +14,20 @@
 @implementation User 
 
 @synthesize status;
+@synthesize todaysStat;
+@synthesize currentPomodoro;
 
 @dynamic currentWeekGoal;
 @dynamic name;
 @dynamic stats;
 @dynamic pomodoros;
 
-//Class Methods
+// Class Methods
 
-+ (User *)findOrCreateUser:(NSManagedObjectContext *)managedObjectContext {
++ (User *)findOrCreateUser:(NSManagedObjectContext *)moc {
 	
 	NSEntityDescription *entityDescription = [NSEntityDescription
-											  entityForName:@"User" inManagedObjectContext:managedObjectContext];
+											  entityForName:@"User" inManagedObjectContext:moc];
 	NSFetchRequest *request = [[[NSFetchRequest alloc] init] autorelease];
 	[request setEntity:entityDescription];
 	
@@ -35,50 +37,66 @@
 	[sortDescriptor release];
 	
 	NSError *error = nil;
-	NSArray *array = [managedObjectContext executeFetchRequest:request error:&error];
+	NSArray *array = [moc executeFetchRequest:request error:&error];
+	
 	if (array == nil || ([array count] == 0)) 
 	{
-		NSLog(@"%s" , "User is getting created for the first time");
-		User *newUser = (User *)[NSEntityDescription
-								 insertNewObjectForEntityForName:@"User"
-								 inManagedObjectContext:managedObjectContext];
-		
-		[newUser setName:@"Default User"];
-		return newUser;
+		return (User *)[NSEntityDescription
+						insertNewObjectForEntityForName:@"User"
+						inManagedObjectContext:moc];		
 	}
 	NSLog(@"%s" , "Giving exisiting user");
 	
-	return (User *)[array objectAtIndex:0 ];
+	return  (User *)[array lastObject];
+}
+
+//Call Back functions
+
+- (void)awakeFromInsert {
+	[super awakeFromInsert];
+	self.name = @"Default User";
+	Stat * newStat = [Stat findOrCreateStat:[self managedObjectContext]];
+	self.todaysStat = newStat;
 	
+	[self addStatsObject:newStat];	
+}
+
+- (void)awakeFromFetch {
+	[super awakeFromFetch];
+	self.todaysStat = [Stat findOrCreateStat:[self managedObjectContext]];
 }
 
 //Instance Methods
 
 - (BOOL)startPomodoro{
+	[self.todaysStat incrementStarts];
 	self.status = @"STARTED";
 	return YES;
 }
 
 - (BOOL)finishPomodoro{
+	[self.todaysStat incrementCompleted];
 	self.status = @"COMPLETED";
 	return YES;
 }
 
 - (BOOL)pausePomodoro{
+	[self.todaysStat incrementInterruptions];
 	self.status = @"INTERRUPTED";
 	return YES;
 }
 
 - (BOOL)resumePomodoro{
+	[self.todaysStat incrementResumes];
 	self.status = @"STARTED";
 	return YES;
 }
 
 - (BOOL)stopPomodoro{
+	[self.todaysStat incrementAborted];
 	self.status = @"ABORTED";
 	return YES;
 }
-
 
 - (BOOL)isRunningPomodoro{
 	return (self.status == @"STARTED");

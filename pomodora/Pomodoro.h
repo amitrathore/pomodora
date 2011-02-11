@@ -30,8 +30,8 @@
 - (void)addEvents:(NSSet *)value;
 - (void)removeEvents:(NSSet *)value;
 
-+ (Pomodoro *) createPomodoro:(NSManagedObjectContext *)managedObjectContext;
-+ (Pomodoro *) findOrCreateCurrentPomodoro:(NSManagedObjectContext *)managedObjectContext;
+
++ (Pomodoro *)createPomodoro:(NSManagedObjectContext *)moc;
 
 @end
 

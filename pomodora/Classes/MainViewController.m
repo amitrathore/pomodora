@@ -34,10 +34,8 @@ NSTimer *pauseTimer;
 
  // Implement viewWillAppear: to do additional setup before the view is presented. You might, for example, fetch objects from the managed object context if necessary.
 - (void)viewWillAppear:(BOOL)animated {
-	NSLog(@"%s" , "appear ..");
-	if (![self user]) {	
-		NSLog(@"%s" , "Loading user ..");
-		[self setUser:[User findOrCreateUser:managedObjectContext]];
+	if (!self.user) {	
+		self.user = [User findOrCreateUser:self.managedObjectContext];
 	}
     [super viewWillAppear:animated];
 }
@@ -46,7 +44,6 @@ NSTimer *pauseTimer;
 - (void)flipsideViewControllerDidFinish:(FlipsideViewController *)controller {
     [self dismissModalViewControllerAnimated:YES];
 }
-
 
 - (IBAction)showInfo:(id)sender {  
 	  
@@ -90,11 +87,11 @@ NSTimer *pauseTimer;
 - (void)updateTimer {
 	NSLog(@"%s" , "Updating ..");
     if (timerValue > 0) {
-        timerValue--;
 		int minutes = (timerValue % 3600) / 60;
         int seconds = (timerValue %3600) % 60;
 		
 		[timerButton setTitle:[NSString stringWithFormat:@"%02d:%02d", minutes, seconds] forState:UIControlStateNormal];
+		timerValue--;
 	}else {
 		[self resetTimerInfo];	
 		[user finishPomodoro];
@@ -105,8 +102,8 @@ NSTimer *pauseTimer;
 - (void)updatePauseTimer {
 	NSLog(@"%s" , "Interrupting ..");
     if (pauseTimerValue > 0) {
-        pauseTimerValue--;
 		[timerButton setTitle:[NSString stringWithFormat:@"00:%02d", pauseTimerValue] forState:UIControlStateNormal];
+		pauseTimerValue--;
   	}else{
 		[self resetTimerInfo];
 		[user stopPomodoro];
@@ -114,14 +111,14 @@ NSTimer *pauseTimer;
 }
 
 - (IBAction)startTimer {
-	NSLog(@"%s" ,"Starting ...");		
-	[user startPomodoro];	
+	[user startPomodoro];
+	
 	[self startTimerInfo];		
-	timer = [NSTimer scheduledTimerWithTimeInterval:1 
-													 target:self 
-												   selector:@selector(updateTimer) 
-												   userInfo:nil
-												   repeats:YES];
+	timer = [NSTimer scheduledTimerWithTimeInterval:1
+											 target:self 
+										   selector:@selector(updateTimer) 
+										   userInfo:nil
+											repeats:YES];
 }
 
 - (IBAction)stopTimer {

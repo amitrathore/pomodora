@@ -22,6 +22,14 @@
 @property (nonatomic, retain) NSNumber * noOfResumes;
 @property (nonatomic, retain) User * user;
 
+- (void)incrementCompleted;
+- (void)incrementAborted;
+- (void)incrementInterruptions;
+- (void)incrementStarts;
+- (void)incrementResumes;
+
++ (Stat *)findOrCreateStat:(NSManagedObjectContext *)moc;
+
 @end
 
 

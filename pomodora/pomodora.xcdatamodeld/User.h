@@ -9,13 +9,18 @@
 #import <CoreData/CoreData.h>
 
 @class Stat;
+@class Pomodoro;
 
 @interface User :  NSManagedObject  
 {
 	NSString * status;
+	Stat * todaysStat;
+	Pomodoro * currentPomodoro;
 }
 
 @property (nonatomic, retain) NSString * status;
+@property (nonatomic, retain) Pomodoro * currentPomodoro;
+@property (nonatomic, retain) Stat * todaysStat;
 
 @property (nonatomic, retain) NSNumber * currentWeekGoal;
 @property (nonatomic, retain) NSString * name;
@@ -45,10 +50,10 @@
 
 - (BOOL)isRunningPomodoro;
 - (BOOL)isPausedPomodoro;
+- (BOOL)isResting;
 
-// Class methods 
+//Class methods
 
-+ (User *)findOrCreateUser:(NSManagedObjectContext *)managedObjectContext;
-
++ (User *)findOrCreateUser:(NSManagedObjectContext *)moc;
 @end
 
