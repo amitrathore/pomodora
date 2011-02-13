@@ -2,7 +2,7 @@
 //  Stat.h
 //  pomodora
 //
-//  Created by Siva Jagadeesan on 2/13/11.
+//  Created by Siva Jagadeesan on 2/8/11.
 //  Copyright 2011 Thoughtworks. All rights reserved.
 //
 
@@ -22,17 +22,15 @@
 @property (nonatomic, retain) NSNumber * noOfResumes;
 @property (nonatomic, retain) User * user;
 
-
-- (void)incrementStarted;
-- (void)incrementAborted;
 - (void)incrementCompleted;
+- (void)incrementAborted;
 - (void)incrementInterruptions;
+- (void)incrementStarts;
 - (void)incrementResumes;
 
-- (NSNumber *)increment:(NSNumber *)number;
+- (NSNumber * )increment:(NSNumber *)number;
 
 + (Stat *)findOrCreateStat:(NSManagedObjectContext *)moc;
-
 
 @end
 

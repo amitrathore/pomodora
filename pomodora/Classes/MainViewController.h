@@ -8,13 +8,14 @@
 
 #import "FlipsideViewController.h"
 #import "User.h"
+#import "Stat.h"
 #import <CoreData/CoreData.h>
 
 @interface MainViewController : UIViewController <FlipsideViewControllerDelegate> {
     NSManagedObjectContext *managedObjectContext;	
-    User *user;
+    User * user;
 	
-	IBOutlet UILabel *timerInfo;
+	IBOutlet UITextField *todayCompletedTxtBox;
 	IBOutlet UIButton *pauseButton;
 	IBOutlet UIButton *timerButton;
 	IBOutlet UIButton *stopButton;
@@ -23,6 +24,7 @@
 
 @property (nonatomic, retain) User *user;
 @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
+@property (nonatomic, retain) UITextField *todayCompletedTxtBox;
 @property (nonatomic, retain) UIButton *pauseButton;
 @property (nonatomic, retain) UIButton *timerButton;
 @property (nonatomic, retain) UIButton *stopButton;

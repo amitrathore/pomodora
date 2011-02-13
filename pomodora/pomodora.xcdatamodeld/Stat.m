@@ -2,7 +2,7 @@
 //  Stat.m
 //  pomodora
 //
-//  Created by Siva Jagadeesan on 2/8/11.
+//  Created by Siva Jagadeesan on 2/13/11.
 //  Copyright 2011 Thoughtworks. All rights reserved.
 //
 
@@ -20,35 +20,60 @@
 @dynamic noOfResumes;
 @dynamic user;
 
-- (void)incrementCompleted {
-	self.noCompleted++;
++ (Stat *)findOrCreateStat:(NSManagedObjectContext *)moc {
+	
+	NSEntityDescription *entityDescription = [NSEntityDescription
+											  entityForName:@"Stat" inManagedObjectContext:moc];
+	NSFetchRequest *request = [[[NSFetchRequest alloc] init] autorelease];
+	[request setEntity:entityDescription];
+	
+	NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc]
+										initWithKey:@"date" ascending:NO];
+	
+	[request setSortDescriptors:[NSArray arrayWithObject:sortDescriptor]];
+	[sortDescriptor release];
+	
+	NSError *error = nil;
+	NSArray *array = [moc executeFetchRequest:request error:&error];
+	
+	if (array == nil || ([array count] == 0)) 
+	{
+		Stat * stat = (Stat *)[NSEntityDescription
+							   insertNewObjectForEntityForName:@"Stat"
+							   inManagedObjectContext:moc];		
+		
+		stat.date = [NSDate	date];
+		
+		return stat;
+	}
+	
+	return (Stat *)[array lastObject];
 }
 
-- (void)incrementAborted {
-	self.noAborted++;
+
+- (void)incrementStarted{
+	self.noStarted = [self increment:self.noStarted];
+}
+
+- (void)incrementAborted{
+	self.noAborted = [self increment:self.noAborted];
+}
+
+- (void)incrementCompleted{
+	self.noCompleted = [self increment:self.noCompleted];
 }
 
 - (void)incrementInterruptions{
-	self.noOfInterruptions++;
+	self.noOfInterruptions = [self increment:self.noOfInterruptions];
 }
 
-- (void)incrementStarts {
-	self.noStarted++;
+- (void)incrementResumes{
+	self.noOfResumes = [self increment:self.noOfResumes];
 }
 
-- (void)incrementResumes {
-	self.noOfInterruptions++;
+- (NSNumber *)increment:(NSNumber *)number{
+	return [NSNumber numberWithInt:[number intValue]+1];
 }
 
-+ (Stat *)findOrCreateStat:(NSManagedObjectContext *)moc {
-	Stat * newStat = (Stat *)[NSEntityDescription
-							  insertNewObjectForEntityForName:@"Stat"
-							  inManagedObjectContext:moc];
-	
-	[newStat setDate:[NSDate date]];
-	
-	
-	return newStat;
-}
 
 @end

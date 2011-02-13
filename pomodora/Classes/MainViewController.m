@@ -8,8 +8,8 @@
 
 #import "MainViewController.h"
 
-int timerValue = 25 * 60;
-int pauseTimerValue = 45;
+int timerValue = 10;
+int pauseTimerValue = 5;
 
 NSTimer *timer;
 NSTimer *pauseTimer;
@@ -21,13 +21,15 @@ NSTimer *pauseTimer;
 	user,
 	pauseButton, 
 	timerButton,
-	stopButton;
+	stopButton,
+	todayCompletedTxtBox;
 
 
  // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
 	[pauseButton setHidden:YES]; 
 	[stopButton setHidden:YES]; 
+	
     [super viewDidLoad];
 }
 
@@ -37,6 +39,8 @@ NSTimer *pauseTimer;
 	if (!self.user) {	
 		self.user = [User findOrCreateUser:self.managedObjectContext];
 	}
+	
+	[self.todayCompletedTxtBox setText:[[[user todaysStat] noCompleted] stringValue]];
     [super viewWillAppear:animated];
 }
 
@@ -64,8 +68,8 @@ NSTimer *pauseTimer;
 	if ([user isRunningPomodoro]) {
 		[timer invalidate];
 	}
-	timerValue = 25 * 60;
-	pauseTimerValue = 45;
+	timerValue = 10;
+	pauseTimerValue = 5;
 	
 	[pauseButton setHidden:YES]; 
 	[pauseButton setTitle:@"Pause" forState:UIControlStateNormal];
@@ -77,7 +81,7 @@ NSTimer *pauseTimer;
 }
 
 - (void)startTimerInfo {
-	pauseTimerValue = 45;	
+	pauseTimerValue = 5;	
 	
 	[pauseButton setHidden:NO]; 
 	[stopButton setHidden:NO]; 
@@ -111,7 +115,7 @@ NSTimer *pauseTimer;
 }
 
 - (IBAction)startTimer {
-	[user startPomodoro];
+	[self.user startPomodoro];
 	
 	[self startTimerInfo];		
 	timer = [NSTimer scheduledTimerWithTimeInterval:1
@@ -144,6 +148,7 @@ NSTimer *pauseTimer;
 		
 	}
 	else {
+		[user resumePomodoro];
 		[pauseTimer invalidate];
 		[self startTimer];
 		[pauseButton setTitle:@"Pause" forState:UIControlStateNormal];

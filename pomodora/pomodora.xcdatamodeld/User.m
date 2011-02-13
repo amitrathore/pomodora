@@ -41,35 +41,32 @@
 	
 	if (array == nil || ([array count] == 0)) 
 	{
-		return (User *)[NSEntityDescription
-						insertNewObjectForEntityForName:@"User"
-						inManagedObjectContext:moc];		
+		User * user = (User *)[NSEntityDescription
+							   insertNewObjectForEntityForName:@"User"
+							   inManagedObjectContext:moc];		
+		
+		Stat * stat = [Stat findOrCreateStat:moc];
+		stat.user = user;
+		
+		user.todaysStat = stat;
+		
+		[user addStatsObject:stat];
+		
+		return user;
 	}
 	NSLog(@"%s" , "Giving exisiting user");
 	
-	return  (User *)[array lastObject];
-}
-
-//Call Back functions
-
-- (void)awakeFromInsert {
-	[super awakeFromInsert];
-	self.name = @"Default User";
-	Stat * newStat = [Stat findOrCreateStat:[self managedObjectContext]];
-	self.todaysStat = newStat;
+	User * user =   (User *)[array lastObject];
 	
-	[self addStatsObject:newStat];	
-}
-
-- (void)awakeFromFetch {
-	[super awakeFromFetch];
-	self.todaysStat = [Stat findOrCreateStat:[self managedObjectContext]];
+	user.todaysStat = [Stat findOrCreateStat:moc];
+	
+	return user;
 }
 
 //Instance Methods
 
 - (BOOL)startPomodoro{
-	[self.todaysStat incrementStarts];
+	[self.todaysStat incrementStarted];
 	self.status = @"STARTED";
 	return YES;
 }
