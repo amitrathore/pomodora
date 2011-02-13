@@ -47,7 +47,7 @@
 					chosenTableWidths = (
 						103.000000,
 						22.000000,
-						60.080078,
+						61.080078,
 					);
 				};
 				UIContextForLayoutManager = {
@@ -77,8 +77,8 @@
 						_percentageOfCollapsedView = 0;
 						isCollapsed = yes;
 						sizes = (
-							"{{0, 0}, {210, 218}}",
-							"{{215, 0}, {432, 218}}",
+							"{{0, 0}, {211, 220}}",
+							"{{216, 0}, {433, 220}}",
 						);
 					};
 				};
@@ -167,7 +167,7 @@
 					chosenTableWidthsPT = (
 						128.000000,
 						108.110840,
-						169.570801,
+						170.570801,
 					);
 					chosenTableWidthsRT = (
 						128.000000,
@@ -189,9 +189,9 @@
 	};
 	289233A90DB2D0DB0083E9F9 /* MainViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1340, 3400}}";
-			sepNavSelRange = "{1016, 0}";
-			sepNavVisRange = "{223, 1416}";
+			sepNavIntBoundsRect = "{{0, 0}, {1375, 3400}}";
+			sepNavSelRange = "{2545, 0}";
+			sepNavVisRange = "{1854, 1271}";
 			sepNavWindowFrame = "{{61, 415}, {1205, 716}}";
 		};
 	};
@@ -222,7 +222,7 @@
 			8405A23713050E2C00825DA5 /* User.m:63 */,
 			8405A24213050E4C00825DA5 /* User.m:63 */,
 			8405A24413050E4D00825DA5 /* User.m:63 */,
-			84C9EC9F1305EB3F0044677E /* MainViewController.m:118 */,
+			84C9EC9F1305EB3F0044677E /* MainViewController.m:119 */,
 			84C9ECE41306CF910044677E /* objc_exception_throw */,
 			84C9ED0D1306D5700044677E /* MainViewController.m:44 */,
 			84C9ED1A1306D6020044677E /* User.m:55 */,
@@ -275,7 +275,7 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					758,
+					1197,
 					20,
 					48,
 					43,
@@ -728,6 +728,9 @@
 			84C9EDE31308179B0044677E /* PBXTextBookmark */ = 84C9EDE31308179B0044677E /* PBXTextBookmark */;
 			84C9EDE41308179B0044677E /* PBXTextBookmark */ = 84C9EDE41308179B0044677E /* PBXTextBookmark */;
 			84C9EDE51308179B0044677E /* PBXTextBookmark */ = 84C9EDE51308179B0044677E /* PBXTextBookmark */;
+			84C9EE1713081D9E0044677E /* XDModelBookmark */ = 84C9EE1713081D9E0044677E /* XDModelBookmark */;
+			84C9EE1813081D9E0044677E /* PBXTextBookmark */ = 84C9EE1813081D9E0044677E /* PBXTextBookmark */;
+			84C9EE1913081D9E0044677E /* PBXTextBookmark */ = 84C9EE1913081D9E0044677E /* PBXTextBookmark */;
 			84F0CCFF12F7242400198A60 = 84F0CCFF12F7242400198A60 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 84F0CC0112F65FE600198A60 /* Source Control */;
@@ -1052,7 +1055,7 @@
 		fRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */;
 		name = "MainViewController.m: 120";
 		rLen = 0;
-		rLoc = 2890;
+		rLoc = 2975;
 		rType = 0;
 		vrLen = 1115;
 		vrLoc = 2067;
@@ -1062,7 +1065,7 @@
 		fRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */;
 		name = "MainViewController.m: 124";
 		rLen = 0;
-		rLoc = 3010;
+		rLoc = 3095;
 		rType = 0;
 		vrLen = 1116;
 		vrLoc = 2067;
@@ -1072,7 +1075,7 @@
 		fRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */;
 		name = "MainViewController.m: 120";
 		rLen = 0;
-		rLoc = 2890;
+		rLoc = 2975;
 		rType = 0;
 		vrLen = 1116;
 		vrLoc = 2067;
@@ -1092,7 +1095,7 @@
 		fRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */;
 		name = "MainViewController.m: 109";
 		rLen = 0;
-		rLoc = 2694;
+		rLoc = 2779;
 		rType = 0;
 		vrLen = 1104;
 		vrLoc = 2067;
@@ -1102,7 +1105,7 @@
 		fRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */;
 		name = "MainViewController.m: 109";
 		rLen = 0;
-		rLoc = 2694;
+		rLoc = 2779;
 		rType = 0;
 		vrLen = 1047;
 		vrLoc = 2429;
@@ -1207,7 +1210,7 @@
 		comments = "Request for member 'status' in something not a structure or union";
 		fRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */;
 		rLen = 0;
-		rLoc = 189;
+		rLoc = 190;
 		rType = 1;
 	};
 	8405A0F113035DB600825DA5 /* PBXTextBookmark */ = {
@@ -1215,7 +1218,7 @@
 		fRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */;
 		name = "MainViewController.m: 223";
 		rLen = 0;
-		rLoc = 4417;
+		rLoc = 4502;
 		rType = 0;
 		vrLen = 38;
 		vrLoc = 4594;
@@ -1230,7 +1233,7 @@
 		comments = "Request for member 'status' in something not a structure or union";
 		fRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */;
 		rLen = 0;
-		rLoc = 189;
+		rLoc = 190;
 		rType = 1;
 	};
 	8405A0F513035DDE00825DA5 /* PBXTextBookmark */ = {
@@ -1238,7 +1241,7 @@
 		fRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */;
 		name = "MainViewController.m: 223";
 		rLen = 0;
-		rLoc = 4417;
+		rLoc = 4502;
 		rType = 0;
 		vrLen = 0;
 		vrLoc = 4632;
@@ -1248,7 +1251,7 @@
 		comments = "'MainViewController' may not respond to '-createPomodoro'";
 		fRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */;
 		rLen = 1;
-		rLoc = 118;
+		rLoc = 119;
 		rType = 1;
 	};
 	8405A0F913035DEA00825DA5 /* PBXTextBookmark */ = {
@@ -1256,7 +1259,7 @@
 		fRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */;
 		name = "MainViewController.m: 114";
 		rLen = 0;
-		rLoc = 2784;
+		rLoc = 2869;
 		rType = 0;
 		vrLen = 314;
 		vrLoc = 2581;
@@ -1266,7 +1269,7 @@
 		comments = "Request for member 'status' in something not a structure or union";
 		fRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */;
 		rLen = 0;
-		rLoc = 189;
+		rLoc = 190;
 		rType = 1;
 	};
 	8405A0FD13035E0000825DA5 /* PBXTextBookmark */ = {
@@ -1274,7 +1277,7 @@
 		fRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */;
 		name = "MainViewController.m: 223";
 		rLen = 0;
-		rLoc = 4417;
+		rLoc = 4502;
 		rType = 0;
 		vrLen = 0;
 		vrLoc = 4632;
@@ -1284,7 +1287,7 @@
 		comments = "Request for member 'status' in something not a structure or union";
 		fRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */;
 		rLen = 0;
-		rLoc = 189;
+		rLoc = 190;
 		rType = 1;
 	};
 	8405A10113035E1600825DA5 /* PBXTextBookmark */ = {
@@ -1292,7 +1295,7 @@
 		fRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */;
 		name = "MainViewController.m: 223";
 		rLen = 0;
-		rLoc = 4417;
+		rLoc = 4502;
 		rType = 0;
 		vrLen = 0;
 		vrLoc = 4632;
@@ -1332,7 +1335,7 @@
 		fRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */;
 		name = "MainViewController.m: 223";
 		rLen = 0;
-		rLoc = 4417;
+		rLoc = 4502;
 		rType = 0;
 		vrLen = 38;
 		vrLoc = 4594;
@@ -1342,7 +1345,7 @@
 		fRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */;
 		name = "MainViewController.m: 230";
 		rLen = 0;
-		rLoc = 4519;
+		rLoc = 4604;
 		rType = 0;
 		vrLen = 110;
 		vrLoc = 4522;
@@ -1402,7 +1405,7 @@
 		fRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */;
 		name = "MainViewController.m: 230";
 		rLen = 0;
-		rLoc = 4519;
+		rLoc = 4604;
 		rType = 0;
 		vrLen = 607;
 		vrLoc = 4025;
@@ -1412,7 +1415,7 @@
 		fRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */;
 		name = "MainViewController.m: 186";
 		rLen = 0;
-		rLoc = 4415;
+		rLoc = 4500;
 		rType = 0;
 		vrLen = 1078;
 		vrLoc = 0;
@@ -1422,7 +1425,7 @@
 		fRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */;
 		name = "MainViewController.m: 186";
 		rLen = 0;
-		rLoc = 4415;
+		rLoc = 4500;
 		rType = 0;
 		vrLen = 1110;
 		vrLoc = 865;
@@ -1493,7 +1496,7 @@
 		fRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */;
 		name = "MainViewController.m: 223";
 		rLen = 0;
-		rLoc = 4417;
+		rLoc = 4502;
 		rType = 0;
 		vrLen = 0;
 		vrLoc = 4632;
@@ -1678,7 +1681,7 @@
 		fRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */;
 		name = "MainViewController.m: 232";
 		rLen = 0;
-		rLoc = 4417;
+		rLoc = 4502;
 		rType = 0;
 		vrLen = 283;
 		vrLoc = 4349;
@@ -1688,7 +1691,7 @@
 		fRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */;
 		name = "MainViewController.m: 240";
 		rLen = 0;
-		rLoc = 4417;
+		rLoc = 4502;
 		rType = 0;
 		vrLen = 0;
 		vrLoc = 4632;
@@ -1736,7 +1739,7 @@
 		comments = "Request for member 'date' in something not a structure or union";
 		fRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */;
 		rLen = 0;
-		rLoc = 189;
+		rLoc = 190;
 		rType = 1;
 	};
 	8405A1671303AC0900825DA5 /* PBXTextBookmark */ = {
@@ -1744,7 +1747,7 @@
 		fRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */;
 		name = "MainViewController.m: 232";
 		rLen = 0;
-		rLoc = 4417;
+		rLoc = 4502;
 		rType = 0;
 		vrLen = 0;
 		vrLoc = 4632;
@@ -1784,7 +1787,7 @@
 		fRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */;
 		name = "MainViewController.m: 118";
 		rLen = 0;
-		rLoc = 2890;
+		rLoc = 2975;
 		rType = 0;
 		vrLen = 0;
 		vrLoc = 4632;
@@ -1794,7 +1797,7 @@
 		fRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */;
 		name = "MainViewController.m: 220";
 		rLen = 0;
-		rLoc = 4417;
+		rLoc = 4502;
 		rType = 0;
 		vrLen = 603;
 		vrLoc = 4029;
@@ -1804,7 +1807,7 @@
 		fRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */;
 		name = "MainViewController.m: 186";
 		rLen = 0;
-		rLoc = 4417;
+		rLoc = 4502;
 		rType = 0;
 		vrLen = 698;
 		vrLoc = 3934;
@@ -1972,7 +1975,7 @@
 		fRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */;
 		name = "MainViewController.m: 186";
 		rLen = 0;
-		rLoc = 4417;
+		rLoc = 4502;
 		rType = 0;
 		vrLen = 1231;
 		vrLoc = 1854;
@@ -1982,7 +1985,7 @@
 		fRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */;
 		name = "MainViewController.m: 114";
 		rLen = 0;
-		rLoc = 2784;
+		rLoc = 2869;
 		rType = 0;
 		vrLen = 1202;
 		vrLoc = 1854;
@@ -2002,7 +2005,7 @@
 		comments = "No '+createPomodoro:' method found";
 		fRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */;
 		rLen = 1;
-		rLoc = 118;
+		rLoc = 119;
 		rType = 1;
 	};
 	8405A1CA1304E20A00825DA5 /* PBXTextBookmark */ = {
@@ -2010,7 +2013,7 @@
 		fRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */;
 		name = "MainViewController.m: 114";
 		rLen = 0;
-		rLoc = 2784;
+		rLoc = 2869;
 		rType = 0;
 		vrLen = 441;
 		vrLoc = 2438;
@@ -2020,7 +2023,7 @@
 		fRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */;
 		name = "MainViewController.m: 114";
 		rLen = 0;
-		rLoc = 2784;
+		rLoc = 2869;
 		rType = 0;
 		vrLen = 441;
 		vrLoc = 2438;
@@ -2060,7 +2063,7 @@
 		fRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */;
 		name = "MainViewController.m: 114";
 		rLen = 0;
-		rLoc = 2784;
+		rLoc = 2869;
 		rType = 0;
 		vrLen = 1290;
 		vrLoc = 1910;
@@ -2070,7 +2073,7 @@
 		fRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */;
 		name = "MainViewController.m: 114";
 		rLen = 0;
-		rLoc = 2784;
+		rLoc = 2869;
 		rType = 0;
 		vrLen = 1232;
 		vrLoc = 1910;
@@ -2080,7 +2083,7 @@
 		comments = "No '+createPomodoro:' method found";
 		fRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */;
 		rLen = 1;
-		rLoc = 118;
+		rLoc = 119;
 		rType = 1;
 	};
 	8405A1E41304E27E00825DA5 /* PBXTextBookmark */ = {
@@ -2088,7 +2091,7 @@
 		fRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */;
 		name = "MainViewController.m: 114";
 		rLen = 0;
-		rLoc = 2784;
+		rLoc = 2869;
 		rType = 0;
 		vrLen = 441;
 		vrLoc = 2464;
@@ -2158,7 +2161,7 @@
 		fRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */;
 		name = "MainViewController.m: 115";
 		rLen = 0;
-		rLoc = 2784;
+		rLoc = 2869;
 		rType = 0;
 		vrLen = 1225;
 		vrLoc = 2370;
@@ -2168,7 +2171,7 @@
 		fRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */;
 		name = "MainViewController.m: 115";
 		rLen = 0;
-		rLoc = 2784;
+		rLoc = 2869;
 		rType = 0;
 		vrLen = 1139;
 		vrLoc = 3460;
@@ -2178,7 +2181,7 @@
 		fRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */;
 		name = "MainViewController.m: 115";
 		rLen = 0;
-		rLoc = 2784;
+		rLoc = 2869;
 		rType = 0;
 		vrLen = 1376;
 		vrLoc = 144;
@@ -2188,7 +2191,7 @@
 		fRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */;
 		name = "MainViewController.m: 115";
 		rLen = 0;
-		rLoc = 2784;
+		rLoc = 2869;
 		rType = 0;
 		vrLen = 1378;
 		vrLoc = 144;
@@ -2253,7 +2256,7 @@
 		fRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */;
 		name = "MainViewController.m: 115";
 		rLen = 0;
-		rLoc = 2784;
+		rLoc = 2869;
 		rType = 0;
 		vrLen = 1232;
 		vrLoc = 1880;
@@ -2298,7 +2301,7 @@
 		fRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */;
 		name = "MainViewController.m: 115";
 		rLen = 0;
-		rLoc = 2784;
+		rLoc = 2869;
 		rType = 0;
 		vrLen = 1081;
 		vrLoc = 3008;
@@ -2328,7 +2331,7 @@
 		fRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */;
 		name = "MainViewController.m: 114";
 		rLen = 0;
-		rLoc = 2784;
+		rLoc = 2869;
 		rType = 0;
 		vrLen = 398;
 		vrLoc = 2370;
@@ -2358,7 +2361,7 @@
 		fRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */;
 		name = "MainViewController.m: 115";
 		rLen = 0;
-		rLoc = 2813;
+		rLoc = 2898;
 		rType = 0;
 		vrLen = 1253;
 		vrLoc = 2023;
@@ -2386,7 +2389,7 @@
 		fRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */;
 		name = "MainViewController.m: 115";
 		rLen = 0;
-		rLoc = 2813;
+		rLoc = 2898;
 		rType = 0;
 		vrLen = 1253;
 		vrLoc = 2023;
@@ -2492,7 +2495,7 @@
 		fRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */;
 		name = "MainViewController.m: 115";
 		rLen = 0;
-		rLoc = 2813;
+		rLoc = 2898;
 		rType = 0;
 		vrLen = 341;
 		vrLoc = 2370;
@@ -2712,7 +2715,7 @@
 		fRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */;
 		name = "MainViewController.m: 117";
 		rLen = 0;
-		rLoc = 2813;
+		rLoc = 2898;
 		rType = 0;
 		vrLen = 320;
 		vrLoc = 2469;
@@ -3360,12 +3363,12 @@
 		fRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */;
 		name = "MainViewController.m: 123";
 		rLen = 0;
-		rLoc = 2791;
+		rLoc = 2876;
 		rType = 0;
 		vrLen = 1235;
 		vrLoc = 1999;
 	};
-	84C9EC9F1305EB3F0044677E /* MainViewController.m:118 */ = {
+	84C9EC9F1305EB3F0044677E /* MainViewController.m:119 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -3377,7 +3380,7 @@
 		functionName = "-startTimer";
 		hitCount = 0;
 		ignoreCount = 0;
-		lineNumber = 118;
+		lineNumber = 119;
 		location = pomodora;
 		modificationTime = 319215123.807818;
 		originalNumberOfMultipleMatches = 1;
@@ -3388,7 +3391,7 @@
 		fRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */;
 		name = "MainViewController.m: 123";
 		rLen = 0;
-		rLoc = 2791;
+		rLoc = 2876;
 		rType = 0;
 		vrLen = 1236;
 		vrLoc = 1999;
@@ -3398,7 +3401,7 @@
 		fRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */;
 		name = "MainViewController.m: 123";
 		rLen = 0;
-		rLoc = 2791;
+		rLoc = 2876;
 		rType = 0;
 		vrLen = 1266;
 		vrLoc = 1969;
@@ -3408,7 +3411,7 @@
 		fRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */;
 		name = "MainViewController.m: 123";
 		rLen = 0;
-		rLoc = 2793;
+		rLoc = 2878;
 		rType = 0;
 		vrLen = 1315;
 		vrLoc = 0;
@@ -3445,7 +3448,7 @@
 		fRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */;
 		name = "MainViewController.m: 123";
 		rLen = 0;
-		rLoc = 2784;
+		rLoc = 2869;
 		rType = 0;
 		vrLen = 1315;
 		vrLoc = 0;
@@ -3657,7 +3660,7 @@
 		fRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */;
 		name = "MainViewController.m: 123";
 		rLen = 0;
-		rLoc = 2784;
+		rLoc = 2869;
 		rType = 0;
 		vrLen = 1280;
 		vrLoc = 2244;
@@ -5092,6 +5095,191 @@
 		rType = 0;
 		vrLen = 1416;
 		vrLoc = 223;
+	};
+	84C9EE1713081D9E0044677E /* XDModelBookmark */ = {
+		isa = XDModelBookmark;
+		fRef = 2880DEA010926BE500CC57B2 /* pomodora.xcdatamodel */;
+		fallbackIsa = PBXBookmark;
+		uiCtxt = {
+			UIContextForDetailArea = {
+				_indexOfSelectedPane = 0;
+				_indexOfSelectedView = 1;
+			};
+			UIContextForEntityArea = {
+				_indexOfSelectedView = 0;
+				chosenTableColumnns = (
+					"ET Entity",
+					"ET Abstract",
+					"ET Class",
+				);
+				chosenTableColumnns_sortDirections = (
+					YES,
+				);
+				chosenTableColumnns_sortKeys = (
+					name,
+				);
+				chosenTableColumnns_sortSelectors = (
+					"_xdcaseInsensitiveNumericCompare:",
+				);
+				chosenTableWidths = (
+					103.000000,
+					22.000000,
+					61.080078,
+				);
+			};
+			UIContextForLayoutManager = {
+				detailSplitGeometry = {
+					_collapsingFrameDimension = 0;
+					_indexOfCollapsedView = 0;
+					_percentageOfCollapsedView = 0;
+					isCollapsed = yes;
+					sizes = (
+						"{{0, 0}, {649, 220}}",
+						"{{654, 0}, {341, 220}}",
+					);
+				};
+				diagramSplitGeometry = {
+					_collapsingFrameDimension = 0;
+					_indexOfCollapsedView = 0;
+					_percentageOfCollapsedView = 0;
+					isCollapsed = yes;
+					sizes = (
+						"{{0, 0}, {995, 220}}",
+						"{{0, 225}, {995, 719}}",
+					);
+				};
+				tableSplitGeometry = {
+					_collapsingFrameDimension = 0;
+					_indexOfCollapsedView = 0;
+					_percentageOfCollapsedView = 0;
+					isCollapsed = yes;
+					sizes = (
+						"{{0, 0}, {211, 220}}",
+						"{{216, 0}, {433, 220}}",
+					);
+				};
+			};
+			UIContextForPropertyArea = {
+				_indexOfSelectedView = 0;
+				chosenTableColumnnFRTs = (
+					"FT Fetch Request",
+					"FT Predicate",
+				);
+				chosenTableColumnnFRTs_sortDirections = (
+					YES,
+				);
+				chosenTableColumnnFRTs_sortKeys = (
+					name,
+				);
+				chosenTableColumnnFRTs_sortSelectors = (
+					"_xdcaseInsensitiveNumericCompare:",
+				);
+				chosenTableColumnnsAT = (
+					"AT Attribute",
+					"AT Type",
+				);
+				chosenTableColumnnsAT_sortDirections = (
+					YES,
+				);
+				chosenTableColumnnsAT_sortKeys = (
+					name,
+				);
+				chosenTableColumnnsAT_sortSelectors = (
+					"_xdcaseInsensitiveNumericCompare:",
+				);
+				chosenTableColumnnsFPT = (
+					"FP FetchedProperty",
+					"FP Destination",
+					"FP Predicate",
+				);
+				chosenTableColumnnsFPT_sortDirections = (
+					YES,
+				);
+				chosenTableColumnnsFPT_sortKeys = (
+					name,
+				);
+				chosenTableColumnnsFPT_sortSelectors = (
+					"_xdcaseInsensitiveNumericCompare:",
+				);
+				chosenTableColumnnsPT = (
+					"PT Property",
+					"PT Kind",
+					"PT SharedKeyOne",
+				);
+				chosenTableColumnnsPT_sortDirections = (
+					YES,
+				);
+				chosenTableColumnnsPT_sortKeys = (
+					name,
+				);
+				chosenTableColumnnsPT_sortSelectors = (
+					"_xdcaseInsensitiveNumericCompare:",
+				);
+				chosenTableColumnnsRT = (
+					"RT Relationship",
+					"RT Destination",
+				);
+				chosenTableColumnnsRT_sortDirections = (
+					YES,
+				);
+				chosenTableColumnnsRT_sortKeys = (
+					name,
+				);
+				chosenTableColumnnsRT_sortSelectors = (
+					"_xdcaseInsensitiveNumericCompare:",
+				);
+				chosenTableWidthsAT = (
+					128.000000,
+					495.000000,
+				);
+				chosenTableWidthsFPT = (
+					128.000000,
+					64.000000,
+					427.764160,
+				);
+				chosenTableWidthsFRT = (
+					128.000000,
+					494.764160,
+				);
+				chosenTableWidthsPT = (
+					128.000000,
+					108.110840,
+					170.570801,
+				);
+				chosenTableWidthsRT = (
+					128.000000,
+					64.000000,
+				);
+			};
+			"xdesign model browser state key - shown/hidden" = 1;
+			"xdesign model diagram view visible rect key" = "{{-166, -136}, {980, 704}}";
+			"xdesign model selected entities key" = (
+				"<XDPMEntity: 0x200c3d460>{name=Pomodoro, package=}",
+			);
+			"xdesign model selected properties key" = (
+				"<XDPMAttribute: 0x200b74ae0>{name=createdAt, type=(null)}",
+			);
+		};
+	};
+	84C9EE1813081D9E0044677E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */;
+		name = "MainViewController.m: 42";
+		rLen = 0;
+		rLoc = 914;
+		rType = 0;
+		vrLen = 1382;
+		vrLoc = 240;
+	};
+	84C9EE1913081D9E0044677E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */;
+		name = "MainViewController.m: 102";
+		rLen = 0;
+		rLoc = 2545;
+		rType = 0;
+		vrLen = 1271;
+		vrLoc = 1854;
 	};
 	84D3A1CA130235D80001C5CA /* Stat.h */ = {
 		isa = PBXFileReference;

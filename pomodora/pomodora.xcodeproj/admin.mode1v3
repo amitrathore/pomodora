@@ -288,7 +288,7 @@
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 0}, {248, 1064}}</string>
+							<string>{{0, 0}, {248, 1059}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -300,14 +300,14 @@
 					<key>GeometryConfiguration</key>
 					<dict>
 						<key>Frame</key>
-						<string>{{0, 0}, {265, 1082}}</string>
+						<string>{{0, 0}, {265, 1077}}</string>
 						<key>GroupTreeTableConfiguration</key>
 						<array>
 							<string>MainColumn</string>
 							<real>248</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>0 55 1267 1123 0 0 1920 1178 </string>
+						<string>0 60 1706 1118 0 0 1920 1178 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -337,7 +337,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>84C9EDE51308179B0044677E</string>
+										<string>84C9EE1913081D9E0044677E</string>
 										<key>history</key>
 										<array>
 											<string>84F0CCFF12F7242400198A60</string>
@@ -355,11 +355,11 @@
 											<string>84C9ED7C1307CC890044677E</string>
 											<string>84C9ED811307CC890044677E</string>
 											<string>84C9EDC1130816350044677E</string>
-											<string>84C9EDE01308179B0044677E</string>
 											<string>84C9EDE11308179B0044677E</string>
 											<string>84C9EDE21308179B0044677E</string>
 											<string>84C9EDE31308179B0044677E</string>
-											<string>84C9EDE41308179B0044677E</string>
+											<string>84C9EE1713081D9E0044677E</string>
+											<string>84C9EE1813081D9E0044677E</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -371,14 +371,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {997, 961}}</string>
+								<string>{{0, 0}, {1436, 956}}</string>
 								<key>RubberWindowFrame</key>
-								<string>0 55 1267 1123 0 0 1920 1178 </string>
+								<string>0 60 1706 1118 0 0 1920 1178 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>961pt</string>
+							<string>956pt</string>
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -391,9 +391,9 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 966}, {997, 116}}</string>
+								<string>{{0, 961}, {1436, 116}}</string>
 								<key>RubberWindowFrame</key>
-								<string>0 55 1267 1123 0 0 1920 1178 </string>
+								<string>0 60 1706 1118 0 0 1920 1178 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
@@ -402,7 +402,7 @@
 						</dict>
 					</array>
 					<key>Proportion</key>
-					<string>997pt</string>
+					<string>1436pt</string>
 				</dict>
 			</array>
 			<key>Name</key>
@@ -565,7 +565,7 @@
 		<string>/Users/admin/work/curry/pomodoro/pomodora/pomodora.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>0 55 1267 1123 0 0 1920 1178 </string>
+	<string>0 60 1706 1118 0 0 1920 1178 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>

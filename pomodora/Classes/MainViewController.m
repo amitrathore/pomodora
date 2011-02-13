@@ -99,6 +99,7 @@ NSTimer *pauseTimer;
 	}else {
 		[self resetTimerInfo];	
 		[user finishPomodoro];
+		[self.todayCompletedTxtBox setText:[[[user todaysStat] noCompleted] stringValue]];
 	}
 
 } 
