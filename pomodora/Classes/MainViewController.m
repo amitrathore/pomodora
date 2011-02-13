@@ -40,7 +40,7 @@ NSTimer *pauseTimer;
 		self.user = [User findOrCreateUser:self.managedObjectContext];
 	}
 	
-	[self.todayCompletedTxtBox setText:[[[user todaysStat] noCompleted] stringValue]];
+	[self.todayCompletedTxtBox setText:[NSString stringWithFormat:@"%d",[user todayCompleted]]];
     [super viewWillAppear:animated];
 }
 
@@ -99,7 +99,7 @@ NSTimer *pauseTimer;
 	}else {
 		[self resetTimerInfo];	
 		[user finishPomodoro];
-		[self.todayCompletedTxtBox setText:[[[user todaysStat] noCompleted] stringValue]];
+		[self.todayCompletedTxtBox setText:[NSString stringWithFormat:@"%d",[user todayCompleted]]];		
 	}
 
 } 

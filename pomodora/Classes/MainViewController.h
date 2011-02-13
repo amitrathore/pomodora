@@ -8,7 +8,6 @@
 
 #import "FlipsideViewController.h"
 #import "User.h"
-#import "Stat.h"
 #import <CoreData/CoreData.h>
 
 @interface MainViewController : UIViewController <FlipsideViewControllerDelegate> {

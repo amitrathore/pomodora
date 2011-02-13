@@ -7,19 +7,15 @@
 //
 
 #import "User.h"
-
-#import "Stat.h"
+#import "Event.h"
 #import "Pomodoro.h"
 
 @implementation User 
 
-@synthesize status;
-@synthesize todaysStat;
 @synthesize currentPomodoro;
 
 @dynamic currentWeekGoal;
 @dynamic name;
-@dynamic stats;
 @dynamic pomodoros;
 
 // Class Methods
@@ -45,20 +41,13 @@
 							   insertNewObjectForEntityForName:@"User"
 							   inManagedObjectContext:moc];		
 		
-		Stat * stat = [Stat findOrCreateStat:moc];
-		stat.user = user;
-		
-		user.todaysStat = stat;
-		
-		[user addStatsObject:stat];
-		
 		return user;
 	}
 	NSLog(@"%s" , "Giving exisiting user");
 	
 	User * user =   (User *)[array lastObject];
 	
-	user.todaysStat = [Stat findOrCreateStat:moc];
+	user.currentPomodoro = [Pomodoro findCurrentPomodoro:user.managedObjectContext];
 	
 	return user;
 }
@@ -66,41 +55,76 @@
 //Instance Methods
 
 - (BOOL)startPomodoro{
-	[self.todaysStat incrementStarted];
-	self.status = @"STARTED";
+	Pomodoro * pomodoro = [Pomodoro createPomodoro:self.managedObjectContext];
+	self.currentPomodoro = pomodoro;
+	[self addPomodorosObject:pomodoro];
+	currentPomodoro.status = @"STARTED";
+	[currentPomodoro addEventWithType:@"START"];
 	return YES;
 }
 
 - (BOOL)finishPomodoro{
-	[self.todaysStat incrementCompleted];
-	self.status = @"COMPLETED";
+	currentPomodoro.status = @"COMPLETED";
+	[currentPomodoro addEventWithType:@"COMPLETE"];
 	return YES;
 }
 
 - (BOOL)pausePomodoro{
-	[self.todaysStat incrementInterruptions];
-	self.status = @"INTERRUPTED";
+	currentPomodoro.status = @"INTERRUPTED";
+	[currentPomodoro addEventWithType:@"INTERRUPT"];
 	return YES;
 }
 
 - (BOOL)resumePomodoro{
-	[self.todaysStat incrementResumes];
-	self.status = @"STARTED";
+	currentPomodoro.status = @"STARTED";
+	[currentPomodoro addEventWithType:@"RESUME"];
 	return YES;
 }
 
 - (BOOL)stopPomodoro{
-	[self.todaysStat incrementAborted];
-	self.status = @"ABORTED";
+	currentPomodoro.status = @"ABORTED";
+	[currentPomodoro addEventWithType:@"ABORT"];
 	return YES;
 }
 
 - (BOOL)isRunningPomodoro{
-	return (self.status == @"STARTED");
+	return (currentPomodoro && currentPomodoro.status == @"STARTED");
 }
 
 - (BOOL)isPausedPomodoro{
-	return (self.status == @"INTERRUPTED");
+	return (currentPomodoro && currentPomodoro.status == @"INTERRUPTED");
+}
+
+- (NSUInteger)todayCompleted{
+	NSManagedObjectContext * moc = self.managedObjectContext;
+	
+	NSEntityDescription *entityDescription = [NSEntityDescription
+											  entityForName:@"Event" inManagedObjectContext:moc];
+	NSFetchRequest *request = [[[NSFetchRequest alloc] init] autorelease];
+	[request setEntity:entityDescription];
+	
+	NSPredicate * predicate = [NSPredicate predicateWithFormat:@"(createdAt >= %@) AND (eventType LIKE %@)", 
+								[CalendarHelper startOfToday],
+								@"COMPLETE"];
+	[request setPredicate:predicate];
+	
+	NSError *error = nil;
+	return [moc countForFetchRequest:request error:&error];
+}
+
+- (NSUInteger)OverallCompleted{
+	NSManagedObjectContext * moc = self.managedObjectContext;
+	
+	NSEntityDescription *entityDescription = [NSEntityDescription
+											  entityForName:@"Event" inManagedObjectContext:moc];
+	NSFetchRequest *request = [[[NSFetchRequest alloc] init] autorelease];
+	[request setEntity:entityDescription];
+	
+	NSPredicate * predicate = [NSPredicate predicateWithFormat:@"(eventType LIKE %@)", @"COMPLETE"];
+	[request setPredicate:predicate];
+	
+	NSError *error = nil;
+	return [moc countForFetchRequest:request error:&error];
 }
 
 @end

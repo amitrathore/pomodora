@@ -20,7 +20,6 @@
 		288765590DF743DE002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765580DF743DE002DB57D /* CoreGraphics.framework */; };
 		289233AE0DB2D0DB0083E9F9 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */; };
 		289233B00DB2D0DB0083E9F9 /* FlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.m */; };
-		84C9ED5B1307C9300044677E /* Stat.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C9ED5A1307C9300044677E /* Stat.m */; };
 		84C9EE2013081F470044677E /* CalendarHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C9EE1F13081F470044677E /* CalendarHelper.m */; };
 		84D3A1D3130235D80001C5CA /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D3A1CD130235D80001C5CA /* User.m */; };
 		84D3A1D4130235D80001C5CA /* Pomodoro.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D3A1CF130235D80001C5CA /* Pomodoro.m */; };
@@ -48,8 +47,6 @@
 		32CA4F630368D1EE00C91783 /* pomodora_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pomodora_Prefix.pch; sourceTree = "<group>"; };
 		84C9ED291306D71A0044677E /* UnitTest.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTest.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84C9ED2A1306D71A0044677E /* UnitTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UnitTest-Info.plist"; sourceTree = "<group>"; };
-		84C9ED591307C9300044677E /* Stat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Stat.h; path = pomodora.xcdatamodeld/Stat.h; sourceTree = "<group>"; };
-		84C9ED5A1307C9300044677E /* Stat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Stat.m; path = pomodora.xcdatamodeld/Stat.m; sourceTree = "<group>"; };
 		84C9EE1E13081F470044677E /* CalendarHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarHelper.h; sourceTree = "<group>"; };
 		84C9EE1F13081F470044677E /* CalendarHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarHelper.m; sourceTree = "<group>"; };
 		84D3A1CC130235D80001C5CA /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = User.h; path = pomodora.xcdatamodeld/User.h; sourceTree = "<group>"; };
@@ -172,8 +169,6 @@
 		8447A17412FE395300DCC0F2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				84C9ED591307C9300044677E /* Stat.h */,
-				84C9ED5A1307C9300044677E /* Stat.m */,
 				84D3A1CC130235D80001C5CA /* User.h */,
 				84D3A1CD130235D80001C5CA /* User.m */,
 				84D3A1CE130235D80001C5CA /* Pomodoro.h */,
@@ -308,7 +303,6 @@
 				84D3A1D3130235D80001C5CA /* User.m in Sources */,
 				84D3A1D4130235D80001C5CA /* Pomodoro.m in Sources */,
 				84D3A1D5130235D80001C5CA /* Event.m in Sources */,
-				84C9ED5B1307C9300044677E /* Stat.m in Sources */,
 				84C9EE2013081F470044677E /* CalendarHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -21,6 +21,11 @@
 @property (nonatomic, retain) NSSet* events;
 @property (nonatomic, retain) User * user;
 
+
++ (Pomodoro *)createPomodoro:(NSManagedObjectContext *)moc;
++ (Pomodoro *)findCurrentPomodoro:(NSManagedObjectContext *)moc;
+
+
 @end
 
 
@@ -30,8 +35,7 @@
 - (void)addEvents:(NSSet *)value;
 - (void)removeEvents:(NSSet *)value;
 
-
-+ (Pomodoro *)createPomodoro:(NSManagedObjectContext *)moc;
+- (void)addEventWithType:(NSString *)eventType;
 
 @end
 

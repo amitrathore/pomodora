@@ -15,5 +15,4 @@
 @dynamic createdAt;
 @dynamic eventType;
 @dynamic pomodoro;
-
 @end

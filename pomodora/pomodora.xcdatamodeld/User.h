@@ -8,38 +8,31 @@
 
 #import <CoreData/CoreData.h>
 
-@class Stat;
+#import "CalendarHelper.h"
+
 @class Pomodoro;
 
 @interface User :  NSManagedObject  
 {
-	NSString * status;
-	Stat * todaysStat;
 	Pomodoro * currentPomodoro;
 }
 
-@property (nonatomic, retain) NSString * status;
 @property (nonatomic, retain) Pomodoro * currentPomodoro;
-@property (nonatomic, retain) Stat * todaysStat;
 
 @property (nonatomic, retain) NSNumber * currentWeekGoal;
 @property (nonatomic, retain) NSString * name;
-@property (nonatomic, retain) NSSet* stats;
 @property (nonatomic, retain) NSSet* pomodoros;
 
 @end
 
 
 @interface User (CoreDataGeneratedAccessors)
-- (void)addStatsObject:(Stat *)value;
-- (void)removeStatsObject:(Stat *)value;
-- (void)addStats:(NSSet *)value;
-- (void)removeStats:(NSSet *)value;
 
 - (void)addPomodorosObject:(NSManagedObject *)value;
 - (void)removePomodorosObject:(NSManagedObject *)value;
 - (void)addPomodoros:(NSSet *)value;
 - (void)removePomodoros:(NSSet *)value;
+
 
 //method declaration
 - (BOOL)finishPomodoro;
@@ -52,8 +45,12 @@
 - (BOOL)isPausedPomodoro;
 - (BOOL)isResting;
 
+- (NSUInteger)todayCompleted;
+- (NSUInteger)OverallCompleted;
+
 //Class methods
 
 + (User *)findOrCreateUser:(NSManagedObjectContext *)moc;
+
 @end
 
