@@ -7,6 +7,7 @@
 //
 
 #import <CoreData/CoreData.h>
+#import "CalendarHelper.h"
 
 @class User;
 

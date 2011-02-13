@@ -27,6 +27,10 @@
 	NSFetchRequest *request = [[[NSFetchRequest alloc] init] autorelease];
 	[request setEntity:entityDescription];
 	
+	
+	NSPredicate *predicate = [NSPredicate predicateWithFormat:@"(date >= %@)", [CalendarHelper startOfToday]];
+	[request setPredicate:predicate];
+	
 	NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc]
 										initWithKey:@"date" ascending:NO];
 	
@@ -38,6 +42,8 @@
 	
 	if (array == nil || ([array count] == 0)) 
 	{
+		NSLog(@"%s" , "Creating new Stat");
+		
 		Stat * stat = (Stat *)[NSEntityDescription
 							   insertNewObjectForEntityForName:@"Stat"
 							   inManagedObjectContext:moc];		
@@ -47,6 +53,7 @@
 		return stat;
 	}
 	
+	NSLog(@"%s" , "Giving exisiting Stat");
 	return (Stat *)[array lastObject];
 }
 
