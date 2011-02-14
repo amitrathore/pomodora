@@ -117,19 +117,31 @@ NSTimer *timer;
 	[user stopPomodoro];
 }
 
+- (void) resetTimer{
+	[self updateTimerInfo];
+	[timer invalidate];
+	timer = [NSTimer scheduledTimerWithTimeInterval:1
+											 target:self 
+										   selector:@selector(updateTimerInfo) 
+										   userInfo:nil
+											repeats:YES];
+}
+
 
 - (IBAction)pauseResumeTimer:(id)sender {
 	NSString * title = [sender titleForState:UIControlStateNormal];
-	
+	NSLog(@"Button Pressed: %@" , title);
+
 	if ([title isEqualToString:@"Pause"]) {
 		[user pausePomodoro];			
 		[pauseButton setTitle:@"Resume" forState:UIControlStateNormal];
+		[self resetTimer];
 	}else if ([title isEqualToString:@"Resume"]) {
 		[user resumePomodoro];			
 		[pauseButton setTitle:@"Pause" forState:UIControlStateNormal];
+		[self resetTimer];
 	}
 	
-	[title release];
 }
 
 - (void)finishTimer {

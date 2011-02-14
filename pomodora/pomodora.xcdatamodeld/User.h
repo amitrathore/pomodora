@@ -51,6 +51,7 @@
 - (int)pomodoroTimerValue;
 - (int)pauseTimerValue;
 - (int)restTimerValue;
+- (int)pausedTime;
 
 //Class methods
 

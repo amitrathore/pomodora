@@ -27,6 +27,8 @@
 	NSFetchRequest *request = [[[NSFetchRequest alloc] init] autorelease];
 	[request setEntity:entityDescription];
 	
+	[request setFetchBatchSize:1];
+	
 	NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc]
 										initWithKey:@"name" ascending:YES];
 	[request setSortDescriptors:[NSArray arrayWithObject:sortDescriptor]];
@@ -128,6 +130,7 @@
 }
 
 - (int)timerValue {
+	//NSLog(@"Paused ? : %@" ,[self isPausedPomodoro]);
 	if ([self isRunningPomodoro]) {
 		return [self pomodoroTimerValue];
 	}
@@ -140,12 +143,27 @@
 }	
 
 - (int)pomodoroTimerValue{
+	NSLog(@"Pomodoro Time : %@ -  %@", [NSDate date], self.currentPomodoro.createdAt);
 	int lapsedTime = (int)[[NSDate date] timeIntervalSinceDate:self.currentPomodoro.createdAt];
-	return 10 - lapsedTime + [currentPomodoro.pausedTime intValue];
+	return 90 - lapsedTime + [currentPomodoro.pausedTime intValue];
+}
+
+- (int)pausedTime{
+	Event * event = [Event findLastEventWithEventType:@"INTERRUPT" using:self.managedObjectContext];
+	
+	if (event == nil) {
+		return 0;
+	}
+	NSLog(@"Interrupted Time : %@ -  %@", [NSDate date], event.createdAt);
+	return (int)[[NSDate date] timeIntervalSinceDate:event.createdAt];
 }
 
 - (int)pauseTimerValue{
-	return 5;
+	int defaultPauseTime = 30;
+	
+	NSLog(@"Paused Time : %d", [self pausedTime]);
+	
+	return defaultPauseTime - [self pausedTime];
 }
 
 - (int)restTimerValue{
