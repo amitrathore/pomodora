@@ -22,7 +22,8 @@ NSTimer *pauseTimer;
 	pauseButton, 
 	timerButton,
 	stopButton,
-	todayCompletedTxtBox;
+	todayCompletedTxtBox,
+	overallCompletedTxtBox;
 
 
  // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
@@ -40,7 +41,7 @@ NSTimer *pauseTimer;
 		self.user = [User findOrCreateUser:self.managedObjectContext];
 	}
 	
-	[self.todayCompletedTxtBox setText:[NSString stringWithFormat:@"%d",[user todayCompleted]]];
+	[self updateStatsInfo];
     [super viewWillAppear:animated];
 }
 
@@ -99,7 +100,7 @@ NSTimer *pauseTimer;
 	}else {
 		[self resetTimerInfo];	
 		[user finishPomodoro];
-		[self.todayCompletedTxtBox setText:[NSString stringWithFormat:@"%d",[user todayCompleted]]];		
+		[self updateStatsInfo];
 	}
 
 } 
@@ -157,13 +158,17 @@ NSTimer *pauseTimer;
 	
 }
 
-
 - (void)setWeeklyGoal:(int)goal{
 	user.currentWeekGoal = (NSNumber *)[NSNumber numberWithInt:goal];
 }
 
 - (int)getWeeklyGoal {
 	return [[user currentWeekGoal] intValue];
+}
+
+- (void) updateStatsInfo {
+	[self.todayCompletedTxtBox setText:[NSString stringWithFormat:@"%d",[user todayCompleted]]];
+	[self.overallCompletedTxtBox setText:[NSString stringWithFormat:@"%d",[user overallCompleted]]];
 }
 
 - (void)didReceiveMemoryWarning {

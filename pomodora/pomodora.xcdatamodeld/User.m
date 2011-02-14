@@ -112,7 +112,7 @@
 	return [moc countForFetchRequest:request error:&error];
 }
 
-- (NSUInteger)OverallCompleted{
+- (NSUInteger)overallCompleted{
 	NSManagedObjectContext * moc = self.managedObjectContext;
 	
 	NSEntityDescription *entityDescription = [NSEntityDescription

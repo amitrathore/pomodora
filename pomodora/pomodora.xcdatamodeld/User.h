@@ -46,7 +46,7 @@
 - (BOOL)isResting;
 
 - (NSUInteger)todayCompleted;
-- (NSUInteger)OverallCompleted;
+- (NSUInteger)overallCompleted;
 
 //Class methods
 
