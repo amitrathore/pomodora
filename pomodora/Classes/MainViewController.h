@@ -33,7 +33,7 @@
 - (IBAction)showInfo:(id)sender;
 - (IBAction)startTimer;
 - (IBAction)stopTimer;
-- (IBAction)pauseTimer;
+- (IBAction)pauseResumeTimer:(id)sender;
 
 - (void)finishTimer;
 

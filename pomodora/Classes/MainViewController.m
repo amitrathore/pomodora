@@ -118,8 +118,18 @@ NSTimer *timer;
 }
 
 
-- (IBAction)pauseTimer {
+- (IBAction)pauseResumeTimer:(id)sender {
+	NSString * title = [sender titleForState:UIControlStateNormal];
 	
+	if ([title isEqualToString:@"Pause"]) {
+		[user pausePomodoro];			
+		[pauseButton setTitle:@"Resume" forState:UIControlStateNormal];
+	}else if ([title isEqualToString:@"Resume"]) {
+		[user resumePomodoro];			
+		[pauseButton setTitle:@"Pause" forState:UIControlStateNormal];
+	}
+	
+	[title release];
 }
 
 - (void)finishTimer {

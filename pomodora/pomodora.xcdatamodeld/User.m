@@ -141,8 +141,6 @@
 
 - (int)pomodoroTimerValue{
 	int lapsedTime = (int)[[NSDate date] timeIntervalSinceDate:self.currentPomodoro.createdAt];
-	NSLog(@"Time Interval %d Paused Time : %d ", lapsedTime,
-		  [currentPomodoro.pausedTime intValue]);
 	return 10 - lapsedTime + [currentPomodoro.pausedTime intValue];
 }
 
