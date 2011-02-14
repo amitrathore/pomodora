@@ -40,6 +40,7 @@
 - (BOOL)resumePomodoro;
 - (BOOL)stopPomodoro;
 - (BOOL)startPomodoro;
+- (BOOL)rest;
 
 - (BOOL)isRunningPomodoro;
 - (BOOL)isPausedPomodoro;

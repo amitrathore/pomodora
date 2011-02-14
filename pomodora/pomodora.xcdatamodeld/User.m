@@ -132,7 +132,6 @@
 }
 
 - (int)timerValue {
-	//NSLog(@"Paused ? : %@" ,[self isPausedPomodoro]);
 	if ([self isRunningPomodoro]) {
 		return [self pomodoroTimerValue];
 	}
@@ -141,12 +140,11 @@
 		return [self pauseTimerValue];
 	}
 	
-	return 0;
+	return [self restTimerValue];
 }	
 
 - (int)pomodoroTimerValue{
 	int defaultPomodorTime = 10;
-	NSLog(@"Pomodoro Time : %@ -  %@", [NSDate date], self.currentPomodoro.createdAt);
 	int lapsedTime = (int)[[NSDate date] timeIntervalSinceDate:self.currentPomodoro.createdAt];
 	return defaultPomodorTime - lapsedTime + [currentPomodoro.pausedTime intValue];
 }
@@ -157,7 +155,6 @@
 	if (event == nil) {
 		return 0;
 	}
-	NSLog(@"Interrupted Time : %@ -  %@", [NSDate date], event.createdAt);
 	return (int)[[NSDate date] timeIntervalSinceDate:event.createdAt];
 }
 
@@ -171,7 +168,13 @@
 }
 
 - (int)restTimerValue{
-	return 3;
+	int defaultRestTime = 11;
+	Event * event = [Event findLastEventWithEventType:@"COMPLETE" using:self.managedObjectContext];
+	
+	if (event == nil) {
+		return 0;
+	}
+	return defaultRestTime - (int)[[NSDate date] timeIntervalSinceDate:event.createdAt];
 }
 
 @end

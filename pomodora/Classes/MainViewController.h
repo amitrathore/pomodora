@@ -36,6 +36,7 @@
 - (IBAction)pauseResumeTimer:(id)sender;
 
 - (void)finishTimer;
+- (void)startResting;
 
 - (void)startTimerInfo;
 - (void)updateStatsInfo;
