@@ -79,6 +79,8 @@
 
 - (BOOL)resumePomodoro{
 	currentPomodoro.status = @"STARTED";
+	int pausedTime = [currentPomodoro.pausedTime intValue] + [self pausedTime];
+	currentPomodoro.pausedTime = [NSNumber numberWithInt:pausedTime];
 	[currentPomodoro addEventWithType:@"RESUME"];
 	return YES;
 }
@@ -143,9 +145,10 @@
 }	
 
 - (int)pomodoroTimerValue{
+	int defaultPomodorTime = 10;
 	NSLog(@"Pomodoro Time : %@ -  %@", [NSDate date], self.currentPomodoro.createdAt);
 	int lapsedTime = (int)[[NSDate date] timeIntervalSinceDate:self.currentPomodoro.createdAt];
-	return 90 - lapsedTime + [currentPomodoro.pausedTime intValue];
+	return defaultPomodorTime - lapsedTime + [currentPomodoro.pausedTime intValue];
 }
 
 - (int)pausedTime{
@@ -159,11 +162,12 @@
 }
 
 - (int)pauseTimerValue{
-	int defaultPauseTime = 30;
-	
-	NSLog(@"Paused Time : %d", [self pausedTime]);
-	
-	return defaultPauseTime - [self pausedTime];
+	int defaultPauseTime = 5;
+	int pauseTimer = defaultPauseTime - [self pausedTime];
+	if (pauseTimer < 0) {
+		return 0;
+	}
+	return pauseTimer;
 }
 
 - (int)restTimerValue{
