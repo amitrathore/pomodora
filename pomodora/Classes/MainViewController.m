@@ -8,11 +8,7 @@
 
 #import "MainViewController.h"
 
-int timerValue = 10;
-int pauseTimerValue = 5;
-
 NSTimer *timer;
-NSTimer *pauseTimer;
 
 @implementation MainViewController
 
@@ -62,16 +58,7 @@ NSTimer *pauseTimer;
 }
 
 - (void)resetTimerInfo {
-	if ([user isPausedPomodoro]) {
-		[pauseTimer invalidate];
-	}
-	
-	if ([user isRunningPomodoro]) {
-		[timer invalidate];
-	}
-	timerValue = 10;
-	pauseTimerValue = 5;
-	
+	[timer invalidate];
 	[pauseButton setHidden:YES]; 
 	[pauseButton setTitle:@"Pause" forState:UIControlStateNormal];
 	
@@ -81,48 +68,46 @@ NSTimer *pauseTimer;
 	[timerButton setEnabled:YES];
 }
 
-- (void)startTimerInfo {
-	pauseTimerValue = 5;	
-	
+- (void)startTimerInfo {	
 	[pauseButton setHidden:NO]; 
 	[stopButton setHidden:NO]; 
     [timerButton setEnabled:NO];
 }
 
-- (void)updateTimer {
-	NSLog(@"%s" , "Updating ..");
-    if (timerValue > 0) {
+- (void) updateStatsInfo {
+	[self.todayCompletedTxtBox setText:[NSString stringWithFormat:@"%d",[user todayCompleted]]];
+	[self.overallCompletedTxtBox setText:[NSString stringWithFormat:@"%d",[user overallCompleted]]];
+}
+
+- (void)updateTimerInfo {
+	int timerValue = [user timerValue];
+	NSLog(@"Updating with TimerValue : %d" , timerValue);
+	
+	if (timerValue > 0) {
 		int minutes = (timerValue % 3600) / 60;
-        int seconds = (timerValue %3600) % 60;
-		
-		[timerButton setTitle:[NSString stringWithFormat:@"%02d:%02d", minutes, seconds] forState:UIControlStateNormal];
-		timerValue--;
+		int seconds = (timerValue % 3600) % 60;
+	
+		[timerButton setTitle:[NSString stringWithFormat:@"%02d:%02d", minutes, seconds] forState:UIControlStateNormal];	
 	}else {
-		[self resetTimerInfo];	
-		[user finishPomodoro];
-		[self updateStatsInfo];
+		if ([user isRunningPomodoro]) {
+			[self finishTimer];
+		}else {
+			[self stopTimer];
+		}
+
 	}
 
-} 
-
-- (void)updatePauseTimer {
-	NSLog(@"%s" , "Interrupting ..");
-    if (pauseTimerValue > 0) {
-		[timerButton setTitle:[NSString stringWithFormat:@"00:%02d", pauseTimerValue] forState:UIControlStateNormal];
-		pauseTimerValue--;
-  	}else{
-		[self resetTimerInfo];
-		[user stopPomodoro];
-	}
 }
 
 - (IBAction)startTimer {
 	[self.user startPomodoro];
 	
 	[self startTimerInfo];		
+	[self updateTimerInfo];
+	
 	timer = [NSTimer scheduledTimerWithTimeInterval:1
 											 target:self 
-										   selector:@selector(updateTimer) 
+										   selector:@selector(updateTimerInfo) 
 										   userInfo:nil
 											repeats:YES];
 }
@@ -133,29 +118,14 @@ NSTimer *pauseTimer;
 }
 
 
-
 - (IBAction)pauseTimer {
 	
-	if ([user isRunningPomodoro]) {
-		[user pausePomodoro];
-		
-		pauseTimer	= [NSTimer scheduledTimerWithTimeInterval:1 
-														 target:self 
-													   selector:@selector(updatePauseTimer) 
-													   userInfo:nil
-														repeats:YES];
-		
-		[timer invalidate];
-		[pauseButton setTitle:@"Resume" forState:UIControlStateNormal];
-		
-	}
-	else {
-		[user resumePomodoro];
-		[pauseTimer invalidate];
-		[self startTimer];
-		[pauseButton setTitle:@"Pause" forState:UIControlStateNormal];
-	}
-	
+}
+
+- (void)finishTimer {
+	[user finishPomodoro];
+	[self resetTimerInfo];	
+	[self updateStatsInfo];
 }
 
 - (void)setWeeklyGoal:(int)goal{
@@ -164,11 +134,6 @@ NSTimer *pauseTimer;
 
 - (int)getWeeklyGoal {
 	return [[user currentWeekGoal] intValue];
-}
-
-- (void) updateStatsInfo {
-	[self.todayCompletedTxtBox setText:[NSString stringWithFormat:@"%d",[user todayCompleted]]];
-	[self.overallCompletedTxtBox setText:[NSString stringWithFormat:@"%d",[user overallCompleted]]];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -201,7 +166,6 @@ NSTimer *pauseTimer;
 	[stopButton release];
 	[user release];
 	[timer release];
-	[pauseTimer release];
     [super dealloc];
 }
 

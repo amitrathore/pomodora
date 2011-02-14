@@ -127,4 +127,31 @@
 	return [moc countForFetchRequest:request error:&error];
 }
 
+- (int)timerValue {
+	if ([self isRunningPomodoro]) {
+		return [self pomodoroTimerValue];
+	}
+	
+	if ([self isPausedPomodoro]) {
+		return [self pauseTimerValue];
+	}
+	
+	return 0;
+}	
+
+- (int)pomodoroTimerValue{
+	int lapsedTime = (int)[[NSDate date] timeIntervalSinceDate:self.currentPomodoro.createdAt];
+	NSLog(@"Time Interval %d Paused Time : %d ", lapsedTime,
+		  [currentPomodoro.pausedTime intValue]);
+	return 10 - lapsedTime + [currentPomodoro.pausedTime intValue];
+}
+
+- (int)pauseTimerValue{
+	return 5;
+}
+
+- (int)restTimerValue{
+	return 3;
+}
+
 @end

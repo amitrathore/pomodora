@@ -35,6 +35,10 @@
 - (IBAction)stopTimer;
 - (IBAction)pauseTimer;
 
-- (void) updateStatsInfo;
+- (void)finishTimer;
+
+- (void)startTimerInfo;
+- (void)updateStatsInfo;
+- (void)updateTimerInfo;
 
 @end

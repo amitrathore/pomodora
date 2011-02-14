@@ -47,6 +47,10 @@
 
 - (NSUInteger)todayCompleted;
 - (NSUInteger)overallCompleted;
+- (int)timerValue;
+- (int)pomodoroTimerValue;
+- (int)pauseTimerValue;
+- (int)restTimerValue;
 
 //Class methods
 

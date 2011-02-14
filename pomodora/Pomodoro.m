@@ -18,6 +18,7 @@
 @dynamic desc;
 @dynamic events;
 @dynamic user;
+@dynamic pausedTime;
 
 - (void)addEventWithType:(NSString *)eventType {
 	Event * event = (Event *)[NSEntityDescription
@@ -35,7 +36,7 @@
 										  insertNewObjectForEntityForName:@"Pomodoro"
 										  inManagedObjectContext:moc];
 	
-	
+	newPomodoro.createdAt = [NSDate date];
 	return newPomodoro;
 }
 

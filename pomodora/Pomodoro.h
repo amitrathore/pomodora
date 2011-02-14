@@ -20,14 +20,12 @@
 @property (nonatomic, retain) NSDate * createdAt;
 @property (nonatomic, retain) NSSet* events;
 @property (nonatomic, retain) User * user;
-
+@property (nonatomic, retain) NSNumber * pausedTime;
 
 + (Pomodoro *)createPomodoro:(NSManagedObjectContext *)moc;
 + (Pomodoro *)findCurrentPomodoro:(NSManagedObjectContext *)moc;
 
-
 @end
-
 
 @interface Pomodoro (CoreDataGeneratedAccessors)
 - (void)addEventsObject:(NSManagedObject *)value;
