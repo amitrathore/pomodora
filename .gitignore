@@ -4,3 +4,5 @@ profile
 =======
 *~
 *#*
+pomodora/pomodora.xcodeproj/*.mode1v3
+pomodora/pomodora.xcodeproj/*.pbxuser
