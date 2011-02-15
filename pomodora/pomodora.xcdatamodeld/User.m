@@ -70,7 +70,7 @@
 - (BOOL)finishPomodoro{
 	currentPomodoro.status = @"COMPLETED";
 	NSDate * completedDate = [CalendarHelper beforeSeconds:(-1 * [self pomodoroTimerValue])];
-	[currentPomodoro addEventWithType:@"COMPLETE" andDate:completedDate];
+	[currentPomodoro addEventWithType:@"COMPLETE" andDate:completedDate\];
 	self.mode = @"STOPPED";
 	return YES;
 }
