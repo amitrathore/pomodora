@@ -35,6 +35,7 @@
 - (void)removeEvents:(NSSet *)value;
 
 - (void)addEventWithType:(NSString *)eventType;
+- (void)addEventWithType:(NSString *)eventType andDate:(NSDate *)date;
 
 @end
 

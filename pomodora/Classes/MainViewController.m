@@ -131,8 +131,7 @@ NSTimer *timer;
 
 - (IBAction)pauseResumeTimer:(id)sender {
 	NSString * title = [sender titleForState:UIControlStateNormal];
-	NSLog(@"Button Pressed: %@" , title);
-
+	
 	if ([title isEqualToString:@"Pause"]) {
 		[user pausePomodoro];			
 		[pauseButton setTitle:@"Resume" forState:UIControlStateNormal];

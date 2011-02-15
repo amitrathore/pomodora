@@ -69,7 +69,8 @@
 
 - (BOOL)finishPomodoro{
 	currentPomodoro.status = @"COMPLETED";
-	[currentPomodoro addEventWithType:@"COMPLETE"];
+	NSDate * completedDate = [CalendarHelper beforeSeconds:(-1 * [self pomodoroTimerValue])];
+	[currentPomodoro addEventWithType:@"COMPLETE" andDate:completedDate];
 	self.mode = @"STOPPED";
 	return YES;
 }
@@ -98,6 +99,7 @@
 }
 
 - (BOOL)startResting{
+	NSLog(@"%s" , "Start Resting");
 	self.mode = @"RESTING";
 	return YES;
 }

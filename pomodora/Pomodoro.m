@@ -21,11 +21,15 @@
 @dynamic pausedTime;
 
 - (void)addEventWithType:(NSString *)eventType {
+	[self addEventWithType:eventType andDate:[NSDate date]];	
+}
+
+- (void)addEventWithType:(NSString *)eventType andDate:(NSDate *)date{
 	Event * event = (Event *)[NSEntityDescription
-								 insertNewObjectForEntityForName:@"Event"
-								 inManagedObjectContext:self.managedObjectContext];
+							  insertNewObjectForEntityForName:@"Event"
+							  inManagedObjectContext:self.managedObjectContext];
 	event.eventType = eventType;
-	event.createdAt = [NSDate date];
+	event.createdAt = date;
 	
 	[self addEventsObject:event];
 	

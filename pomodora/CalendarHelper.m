@@ -25,4 +25,11 @@
 	return today;
 }
 
++ (NSDate *)beforeSeconds:(int)seconds{
+	NSDate * now = [[NSDate alloc] init];
+	NSTimeInterval secondsInterval = seconds;
+	
+	return [now initWithTimeIntervalSinceNow:-secondsInterval];
+}
+
 @end

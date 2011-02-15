@@ -12,5 +12,6 @@
 }
 
 + (NSDate *)startOfToday;
++ (NSDate *)beforeSeconds:(int)seconds;
 
 @end
