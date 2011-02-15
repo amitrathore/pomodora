@@ -37,6 +37,7 @@
 
 - (void)finishTimer;
 - (void)startResting;
+- (void)finishResting;
 
 - (void)startTimerInfo;
 - (void)updateStatsInfo;

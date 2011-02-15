@@ -21,6 +21,7 @@
 
 @property (nonatomic, retain) NSNumber * currentWeekGoal;
 @property (nonatomic, retain) NSString * name;
+@property (nonatomic, retain) NSString * mode;
 @property (nonatomic, retain) NSSet* pomodoros;
 
 @end
@@ -40,7 +41,8 @@
 - (BOOL)resumePomodoro;
 - (BOOL)stopPomodoro;
 - (BOOL)startPomodoro;
-- (BOOL)rest;
+- (BOOL)startResting;
+- (BOOL)finishResting;
 
 - (BOOL)isRunningPomodoro;
 - (BOOL)isPausedPomodoro;
@@ -53,6 +55,7 @@
 - (int)pauseTimerValue;
 - (int)restTimerValue;
 - (int)pausedTime;
+- (int)restTime;
 
 //Class methods
 

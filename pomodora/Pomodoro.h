@@ -24,6 +24,7 @@
 
 + (Pomodoro *)createPomodoro:(NSManagedObjectContext *)moc;
 + (Pomodoro *)findCurrentPomodoro:(NSManagedObjectContext *)moc;
++ (int)countCompletedPomodorosAfter:(NSDate *)date using:(NSManagedObjectContext *)moc;
 
 @end
 

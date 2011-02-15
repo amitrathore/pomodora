@@ -59,4 +59,21 @@
 	return (Pomodoro *)[array lastObject];
 }
 
++ (int)countCompletedPomodorosAfter:(NSDate *)date using:(NSManagedObjectContext *)moc{
+	
+	NSEntityDescription *entityDescription = [NSEntityDescription
+											  entityForName:@"Pomodoro" inManagedObjectContext:moc];
+	NSFetchRequest *request = [[[NSFetchRequest alloc] init] autorelease];
+	[request setEntity:entityDescription];
+	
+	NSPredicate * predicate = [NSPredicate predicateWithFormat:@"(createdAt >= %@) AND (status LIKE %@)", 
+							   date,
+							   @"COMPLETED"];
+	[request setPredicate:predicate];
+	
+	NSError *error = nil;
+	
+	return (int)[moc countForFetchRequest:request error:&error];
+}
+
 @end

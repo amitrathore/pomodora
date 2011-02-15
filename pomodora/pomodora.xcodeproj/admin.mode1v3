@@ -282,8 +282,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>14</integer>
-									<integer>13</integer>
+									<integer>6</integer>
+									<integer>4</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -325,7 +325,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>MainViewController.h</string>
+								<string>User.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -333,11 +333,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>MainViewController.h</string>
+										<string>User.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>849A4B281309C42A001CF8D9</string>
+										<string>849A4BB9130A22B9001CF8D9</string>
 										<key>history</key>
 										<array>
 											<string>84F0CCFF12F7242400198A60</string>
@@ -349,15 +349,15 @@
 											<string>84C9ED7A1307CC890044677E</string>
 											<string>84C9ED7B1307CC890044677E</string>
 											<string>84C9ED7C1307CC890044677E</string>
-											<string>844D52111308EFC7008E3615</string>
 											<string>849A4A4A1309B373001CF8D9</string>
-											<string>849A4AA71309B908001CF8D9</string>
-											<string>849A4ACD1309BB39001CF8D9</string>
-											<string>849A4AEE1309BDAA001CF8D9</string>
-											<string>849A4B121309C31D001CF8D9</string>
-											<string>849A4B251309C42A001CF8D9</string>
-											<string>849A4B261309C42A001CF8D9</string>
-											<string>849A4B271309C42A001CF8D9</string>
+											<string>849A4B331309C664001CF8D9</string>
+											<string>849A4B621309C867001CF8D9</string>
+											<string>849A4B6E1309F337001CF8D9</string>
+											<string>849A4B8A130A1F46001CF8D9</string>
+											<string>849A4BA0130A2043001CF8D9</string>
+											<string>849A4BAB130A20F0001CF8D9</string>
+											<string>849A4BB2130A2141001CF8D9</string>
+											<string>849A4BB3130A2141001CF8D9</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -369,14 +369,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {1056, 953}}</string>
+								<string>{{0, 0}, {1056, 904}}</string>
 								<key>RubberWindowFrame</key>
 								<string>0 55 1326 1123 0 0 1920 1178 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>953pt</string>
+							<string>904pt</string>
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -389,14 +389,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 958}, {1056, 124}}</string>
+								<string>{{0, 909}, {1056, 173}}</string>
 								<key>RubberWindowFrame</key>
 								<string>0 55 1326 1123 0 0 1920 1178 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
 							<key>Proportion</key>
-							<string>124pt</string>
+							<string>173pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
@@ -555,6 +555,7 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>84479E7612F945F100DCC0F2</string>
 		<string>849A4A691309B4DD001CF8D9</string>
 		<string>849A4A6A1309B4DD001CF8D9</string>
 		<string>84F0CBFF12F65FE600198A60</string>
@@ -1407,6 +1408,10 @@
 								<string>{{0, 0}, {500, 315}}</string>
 								<key>RubberWindowFrame</key>
 								<string>21 799 500 356 0 0 1920 1178 </string>
+								<key>XCRefactoringSplitViewLowerHeight</key>
+								<real>112</real>
+								<key>XCRefactoringSplitViewTotalHeight</key>
+								<real>232</real>
 							</dict>
 							<key>Module</key>
 							<string>XCRefactoringModule</string>
@@ -1429,7 +1434,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>84479E7612F945F100DCC0F2</string>
-				<string>844D530D13091B83008E3615</string>
+				<string>849A4B8E130A1F46001CF8D9</string>
 				<string>84479E7512F945F100DCC0F2</string>
 			</array>
 			<key>WindowString</key>

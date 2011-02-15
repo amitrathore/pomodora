@@ -16,6 +16,7 @@
 
 @dynamic currentWeekGoal;
 @dynamic name;
+@dynamic mode;
 @dynamic pomodoros;
 
 // Class Methods
@@ -61,6 +62,7 @@
 	self.currentPomodoro = pomodoro;
 	[self addPomodorosObject:pomodoro];
 	currentPomodoro.status = @"STARTED";
+	self.mode = @"STARTED";
 	[currentPomodoro addEventWithType:@"START"];
 	return YES;
 }
@@ -68,12 +70,14 @@
 - (BOOL)finishPomodoro{
 	currentPomodoro.status = @"COMPLETED";
 	[currentPomodoro addEventWithType:@"COMPLETE"];
+	self.mode = @"STOPPED";
 	return YES;
 }
 
 - (BOOL)pausePomodoro{
 	currentPomodoro.status = @"INTERRUPTED";
 	[currentPomodoro addEventWithType:@"INTERRUPT"];
+	self.mode = @"PAUSED";
 	return YES;
 }
 
@@ -82,21 +86,34 @@
 	int pausedTime = [currentPomodoro.pausedTime intValue] + [self pausedTime];
 	currentPomodoro.pausedTime = [NSNumber numberWithInt:pausedTime];
 	[currentPomodoro addEventWithType:@"RESUME"];
+	self.mode = @"STARTED";
 	return YES;
 }
 
 - (BOOL)stopPomodoro{
 	currentPomodoro.status = @"ABORTED";
 	[currentPomodoro addEventWithType:@"ABORT"];
+	self.mode = @"STOPPED";
+	return YES;
+}
+
+- (BOOL)startResting{
+	self.mode = @"RESTING";
+	return YES;
+}
+
+- (BOOL)finishResting{
+	NSLog(@"%s" , "Finish Resting");
+	self.mode = @"STOPPED";
 	return YES;
 }
 
 - (BOOL)isRunningPomodoro{
-	return (currentPomodoro && currentPomodoro.status == @"STARTED");
+	return (self.mode == @"STARTED");
 }
 
 - (BOOL)isPausedPomodoro{
-	return (currentPomodoro && currentPomodoro.status == @"INTERRUPTED");
+	return  (self.mode == @"PAUSED");
 }
 
 - (NSUInteger)todayCompleted{
@@ -144,7 +161,7 @@
 }	
 
 - (int)pomodoroTimerValue{
-	int defaultPomodorTime = 10;
+	int defaultPomodorTime = 3;
 	int lapsedTime = (int)[[NSDate date] timeIntervalSinceDate:self.currentPomodoro.createdAt];
 	return defaultPomodorTime - lapsedTime + [currentPomodoro.pausedTime intValue];
 }
@@ -168,13 +185,28 @@
 }
 
 - (int)restTimerValue{
-	int defaultRestTime = 11;
+	int defaultRestTime = [self restTime];
 	Event * event = [Event findLastEventWithEventType:@"COMPLETE" using:self.managedObjectContext];
 	
 	if (event == nil) {
 		return 0;
 	}
 	return defaultRestTime - (int)[[NSDate date] timeIntervalSinceDate:event.createdAt];
+}
+
+- (int)restTime {
+	int shortRestTime = 5;
+	int longRestTime = 10;
+	
+	int completed = (int)[self todayCompleted] % 4;
+	
+	if (completed == 0) {
+		return longRestTime;
+	}else {
+		return shortRestTime;
+	}
+
+	
 }
 
 @end

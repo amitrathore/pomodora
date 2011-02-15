@@ -94,7 +94,7 @@ NSTimer *timer;
 		}else if ([user isPausedPomodoro]) {
 			[self stopTimer];
 		}else{
-			[self resetTimerInfo];	
+			[self finishResting];
 		}
 
 	}
@@ -152,11 +152,17 @@ NSTimer *timer;
 }
 
 - (void)startResting {
+	[user startResting];
 	[self resetTimer];	
 	[pauseButton setHidden:YES]; 
 	[pauseButton setTitle:@"Pause" forState:UIControlStateNormal];
 	
 	[stopButton setHidden:YES];
+}
+
+- (void)finishResting {
+	[user finishResting];
+	[self resetTimerInfo];	
 }
 
 - (void)setWeeklyGoal:(int)goal{
