@@ -20,6 +20,19 @@
 		288765590DF743DE002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765580DF743DE002DB57D /* CoreGraphics.framework */; };
 		289233AE0DB2D0DB0083E9F9 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */; };
 		289233B00DB2D0DB0083E9F9 /* FlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.m */; };
+		849A4C36130A67E5001CF8D9 /* drips.png in Resources */ = {isa = PBXBuildFile; fileRef = 849A4C29130A67E5001CF8D9 /* drips.png */; };
+		849A4C37130A67E5001CF8D9 /* flat.png in Resources */ = {isa = PBXBuildFile; fileRef = 849A4C2A130A67E5001CF8D9 /* flat.png */; };
+		849A4C38130A67E5001CF8D9 /* carrot.png in Resources */ = {isa = PBXBuildFile; fileRef = 849A4C2B130A67E5001CF8D9 /* carrot.png */; };
+		849A4C39130A67E5001CF8D9 /* onion.png in Resources */ = {isa = PBXBuildFile; fileRef = 849A4C2C130A67E5001CF8D9 /* onion.png */; };
+		849A4C3A130A67E5001CF8D9 /* sprout.png in Resources */ = {isa = PBXBuildFile; fileRef = 849A4C2D130A67E5001CF8D9 /* sprout.png */; };
+		849A4C3B130A67E5001CF8D9 /* radish.png in Resources */ = {isa = PBXBuildFile; fileRef = 849A4C2E130A67E5001CF8D9 /* radish.png */; };
+		849A4C3C130A67E5001CF8D9 /* ucarrot.png in Resources */ = {isa = PBXBuildFile; fileRef = 849A4C2F130A67E5001CF8D9 /* ucarrot.png */; };
+		849A4C3D130A67E5001CF8D9 /* uradish.png in Resources */ = {isa = PBXBuildFile; fileRef = 849A4C30130A67E5001CF8D9 /* uradish.png */; };
+		849A4C3E130A67E5001CF8D9 /* usprout.png in Resources */ = {isa = PBXBuildFile; fileRef = 849A4C31130A67E5001CF8D9 /* usprout.png */; };
+		849A4C3F130A67E5001CF8D9 /* uonion.png in Resources */ = {isa = PBXBuildFile; fileRef = 849A4C32130A67E5001CF8D9 /* uonion.png */; };
+		849A4C41130A67E5001CF8D9 /* lcd.png in Resources */ = {isa = PBXBuildFile; fileRef = 849A4C34130A67E5001CF8D9 /* lcd.png */; };
+		849A4C42130A67E5001CF8D9 /* WheelCover.png in Resources */ = {isa = PBXBuildFile; fileRef = 849A4C35130A67E5001CF8D9 /* WheelCover.png */; };
+		849A4C4D130A6A20001CF8D9 /* PomodoroTimerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 849A4C4C130A6A20001CF8D9 /* PomodoroTimerView.m */; };
 		84C9EE2013081F470044677E /* CalendarHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C9EE1F13081F470044677E /* CalendarHelper.m */; };
 		84D3A1D3130235D80001C5CA /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D3A1CD130235D80001C5CA /* User.m */; };
 		84D3A1D4130235D80001C5CA /* Pomodoro.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D3A1CF130235D80001C5CA /* Pomodoro.m */; };
@@ -28,8 +41,8 @@
 
 /* Begin PBXFileReference section */
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		1D3623240D0F684500981E51 /* pomodoraAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pomodoraAppDelegate.h; sourceTree = "<group>"; };
-		1D3623250D0F684500981E51 /* pomodoraAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = pomodoraAppDelegate.m; sourceTree = "<group>"; };
+		1D3623240D0F684500981E51 /* pomodoraAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pomodoraAppDelegate.h; path = Classes/pomodoraAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* pomodoraAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = pomodoraAppDelegate.m; path = Classes/pomodoraAppDelegate.m; sourceTree = "<group>"; };
 		1D6058910D05DD3D006BFB54 /* pomodora.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pomodora.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		280E754A0DD40C5E005A515E /* FlipsideView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlipsideView.xib; sourceTree = "<group>"; };
@@ -45,6 +58,20 @@
 		289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FlipsideViewController.m; path = Classes/FlipsideViewController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* pomodora_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pomodora_Prefix.pch; sourceTree = "<group>"; };
+		849A4C29130A67E5001CF8D9 /* drips.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = drips.png; sourceTree = "<group>"; };
+		849A4C2A130A67E5001CF8D9 /* flat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flat.png; sourceTree = "<group>"; };
+		849A4C2B130A67E5001CF8D9 /* carrot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = carrot.png; sourceTree = "<group>"; };
+		849A4C2C130A67E5001CF8D9 /* onion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = onion.png; sourceTree = "<group>"; };
+		849A4C2D130A67E5001CF8D9 /* sprout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sprout.png; sourceTree = "<group>"; };
+		849A4C2E130A67E5001CF8D9 /* radish.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radish.png; sourceTree = "<group>"; };
+		849A4C2F130A67E5001CF8D9 /* ucarrot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ucarrot.png; sourceTree = "<group>"; };
+		849A4C30130A67E5001CF8D9 /* uradish.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = uradish.png; sourceTree = "<group>"; };
+		849A4C31130A67E5001CF8D9 /* usprout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = usprout.png; sourceTree = "<group>"; };
+		849A4C32130A67E5001CF8D9 /* uonion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = uonion.png; sourceTree = "<group>"; };
+		849A4C34130A67E5001CF8D9 /* lcd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lcd.png; sourceTree = "<group>"; };
+		849A4C35130A67E5001CF8D9 /* WheelCover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WheelCover.png; sourceTree = "<group>"; };
+		849A4C4B130A6A20001CF8D9 /* PomodoroTimerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PomodoroTimerView.h; sourceTree = "<group>"; };
+		849A4C4C130A6A20001CF8D9 /* PomodoroTimerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PomodoroTimerView.m; sourceTree = "<group>"; };
 		84C9ED291306D71A0044677E /* UnitTest.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTest.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84C9ED2A1306D71A0044677E /* UnitTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UnitTest-Info.plist"; sourceTree = "<group>"; };
 		84C9EE1E13081F470044677E /* CalendarHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarHelper.h; sourceTree = "<group>"; };
@@ -80,16 +107,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		080E96DDFE201D6D7F000001 /* Application Delegate */ = {
-			isa = PBXGroup;
-			children = (
-				1D3623240D0F684500981E51 /* pomodoraAppDelegate.h */,
-				1D3623250D0F684500981E51 /* pomodoraAppDelegate.m */,
-			);
-			name = "Application Delegate";
-			path = Classes;
-			sourceTree = "<group>";
-		};
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -99,32 +116,10 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		281C6CD70DB2D82200F60ACC /* Flipside View */ = {
-			isa = PBXGroup;
-			children = (
-				289233AC0DB2D0DB0083E9F9 /* FlipsideViewController.h */,
-				289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.m */,
-			);
-			name = "Flipside View";
-			sourceTree = "<group>";
-		};
-		289233A00DB2D0730083E9F9 /* Main View */ = {
-			isa = PBXGroup;
-			children = (
-				289233A80DB2D0DB0083E9F9 /* MainViewController.h */,
-				289233A90DB2D0DB0083E9F9 /* MainViewController.m */,
-			);
-			name = "Main View";
-			sourceTree = "<group>";
-		};
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				84C9EE1D13081F2A0044677E /* Helper */,
-				8447A17412FE395300DCC0F2 /* Models */,
-				289233A00DB2D0730083E9F9 /* Main View */,
-				281C6CD70DB2D82200F60ACC /* Flipside View */,
-				080E96DDFE201D6D7F000001 /* Application Delegate */,
+				840EACF11311D2AA00E3A14F /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
@@ -146,6 +141,18 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				849A4C29130A67E5001CF8D9 /* drips.png */,
+				849A4C2A130A67E5001CF8D9 /* flat.png */,
+				849A4C2B130A67E5001CF8D9 /* carrot.png */,
+				849A4C2C130A67E5001CF8D9 /* onion.png */,
+				849A4C2D130A67E5001CF8D9 /* sprout.png */,
+				849A4C2E130A67E5001CF8D9 /* radish.png */,
+				849A4C2F130A67E5001CF8D9 /* ucarrot.png */,
+				849A4C30130A67E5001CF8D9 /* uradish.png */,
+				849A4C31130A67E5001CF8D9 /* usprout.png */,
+				849A4C32130A67E5001CF8D9 /* uonion.png */,
+				849A4C34130A67E5001CF8D9 /* lcd.png */,
+				849A4C35130A67E5001CF8D9 /* WheelCover.png */,
 				286736F812F6A03300B7864A /* pomodoro.jpg */,
 				280E754A0DD40C5E005A515E /* FlipsideView.xib */,
 				280E754B0DD40C5E005A515E /* MainView.xib */,
@@ -164,6 +171,39 @@
 				2880DEA210926BF800CC57B2 /* CoreData.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		840EACF11311D2AA00E3A14F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1D3623240D0F684500981E51 /* pomodoraAppDelegate.h */,
+				1D3623250D0F684500981E51 /* pomodoraAppDelegate.m */,
+				840EACF31311D2D600E3A14F /* Views */,
+				840EACF21311D2BC00E3A14F /* Controllers */,
+				8447A17412FE395300DCC0F2 /* Models */,
+				84C9EE1D13081F2A0044677E /* Helper */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		840EACF21311D2BC00E3A14F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				289233A80DB2D0DB0083E9F9 /* MainViewController.h */,
+				289233AC0DB2D0DB0083E9F9 /* FlipsideViewController.h */,
+				289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.m */,
+				289233A90DB2D0DB0083E9F9 /* MainViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		840EACF31311D2D600E3A14F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				849A4C4B130A6A20001CF8D9 /* PomodoroTimerView.h */,
+				849A4C4C130A6A20001CF8D9 /* PomodoroTimerView.m */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 		8447A17412FE395300DCC0F2 /* Models */ = {
@@ -262,6 +302,18 @@
 				280E754E0DD40C5E005A515E /* MainView.xib in Resources */,
 				280E754F0DD40C5E005A515E /* MainWindow.xib in Resources */,
 				286736F912F6A03300B7864A /* pomodoro.jpg in Resources */,
+				849A4C36130A67E5001CF8D9 /* drips.png in Resources */,
+				849A4C37130A67E5001CF8D9 /* flat.png in Resources */,
+				849A4C38130A67E5001CF8D9 /* carrot.png in Resources */,
+				849A4C39130A67E5001CF8D9 /* onion.png in Resources */,
+				849A4C3A130A67E5001CF8D9 /* sprout.png in Resources */,
+				849A4C3B130A67E5001CF8D9 /* radish.png in Resources */,
+				849A4C3C130A67E5001CF8D9 /* ucarrot.png in Resources */,
+				849A4C3D130A67E5001CF8D9 /* uradish.png in Resources */,
+				849A4C3E130A67E5001CF8D9 /* usprout.png in Resources */,
+				849A4C3F130A67E5001CF8D9 /* uonion.png in Resources */,
+				849A4C41130A67E5001CF8D9 /* lcd.png in Resources */,
+				849A4C42130A67E5001CF8D9 /* WheelCover.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +356,7 @@
 				84D3A1D4130235D80001C5CA /* Pomodoro.m in Sources */,
 				84D3A1D5130235D80001C5CA /* Event.m in Sources */,
 				84C9EE2013081F470044677E /* CalendarHelper.m in Sources */,
+				849A4C4D130A6A20001CF8D9 /* PomodoroTimerView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

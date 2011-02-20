@@ -10,11 +10,12 @@
 #import <CoreData/CoreData.h>
 
 @class MainViewController;
+@class PomodoroTimerView;
 
 @interface pomodoraAppDelegate : NSObject <UIApplicationDelegate> {
 	
     UIWindow *window;
-    MainViewController *mainViewController;
+    MainViewController * mainViewController;
     
 @private
     NSManagedObjectContext *managedObjectContext_;

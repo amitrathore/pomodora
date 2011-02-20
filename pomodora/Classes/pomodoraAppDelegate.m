@@ -8,9 +8,9 @@
 
 #import "pomodoraAppDelegate.h"
 #import "MainViewController.h"
+#import "PomodoroTimerView.h"
 
 @implementation pomodoraAppDelegate
-
 
 @synthesize window;
 @synthesize mainViewController;
@@ -20,19 +20,15 @@
 #pragma mark Application lifecycle
 
 - (void)awakeFromNib {    
-    
 	mainViewController.managedObjectContext = self.managedObjectContext;    
 }
 
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {  
+    [window setBackgroundColor:[UIColor blackColor]]; 
+    [window addSubview:mainViewController.view];
+    [window makeKeyAndVisible];
     
-    // Override point for customization after application launch.  
-    
-    // Add the main view controller's view to the window and display.
-    [self.window addSubview:mainViewController.view];
-    [self.window makeKeyAndVisible];
-
     return YES;
 }
 

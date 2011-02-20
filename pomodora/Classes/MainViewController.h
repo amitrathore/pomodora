@@ -8,9 +8,11 @@
 
 #import "FlipsideViewController.h"
 #import "User.h"
+#import "PomodoroTimerView.h"
 #import <CoreData/CoreData.h>
 
-@interface MainViewController : UIViewController <FlipsideViewControllerDelegate> {
+
+@interface MainViewController : UIViewController <FlipsideViewControllerDelegate , PomodoroTimerViewDelegate> {
     NSManagedObjectContext *managedObjectContext;	
     User * user;
 	
@@ -30,7 +32,6 @@
 @property (nonatomic, retain) UIButton *timerButton;
 @property (nonatomic, retain) UIButton *stopButton;
 
-- (IBAction)showInfo:(id)sender;
 - (IBAction)startTimer;
 - (IBAction)stopTimer;
 - (IBAction)pauseResumeTimer:(id)sender;

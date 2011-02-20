@@ -21,6 +21,14 @@ NSTimer *timer;
 	todayCompletedTxtBox,
 	overallCompletedTxtBox;
 
+#pragma mark Application lifecycle
+- (void)loadView
+{
+	PomodoroTimerView *pomodoroTimerView = [[PomodoroTimerView alloc] initWithFrame:[[UIScreen mainScreen] applicationFrame] 
+																		   delegate:self];
+	self.view = pomodoroTimerView;
+	[pomodoroTimerView release];
+}
 
  // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
@@ -41,6 +49,7 @@ NSTimer *timer;
     [super viewWillAppear:animated];
 }
 
+#pragma mark Delegate PomodoroTimerViewDelegate
 
 - (void)flipsideViewControllerDidFinish:(FlipsideViewController *)controller {
     [self dismissModalViewControllerAnimated:YES];
@@ -56,6 +65,8 @@ NSTimer *timer;
     
     [controller release];
 }
+
+#pragma mark Private Methods
 
 - (void)resetTimerInfo {
 	[timer invalidate];
