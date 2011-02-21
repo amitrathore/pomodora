@@ -2,7 +2,7 @@
 
 @interface PomodoroTimerView (private)
 
-- (UILabel *)newWaterLabel;
+- (UILabel *)newTimerLabel;
 - (void)setupVegetableButtons;
 - (void)setupBlades;
 - (UIImage *)imageForVeg:(id)sender;
@@ -118,6 +118,22 @@
     return radians(angle);
 }
 
+/*
+ Create and setup the water label
+ */
+- (UILabel *)newTimerLabel
+{
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(20, 30, 280, 135)];
+    [label setText:@"Start"];
+    [label setFont:[UIFont fontWithName:@"Helvetica" size:50]];
+    [label setTextAlignment:UITextAlignmentCenter];
+    [label setTextColor:[UIColor whiteColor]];
+    [label setBackgroundColor:[UIColor clearColor]];
+    return label;
+}
+
+#pragma mark Application LifeCycle
+
 - (id)initWithFrame:(CGRect)frame  delegate:(id)aDelegate
 {
     if ((self = [super initWithFrame:frame])){
@@ -128,12 +144,12 @@
         vegetableSpinner = [[UIView alloc] initWithFrame:CGRectMake(28, 167, 259, 259)];
         [vegetableSpinner setBackgroundColor:[UIColor clearColor]];
         
-        UIImageView *waterBackground = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"lcd.png"]];
-        [self addSubview:waterBackground];
-        [waterBackground release];
+        UIImageView *timerBackground = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"lcd.png"]];
+        [self addSubview:timerBackground];
+        [timerBackground release];
         
-        volumeLabel = [self newWaterLabel];
-        [self addSubview:volumeLabel];
+        timerLabel = [self newTimerLabel];
+        [self addSubview:timerLabel];
         
         UIImageView *foreground = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"flat.png"]];
         [self addSubview:foreground];
@@ -157,34 +173,20 @@
         [selectedVegetableIcon setImage:[UIImage imageNamed:@"carrot.png"]];
         [self addSubview:selectedVegetableIcon];
         
-        UIButton *waterPlantButton = [UIButton buttonWithType:UIButtonTypeCustom];
-        [waterPlantButton setImage:[UIImage imageNamed:@"drips.png"] forState:UIControlStateNormal];
-        [waterPlantButton setFrame:CGRectMake(CGRectGetWidth(frame)/2.0 - 85.0/2.0 - 2,CGRectGetHeight(frame)/2.0 - 85.0/2.0 + 70,85,85)];
-        //[waterPlantButton addTarget:self action:@selector(startWateringProcedure:) forControlEvents:UIControlEventTouchUpInside];
-        [self addSubview:waterPlantButton];
+        UIButton *startTimerButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        [startTimerButton setImage:[UIImage imageNamed:@"drips.png"] forState:UIControlStateNormal];
+        [startTimerButton setFrame:CGRectMake(CGRectGetWidth(frame)/2.0 - 85.0/2.0 - 2,CGRectGetHeight(frame)/2.0 - 85.0/2.0 + 70,85,85)];
+        [startTimerButton addTarget:delegate action:@selector(startTimer) forControlEvents:UIControlEventTouchUpInside];
+        [self addSubview:startTimerButton];
     }
     return self;
-}
-
-/*
- Create and setup the water label
- */
-- (UILabel *)newWaterLabel
-{
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(20, 30, 280, 135)];
-    [label setText:@"100%"];
-    [label setFont:[UIFont fontWithName:@"Helvetica" size:50]];
-    [label setTextAlignment:UITextAlignmentCenter];
-    [label setTextColor:[UIColor whiteColor]];
-    [label setBackgroundColor:[UIColor clearColor]];
-    return label;
 }
 
 - (void)dealloc 
 {    
     [waterView release];
     [selectedVegetableIcon release];
-    [volumeLabel release];
+    [timerLabel release];
     [carrotButton release];
     [radishButton release];
     [onionButton release];
@@ -194,13 +196,23 @@
     [super dealloc];
 }
 
+#pragma mark Public Methods
+
+
+- (void)updateTimerInfo {
+	int timerValue = [delegate timerValue];
+	
+	if (timerValue > 0) {
+		int minutes = (timerValue % 3600) / 60;
+		int seconds = (timerValue % 3600) % 60;
+		
+		[timerLabel setText:[NSString stringWithFormat:@"%02d:%02d", minutes, seconds]];	
+	}	
+}
+
+- (void)resetTimerInfo {
+	[timerLabel setText:@"Start"];
+}
 
 @end
 
-/*
- Returns a rect for the waters frame at a given level
- */
-CGRect RectForWaterWithLevel(float level)
-{
-    return CGRectMake(17, 10 + (140 * ((100 - level)/100.0)), 285, 140 * (level/100.0));
-}

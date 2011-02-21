@@ -16,6 +16,8 @@
     NSManagedObjectContext *managedObjectContext;	
     User * user;
 	
+	PomodoroTimerView * pomodoroTimerView;
+	
 	IBOutlet UITextField *todayCompletedTxtBox;
 	IBOutlet UITextField *overallCompletedTxtBox;
 	IBOutlet UIButton *pauseButton;
@@ -25,6 +27,7 @@
 }
 
 @property (nonatomic, retain) User *user;
+@property (nonatomic, retain) PomodoroTimerView *pomodoroTimerView;
 @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
 @property (nonatomic, retain) UITextField *todayCompletedTxtBox;
 @property (nonatomic, retain) UITextField *overallCompletedTxtBox;
@@ -32,16 +35,7 @@
 @property (nonatomic, retain) UIButton *timerButton;
 @property (nonatomic, retain) UIButton *stopButton;
 
-- (IBAction)startTimer;
-- (IBAction)stopTimer;
-- (IBAction)pauseResumeTimer:(id)sender;
 
-- (void)finishTimer;
-- (void)startResting;
-- (void)finishResting;
-
-- (void)startTimerInfo;
 - (void)updateStatsInfo;
-- (void)updateTimerInfo;
 
 @end

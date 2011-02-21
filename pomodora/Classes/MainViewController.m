@@ -15,6 +15,7 @@ NSTimer *timer;
 @synthesize 
 	managedObjectContext, 
 	user,
+	pomodoroTimerView,
 	pauseButton, 
 	timerButton,
 	stopButton,
@@ -24,10 +25,11 @@ NSTimer *timer;
 #pragma mark Application lifecycle
 - (void)loadView
 {
-	PomodoroTimerView *pomodoroTimerView = [[PomodoroTimerView alloc] initWithFrame:[[UIScreen mainScreen] applicationFrame] 
+	PomodoroTimerView * aPomodoroTimerView = [[PomodoroTimerView alloc] initWithFrame:[[UIScreen mainScreen] applicationFrame] 
 																		   delegate:self];
-	self.view = pomodoroTimerView;
-	[pomodoroTimerView release];
+	self.view = aPomodoroTimerView; 
+	self.pomodoroTimerView = aPomodoroTimerView;
+	[aPomodoroTimerView release];
 }
 
  // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
@@ -49,98 +51,60 @@ NSTimer *timer;
     [super viewWillAppear:animated];
 }
 
-#pragma mark Delegate PomodoroTimerViewDelegate
-
-- (void)flipsideViewControllerDidFinish:(FlipsideViewController *)controller {
-    [self dismissModalViewControllerAnimated:YES];
+- (void)didReceiveMemoryWarning {
+    // Releases the view if it doesn't have a superview.
+    [super didReceiveMemoryWarning];
+    
+    // Release any cached data, images, etc. that aren't in use.
 }
 
-- (IBAction)showInfo:(id)sender {  
-	  
+
+- (void)dealloc {
+    [managedObjectContext release];
+	[pauseButton release];
+	[timerButton release];
+	[stopButton release];
+	[user release];
+	[timer release];
+    [super dealloc];
+}
+
+#pragma mark Delegate PomodoroTimerViewDelegate
+
+- (void)showInfo:(id)sender {  	  
     FlipsideViewController *controller = [[FlipsideViewController alloc] initWithNibName:@"FlipsideView" bundle:nil];
     controller.delegate = self;
-    
     controller.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
 	[self presentModalViewController:controller animated:YES];
-    
     [controller release];
 }
 
-#pragma mark Private Methods
-
-- (void)resetTimerInfo {
-	[timer invalidate];
-	[pauseButton setHidden:YES]; 
-	[pauseButton setTitle:@"Pause" forState:UIControlStateNormal];
-	
-	[stopButton setHidden:YES]; 
-	
-	[timerButton setTitle:@"Start" forState:UIControlStateNormal];
-	[timerButton setEnabled:YES];
-}
-
-- (void)startTimerInfo {	
-	[pauseButton setHidden:NO]; 
-	[stopButton setHidden:NO]; 
-    [timerButton setEnabled:NO];
-}
-
-- (void) updateStatsInfo {
-	[self.todayCompletedTxtBox setText:[NSString stringWithFormat:@"%d",[user todayCompleted]]];
-	[self.overallCompletedTxtBox setText:[NSString stringWithFormat:@"%d",[user overallCompleted]]];
-}
-
-- (void)updateTimerInfo {
-	int timerValue = [user timerValue];
-	NSLog(@"Updating with TimerValue : %d" , timerValue);
-	
-	if (timerValue > 0) {
-		int minutes = (timerValue % 3600) / 60;
-		int seconds = (timerValue % 3600) % 60;
-	
-		[timerButton setTitle:[NSString stringWithFormat:@"%02d:%02d", minutes, seconds] forState:UIControlStateNormal];	
-	}else {
-		if ([user isRunningPomodoro]) {
-			[self finishTimer];
-		}else if ([user isPausedPomodoro]) {
-			[self stopTimer];
-		}else{
-			[self finishResting];
-		}
-
-	}
-
-}
-
-- (IBAction)startTimer {
+- (void)startTimer {
 	[self.user startPomodoro];
-	
-	[self startTimerInfo];		
-	[self updateTimerInfo];
-	
+	[self.pomodoroTimerView updateTimerInfo];
 	timer = [NSTimer scheduledTimerWithTimeInterval:1
-											 target:self 
+											 target:self.pomodoroTimerView 
 										   selector:@selector(updateTimerInfo) 
 										   userInfo:nil
 											repeats:YES];
 }
 
-- (IBAction)stopTimer {
+- (void)stopTimer {
 	[user stopPomodoro];
 }
 
 - (void) resetTimer{
-	[self updateTimerInfo];
+	[self.pomodoroTimerView updateTimerInfo];
 	[timer invalidate];
 	timer = [NSTimer scheduledTimerWithTimeInterval:1
-											 target:self 
+											 target:self.pomodoroTimerView 
 										   selector:@selector(updateTimerInfo) 
 										   userInfo:nil
 											repeats:YES];
 }
 
 
-- (IBAction)pauseResumeTimer:(id)sender {
+- (void)pauseResumeTimer:(id)sender {
 	NSString * title = [sender titleForState:UIControlStateNormal];
 	
 	if ([title isEqualToString:@"Pause"]) {
@@ -172,7 +136,30 @@ NSTimer *timer;
 
 - (void)finishResting {
 	[user finishResting];
-	[self resetTimerInfo];	
+	[pomodoroTimerView resetTimerInfo];
+	[timer invalidate];
+}
+
+- (int)timerValue {
+	int tValue = [user timerValue];
+	if (tValue > 0) {
+		return tValue;
+	}else {
+		if ([user isRunningPomodoro]) {
+			[self finishTimer];
+		}else if ([user isPausedPomodoro]) {
+			[self stopTimer];
+		}else{
+			[self finishResting];
+		}
+	}
+	return 0;
+}
+
+#pragma mark Delegate FlipsideViewControllerDelegate
+
+- (void)flipsideViewControllerDidFinish:(FlipsideViewController *)controller {
+    [self dismissModalViewControllerAnimated:YES];
 }
 
 - (void)setWeeklyGoal:(int)goal{
@@ -183,37 +170,11 @@ NSTimer *timer;
 	return [[user currentWeekGoal] intValue];
 }
 
-- (void)didReceiveMemoryWarning {
-    // Releases the view if it doesn't have a superview.
-    [super didReceiveMemoryWarning];
-    
-    // Release any cached data, images, etc. that aren't in use.
-}
+#pragma mark Private Methods
 
-
-- (void)viewDidUnload {
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
-}
-
-
-/*
- // Override to allow orientations other than the default portrait orientation.
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    // Return YES for supported orientations.
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
- */
-
-
-- (void)dealloc {
-    [managedObjectContext release];
-	[pauseButton release];
-	[timerButton release];
-	[stopButton release];
-	[user release];
-	[timer release];
-    [super dealloc];
+- (void) updateStatsInfo {
+	[self.todayCompletedTxtBox setText:[NSString stringWithFormat:@"%d",[user todayCompleted]]];
+	[self.overallCompletedTxtBox setText:[NSString stringWithFormat:@"%d",[user overallCompleted]]];
 }
 
 

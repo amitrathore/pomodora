@@ -1,15 +1,18 @@
 #import <UIKit/UIKit.h>
 
-#import "FlipsideViewController.h"
-
 #define NUMBER_OF_BLADES 9.0
 
 static inline double radians(double degrees) { return degrees * M_PI / 180; }
 
-CGRect RectForWaterWithLevel(float level);
-
 @protocol PomodoroTimerViewDelegate <NSObject>
 - (void)showInfo:(id)sender;
+- (void)startTimer;	
+- (void)stopTimer;
+- (void)pauseResumeTimer:(id)sender;
+- (void)finishTimer;
+- (void)startResting;
+- (void)finishResting;
+- (int)timerValue;
 @end
 
 @interface PomodoroTimerView : UIView {	
@@ -18,7 +21,7 @@ CGRect RectForWaterWithLevel(float level);
     // Display Items
     UIImageView     *waterView;
     UIImageView     *selectedVegetableIcon;
-    UILabel         *volumeLabel;
+    UILabel         *timerLabel;
     
     // Buttons
     UIButton        *carrotButton;
@@ -30,5 +33,8 @@ CGRect RectForWaterWithLevel(float level);
 }
 
 - (id)initWithFrame:(CGRect)frame delegate:(id)aDelegate;
+- (void)resetTimerInfo;
+- (void)updateTimerInfo;
+
 @end
 
