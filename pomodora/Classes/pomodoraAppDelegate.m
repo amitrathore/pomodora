@@ -14,6 +14,7 @@
 
 @synthesize window;
 @synthesize mainViewController;
+@synthesize tabBarController;
 
 
 #pragma mark -
@@ -25,8 +26,8 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {  
-    [window setBackgroundColor:[UIColor blackColor]]; 
-    [window addSubview:mainViewController.view];
+    //[window setBackgroundColor:[UIColor blackColor]]; 
+    [window addSubview:tabBarController.view];
     [window makeKeyAndVisible];
     
     return YES;

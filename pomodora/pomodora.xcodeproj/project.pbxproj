@@ -12,7 +12,6 @@
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		280E754D0DD40C5E005A515E /* FlipsideView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 280E754A0DD40C5E005A515E /* FlipsideView.xib */; };
-		280E754E0DD40C5E005A515E /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 280E754B0DD40C5E005A515E /* MainView.xib */; };
 		280E754F0DD40C5E005A515E /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 280E754C0DD40C5E005A515E /* MainWindow.xib */; };
 		28193033112F806B00ECF9B4 /* pomodora.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 28193032112F806B00ECF9B4 /* pomodora.xcdatamodeld */; };
 		286736F912F6A03300B7864A /* pomodoro.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 286736F812F6A03300B7864A /* pomodoro.jpg */; };
@@ -46,7 +45,6 @@
 		1D6058910D05DD3D006BFB54 /* pomodora.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pomodora.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		280E754A0DD40C5E005A515E /* FlipsideView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlipsideView.xib; sourceTree = "<group>"; };
-		280E754B0DD40C5E005A515E /* MainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainView.xib; sourceTree = "<group>"; };
 		280E754C0DD40C5E005A515E /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		286736F812F6A03300B7864A /* pomodoro.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pomodoro.jpg; sourceTree = "<group>"; };
 		2880DEA010926BE500CC57B2 /* pomodora.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = pomodora.xcdatamodel; sourceTree = "<group>"; };
@@ -154,9 +152,6 @@
 				849A4C34130A67E5001CF8D9 /* lcd.png */,
 				849A4C35130A67E5001CF8D9 /* WheelCover.png */,
 				286736F812F6A03300B7864A /* pomodoro.jpg */,
-				280E754A0DD40C5E005A515E /* FlipsideView.xib */,
-				280E754B0DD40C5E005A515E /* MainView.xib */,
-				280E754C0DD40C5E005A515E /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* pomodora-Info.plist */,
 			);
 			name = Resources;
@@ -201,6 +196,8 @@
 			isa = PBXGroup;
 			children = (
 				849A4C4B130A6A20001CF8D9 /* PomodoroTimerView.h */,
+				280E754A0DD40C5E005A515E /* FlipsideView.xib */,
+				280E754C0DD40C5E005A515E /* MainWindow.xib */,
 				849A4C4C130A6A20001CF8D9 /* PomodoroTimerView.m */,
 			);
 			name = Views;
@@ -299,7 +296,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				280E754D0DD40C5E005A515E /* FlipsideView.xib in Resources */,
-				280E754E0DD40C5E005A515E /* MainView.xib in Resources */,
 				280E754F0DD40C5E005A515E /* MainWindow.xib in Resources */,
 				286736F912F6A03300B7864A /* pomodoro.jpg in Resources */,
 				849A4C36130A67E5001CF8D9 /* drips.png in Resources */,
