@@ -14,16 +14,11 @@
 
 @interface MainViewController : UIViewController <FlipsideViewControllerDelegate , PomodoroTimerViewDelegate> {
     NSManagedObjectContext *managedObjectContext;	
-    User * user;
-	
+    User * user;	
 	PomodoroTimerView * pomodoroTimerView;
 	
 	IBOutlet UITextField *todayCompletedTxtBox;
 	IBOutlet UITextField *overallCompletedTxtBox;
-	IBOutlet UIButton *pauseButton;
-	IBOutlet UIButton *timerButton;
-	IBOutlet UIButton *stopButton;
-
 }
 
 @property (nonatomic, retain) User *user;
@@ -31,10 +26,6 @@
 @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
 @property (nonatomic, retain) UITextField *todayCompletedTxtBox;
 @property (nonatomic, retain) UITextField *overallCompletedTxtBox;
-@property (nonatomic, retain) UIButton *pauseButton;
-@property (nonatomic, retain) UIButton *timerButton;
-@property (nonatomic, retain) UIButton *stopButton;
-
 
 - (void)updateStatsInfo;
 

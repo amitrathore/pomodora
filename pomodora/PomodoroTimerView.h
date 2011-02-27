@@ -33,8 +33,11 @@ static inline double radians(double degrees) { return degrees * M_PI / 180; }
 }
 
 - (id)initWithFrame:(CGRect)frame delegate:(id)aDelegate;
-- (void)resetTimerInfo;
 - (void)updateTimerInfo;
+- (void)putInNotRunningMode;
+- (void)putInRunningMode;
+- (void)putInInterruptedMode;
+- (void)putInRestMode;
 
 @end
 

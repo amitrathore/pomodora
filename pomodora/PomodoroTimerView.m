@@ -125,11 +125,15 @@
 {
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(20, 30, 280, 135)];
     [label setText:@"Start"];
-    [label setFont:[UIFont fontWithName:@"Helvetica" size:50]];
+    [label setFont:[UIFont fontWithName:@"Helvetica" size:100]];
     [label setTextAlignment:UITextAlignmentCenter];
     [label setTextColor:[UIColor whiteColor]];
     [label setBackgroundColor:[UIColor clearColor]];
-    return label;
+	
+	[label.layer setShadowColor:[UIColor greenColor]];
+	[label.layer setShadowOffset:CGSizeMake(0.2, 0.8)];
+	
+	return label;
 }
 
 #pragma mark Application LifeCycle
@@ -198,7 +202,6 @@
 
 #pragma mark Public Methods
 
-
 - (void)updateTimerInfo {
 	int timerValue = [delegate timerValue];
 	
@@ -210,8 +213,17 @@
 	}	
 }
 
-- (void)resetTimerInfo {
+- (void)putInNotRunningMode {
 	[timerLabel setText:@"Start"];
+}
+
+- (void)putInRunningMode {
+}
+
+- (void)putInInterruptedMode{
+}
+
+- (void)putInRestMode{
 }
 
 @end

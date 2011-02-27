@@ -12,15 +12,11 @@ NSTimer *timer;
 
 @implementation MainViewController
 
-@synthesize 
-	managedObjectContext, 
-	user,
-	pomodoroTimerView,
-	pauseButton, 
-	timerButton,
-	stopButton,
-	todayCompletedTxtBox,
-	overallCompletedTxtBox;
+@synthesize managedObjectContext;
+@synthesize user;
+@synthesize pomodoroTimerView;
+@synthesize todayCompletedTxtBox;
+@synthesize overallCompletedTxtBox;
 
 #pragma mark Application lifecycle
 - (void)loadView
@@ -31,15 +27,6 @@ NSTimer *timer;
 	self.pomodoroTimerView = aPomodoroTimerView;
 	[aPomodoroTimerView release];
 }
-
- // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
-- (void)viewDidLoad {
-	[pauseButton setHidden:YES]; 
-	[stopButton setHidden:YES]; 
-	
-    [super viewDidLoad];
-}
-
 
  // Implement viewWillAppear: to do additional setup before the view is presented. You might, for example, fetch objects from the managed object context if necessary.
 - (void)viewWillAppear:(BOOL)animated {
@@ -61,10 +48,8 @@ NSTimer *timer;
 
 - (void)dealloc {
     [managedObjectContext release];
-	[pauseButton release];
-	[timerButton release];
-	[stopButton release];
 	[user release];
+	[pomodoroTimerView release];
 	[timer release];
     [super dealloc];
 }
@@ -80,8 +65,9 @@ NSTimer *timer;
 }
 
 - (void)startTimer {
-	[self.user startPomodoro];
-	[self.pomodoroTimerView updateTimerInfo];
+	[user startPomodoro];
+	[pomodoroTimerView putInRunningMode];
+	[pomodoroTimerView updateTimerInfo];
 	timer = [NSTimer scheduledTimerWithTimeInterval:1
 											 target:self.pomodoroTimerView 
 										   selector:@selector(updateTimerInfo) 
@@ -91,6 +77,7 @@ NSTimer *timer;
 
 - (void)stopTimer {
 	[user stopPomodoro];
+	[pomodoroTimerView putInNotRunningMode];
 }
 
 - (void) resetTimer{
@@ -109,11 +96,11 @@ NSTimer *timer;
 	
 	if ([title isEqualToString:@"Pause"]) {
 		[user pausePomodoro];			
-		[pauseButton setTitle:@"Resume" forState:UIControlStateNormal];
+		[pomodoroTimerView putInInterruptedMode];
 		[self resetTimer];
 	}else if ([title isEqualToString:@"Resume"]) {
 		[user resumePomodoro];			
-		[pauseButton setTitle:@"Pause" forState:UIControlStateNormal];
+		[pomodoroTimerView putInRunningMode];
 		[self resetTimer];
 	}
 	
@@ -127,16 +114,13 @@ NSTimer *timer;
 
 - (void)startResting {
 	[user startResting];
+	[pomodoroTimerView putInRestMode];
 	[self resetTimer];	
-	[pauseButton setHidden:YES]; 
-	[pauseButton setTitle:@"Pause" forState:UIControlStateNormal];
-	
-	[stopButton setHidden:YES];
 }
 
 - (void)finishResting {
 	[user finishResting];
-	[pomodoroTimerView resetTimerInfo];
+	[pomodoroTimerView putInNotRunningMode];
 	[timer invalidate];
 }
 
