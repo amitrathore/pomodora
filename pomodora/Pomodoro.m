@@ -18,6 +18,7 @@
 @dynamic desc;
 @dynamic events;
 @dynamic user;
+@dynamic goal;
 @dynamic pausedTime;
 
 - (void)addEventWithType:(NSString *)eventType {

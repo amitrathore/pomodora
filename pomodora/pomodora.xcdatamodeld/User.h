@@ -11,6 +11,7 @@
 #import "CalendarHelper.h"
 
 @class Pomodoro;
+@class Goal;
 
 @interface User :  NSManagedObject  
 {
@@ -23,6 +24,7 @@
 @property (nonatomic, retain) NSString * name;
 @property (nonatomic, retain) NSString * mode;
 @property (nonatomic, retain) NSSet* pomodoros;
+@property (nonatomic, retain) NSSet* goals;
 
 @end
 
@@ -33,6 +35,11 @@
 - (void)removePomodorosObject:(NSManagedObject *)value;
 - (void)addPomodoros:(NSSet *)value;
 - (void)removePomodoros:(NSSet *)value;
+
+- (void)addGoalsObject:(NSManagedObject *)value;
+- (void)removeGoalsObject:(NSManagedObject *)value;
+- (void)addGoals:(NSSet *)value;
+- (void)removeGoals:(NSSet *)value;
 
 
 //method declaration

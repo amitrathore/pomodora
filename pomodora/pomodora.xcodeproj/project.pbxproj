@@ -32,6 +32,7 @@
 		849A4C41130A67E5001CF8D9 /* lcd.png in Resources */ = {isa = PBXBuildFile; fileRef = 849A4C34130A67E5001CF8D9 /* lcd.png */; };
 		849A4C42130A67E5001CF8D9 /* WheelCover.png in Resources */ = {isa = PBXBuildFile; fileRef = 849A4C35130A67E5001CF8D9 /* WheelCover.png */; };
 		849A4C4D130A6A20001CF8D9 /* PomodoroTimerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 849A4C4C130A6A20001CF8D9 /* PomodoroTimerView.m */; };
+		84B23ECE13231694009916A4 /* Goal.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B23ECD13231694009916A4 /* Goal.m */; };
 		84C9EE2013081F470044677E /* CalendarHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C9EE1F13081F470044677E /* CalendarHelper.m */; };
 		84D3A1D3130235D80001C5CA /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D3A1CD130235D80001C5CA /* User.m */; };
 		84D3A1D4130235D80001C5CA /* Pomodoro.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D3A1CF130235D80001C5CA /* Pomodoro.m */; };
@@ -70,6 +71,8 @@
 		849A4C35130A67E5001CF8D9 /* WheelCover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WheelCover.png; sourceTree = "<group>"; };
 		849A4C4B130A6A20001CF8D9 /* PomodoroTimerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PomodoroTimerView.h; sourceTree = "<group>"; };
 		849A4C4C130A6A20001CF8D9 /* PomodoroTimerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PomodoroTimerView.m; sourceTree = "<group>"; };
+		84B23ECC13231694009916A4 /* Goal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Goal.h; sourceTree = "<group>"; };
+		84B23ECD13231694009916A4 /* Goal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Goal.m; sourceTree = "<group>"; };
 		84C9ED291306D71A0044677E /* UnitTest.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTest.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84C9ED2A1306D71A0044677E /* UnitTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UnitTest-Info.plist"; sourceTree = "<group>"; };
 		84C9EE1E13081F470044677E /* CalendarHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarHelper.h; sourceTree = "<group>"; };
@@ -208,6 +211,8 @@
 			children = (
 				84D3A1CC130235D80001C5CA /* User.h */,
 				84D3A1CD130235D80001C5CA /* User.m */,
+				84B23ECC13231694009916A4 /* Goal.h */,
+				84B23ECD13231694009916A4 /* Goal.m */,
 				84D3A1CE130235D80001C5CA /* Pomodoro.h */,
 				28193032112F806B00ECF9B4 /* pomodora.xcdatamodeld */,
 				84D3A1CF130235D80001C5CA /* Pomodoro.m */,
@@ -353,6 +358,7 @@
 				84D3A1D5130235D80001C5CA /* Event.m in Sources */,
 				84C9EE2013081F470044677E /* CalendarHelper.m in Sources */,
 				849A4C4D130A6A20001CF8D9 /* PomodoroTimerView.m in Sources */,
+				84B23ECE13231694009916A4 /* Goal.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

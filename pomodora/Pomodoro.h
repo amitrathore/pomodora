@@ -9,6 +9,7 @@
 #import <CoreData/CoreData.h>
 
 @class User;
+@class Goal;
 
 @interface Pomodoro :  NSManagedObject  
 {
@@ -20,6 +21,7 @@
 @property (nonatomic, retain) NSDate * createdAt;
 @property (nonatomic, retain) NSSet* events;
 @property (nonatomic, retain) User * user;
+@property (nonatomic, retain) Goal * goal;
 @property (nonatomic, retain) NSNumber * pausedTime;
 
 + (Pomodoro *)createPomodoro:(NSManagedObjectContext *)moc;

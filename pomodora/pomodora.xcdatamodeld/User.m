@@ -18,6 +18,7 @@
 @dynamic name;
 @dynamic mode;
 @dynamic pomodoros;
+@dynamic goals;
 
 // Class Methods
 
