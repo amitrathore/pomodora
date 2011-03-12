@@ -18,6 +18,7 @@
 @dynamic createdAt;
 @dynamic user;
 @dynamic pomodoros;
+@dynamic weekGoal;
 
 
 + (NSArray *)findIncompletedGoals:(NSManagedObjectContext *)moc{
