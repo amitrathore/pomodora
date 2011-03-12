@@ -21,6 +21,8 @@
 @property (nonatomic, retain) User * user;
 @property (nonatomic, retain) NSSet* pomodoros;
 
++ (NSArray *)findIncompletedGoals:(NSManagedObjectContext *)moc;
+
 @end
 
 
