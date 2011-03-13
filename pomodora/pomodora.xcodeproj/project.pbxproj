@@ -382,6 +382,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = pomodora_Prefix.pch;
 				INFOPLIST_FILE = "pomodora-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = pomodora;
 			};
 			name = Debug;
@@ -394,6 +395,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = pomodora_Prefix.pch;
 				INFOPLIST_FILE = "pomodora-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = pomodora;
 				VALIDATE_PRODUCT = YES;
 			};
