@@ -79,7 +79,7 @@
 - (void)goalAddViewController:(GoalAddViewController *)goalAddViewController didAddGoal:(Goal *)goal {
     if (goal) {        
         // Show the Goal in a new view controller
-        [self showGoal:goal animated:NO];
+        //[self showGoal:goal animated:NO];
     }
     
     // Dismiss the modal add Goal view controller
