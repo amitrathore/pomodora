@@ -11,12 +11,15 @@
 
 @class MainViewController;
 @class PomodoroTimerView;
+@class GoalsListTableViewController;
 
 @interface pomodoraAppDelegate : NSObject <UIApplicationDelegate> {
 	
     UIWindow *window;
+    
     MainViewController * mainViewController;
 	UITabBarController *tabBarController;	
+    GoalsListTableViewController * goalsListController;
     
 @private
     NSManagedObjectContext *managedObjectContext_;
@@ -27,6 +30,7 @@
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 @property (nonatomic, retain) IBOutlet MainViewController *mainViewController;
 @property (nonatomic, retain) IBOutlet UITabBarController *tabBarController;
+@property (nonatomic, retain) IBOutlet GoalsListTableViewController * goalsListController;
 
 @property (nonatomic, retain, readonly) NSManagedObjectContext *managedObjectContext;
 @property (nonatomic, retain, readonly) NSManagedObjectModel *managedObjectModel;

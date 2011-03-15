@@ -13,7 +13,7 @@
 
 @implementation Goal 
 
-@dynamic desc;
+@dynamic name;
 @dynamic completed;
 @dynamic createdAt;
 @dynamic user;

@@ -20,6 +20,11 @@
 		289233AE0DB2D0DB0083E9F9 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */; };
 		289233B00DB2D0DB0083E9F9 /* FlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.m */; };
 		848E4C35132DB9DB00DE2FBE /* GoalsListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848E4C34132DB9DB00DE2FBE /* GoalsListTableViewController.m */; };
+		848E4C46132DDFFC00DE2FBE /* GoalAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848E4C44132DDFFB00DE2FBE /* GoalAddViewController.m */; };
+		848E4C47132DDFFC00DE2FBE /* GoalAddView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 848E4C45132DDFFB00DE2FBE /* GoalAddView.xib */; };
+		848E4C55132DEF4500DE2FBE /* GoalDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848E4C53132DEF4300DE2FBE /* GoalDetailViewController.m */; };
+		848E4C56132DEF4500DE2FBE /* GoalDetailHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 848E4C54132DEF4400DE2FBE /* GoalDetailHeaderView.xib */; };
+		848E4C63132DF9E100DE2FBE /* GoalTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 848E4C62132DF9E100DE2FBE /* GoalTableViewCell.m */; };
 		849A4C36130A67E5001CF8D9 /* drips.png in Resources */ = {isa = PBXBuildFile; fileRef = 849A4C29130A67E5001CF8D9 /* drips.png */; };
 		849A4C37130A67E5001CF8D9 /* flat.png in Resources */ = {isa = PBXBuildFile; fileRef = 849A4C2A130A67E5001CF8D9 /* flat.png */; };
 		849A4C38130A67E5001CF8D9 /* carrot.png in Resources */ = {isa = PBXBuildFile; fileRef = 849A4C2B130A67E5001CF8D9 /* carrot.png */; };
@@ -60,6 +65,14 @@
 		32CA4F630368D1EE00C91783 /* pomodora_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pomodora_Prefix.pch; sourceTree = "<group>"; };
 		848E4C33132DB9DB00DE2FBE /* GoalsListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoalsListTableViewController.h; sourceTree = "<group>"; };
 		848E4C34132DB9DB00DE2FBE /* GoalsListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoalsListTableViewController.m; sourceTree = "<group>"; };
+		848E4C43132DDFFB00DE2FBE /* GoalAddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoalAddViewController.h; sourceTree = "<group>"; };
+		848E4C44132DDFFB00DE2FBE /* GoalAddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoalAddViewController.m; sourceTree = "<group>"; };
+		848E4C45132DDFFB00DE2FBE /* GoalAddView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GoalAddView.xib; sourceTree = "<group>"; };
+		848E4C52132DEF4200DE2FBE /* GoalDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoalDetailViewController.h; sourceTree = "<group>"; };
+		848E4C53132DEF4300DE2FBE /* GoalDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoalDetailViewController.m; sourceTree = "<group>"; };
+		848E4C54132DEF4400DE2FBE /* GoalDetailHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GoalDetailHeaderView.xib; sourceTree = "<group>"; };
+		848E4C61132DF9E100DE2FBE /* GoalTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoalTableViewCell.h; sourceTree = "<group>"; };
+		848E4C62132DF9E100DE2FBE /* GoalTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoalTableViewCell.m; sourceTree = "<group>"; };
 		849A4C29130A67E5001CF8D9 /* drips.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = drips.png; sourceTree = "<group>"; };
 		849A4C2A130A67E5001CF8D9 /* flat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flat.png; sourceTree = "<group>"; };
 		849A4C2B130A67E5001CF8D9 /* carrot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = carrot.png; sourceTree = "<group>"; };
@@ -193,9 +206,13 @@
 				289233A80DB2D0DB0083E9F9 /* MainViewController.h */,
 				289233AC0DB2D0DB0083E9F9 /* FlipsideViewController.h */,
 				289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.m */,
+				848E4C34132DB9DB00DE2FBE /* GoalsListTableViewController.m */,
 				289233A90DB2D0DB0083E9F9 /* MainViewController.m */,
 				848E4C33132DB9DB00DE2FBE /* GoalsListTableViewController.h */,
-				848E4C34132DB9DB00DE2FBE /* GoalsListTableViewController.m */,
+				848E4C43132DDFFB00DE2FBE /* GoalAddViewController.h */,
+				848E4C44132DDFFB00DE2FBE /* GoalAddViewController.m */,
+				848E4C52132DEF4200DE2FBE /* GoalDetailViewController.h */,
+				848E4C53132DEF4300DE2FBE /* GoalDetailViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -206,7 +223,11 @@
 				849A4C4B130A6A20001CF8D9 /* PomodoroTimerView.h */,
 				280E754A0DD40C5E005A515E /* FlipsideView.xib */,
 				280E754C0DD40C5E005A515E /* MainWindow.xib */,
+				848E4C54132DEF4400DE2FBE /* GoalDetailHeaderView.xib */,
 				849A4C4C130A6A20001CF8D9 /* PomodoroTimerView.m */,
+				848E4C45132DDFFB00DE2FBE /* GoalAddView.xib */,
+				848E4C61132DF9E100DE2FBE /* GoalTableViewCell.h */,
+				848E4C62132DF9E100DE2FBE /* GoalTableViewCell.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -320,6 +341,8 @@
 				849A4C3F130A67E5001CF8D9 /* uonion.png in Resources */,
 				849A4C41130A67E5001CF8D9 /* lcd.png in Resources */,
 				849A4C42130A67E5001CF8D9 /* WheelCover.png in Resources */,
+				848E4C47132DDFFC00DE2FBE /* GoalAddView.xib in Resources */,
+				848E4C56132DEF4500DE2FBE /* GoalDetailHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,6 +388,9 @@
 				849A4C4D130A6A20001CF8D9 /* PomodoroTimerView.m in Sources */,
 				84B23ECE13231694009916A4 /* Goal.m in Sources */,
 				848E4C35132DB9DB00DE2FBE /* GoalsListTableViewController.m in Sources */,
+				848E4C46132DDFFC00DE2FBE /* GoalAddViewController.m in Sources */,
+				848E4C55132DEF4500DE2FBE /* GoalDetailViewController.m in Sources */,
+				848E4C63132DF9E100DE2FBE /* GoalTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

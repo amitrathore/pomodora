@@ -15,7 +15,7 @@
 {
 }
 
-@property (nonatomic, retain) NSString * desc;
+@property (nonatomic, retain) NSString * name;
 @property (nonatomic, retain) NSNumber * weekGoal;
 @property (nonatomic, retain) NSNumber * completed;
 @property (nonatomic, retain) NSDate * createdAt;

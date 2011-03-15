@@ -6,17 +6,23 @@
 //  Copyright 2011 Thoughtworks. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "GoalAddViewController.h"
+#import <CoreData/CoreData.h>
 
+@class Goal;
+@class GoalTableViewCell;
 
-@interface GoalsListTableViewController : UITableViewController {
+@interface GoalsListTableViewController : UITableViewController <GoalAddDelegate,NSFetchedResultsControllerDelegate> {
     
-    NSMutableArray * goals;
-    
+    NSFetchedResultsController *fetchedResultsController;
+    NSManagedObjectContext * managedObjectContext;
 }
 
-@property (retain, nonatomic) NSMutableArray * goals;
+@property (nonatomic, retain) NSFetchedResultsController * fetchedResultsController;
+@property (nonatomic, retain) NSManagedObjectContext * managedObjectContext;
 
-- (void) addGoal;
+- (void)add:(id)sender;
+- (void)showGoal:(Goal *)Goal animated:(BOOL)animated;
+- (void)configureCell:(GoalTableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
 
 @end
