@@ -11,7 +11,6 @@
 @interface GoalDetailViewController : UITableViewController <UINavigationControllerDelegate, UITextFieldDelegate> {
 @private
     Goal *goal;
-    NSMutableArray *ingredients;
     
     UIView *tableHeaderView; 
     UITextField *nameTextField;

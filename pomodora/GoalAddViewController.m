@@ -14,6 +14,7 @@
 
 @synthesize goal;
 @synthesize nameTextField;
+@synthesize weekGoalPicker;
 @synthesize delegate;
 
 
@@ -30,9 +31,22 @@
     self.navigationItem.rightBarButtonItem = saveButtonItem;
     [saveButtonItem release];
 	
+    [weekGoalPicker selectRow:9 inComponent:0 animated:YES];
 	[nameTextField becomeFirstResponder];
 }
 
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+	if (textField == nameTextField) {
+		[nameTextField resignFirstResponder];
+//		[self save];
+	}
+	return YES;
+}
+
+-(IBAction)backgroundTouched:(id)sender
+{
+    [nameTextField resignFirstResponder];
+}
 
 - (void)viewDidUnload {
 	self.nameTextField = nil;
@@ -43,15 +57,6 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
     // Support all orientations except upside-down
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
-}
-
-
-- (BOOL)textFieldShouldReturn:(UITextField *)textField {
-	if (textField == nameTextField) {
-		[nameTextField resignFirstResponder];
-		[self save];
-	}
-	return YES;
 }
 
 
@@ -92,6 +97,34 @@
     [self.delegate goalAddViewController:self didAddGoal:nil];
 }
 
+#pragma mark -
+#pragma mark Implementing UIPickerDataSource
+
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
+{
+    return 1;
+}
+
+- (NSInteger)pickerView:(UIPickerView *)pickerView
+numberOfRowsInComponent:(NSInteger)component
+{
+    return 20;
+}
+
+- (NSString *)pickerView:(UIPickerView *)pickerView
+             titleForRow:(NSInteger)row
+            forComponent:(NSInteger)component
+{
+    return [NSString stringWithFormat:@"%d", row + 1];
+} 
+
+#pragma mark -
+#pragma mark PickerView Delegate
+-(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row
+      inComponent:(NSInteger)component
+{
+    goal.weekGoal = [NSNumber numberWithInt:row - 1];
+}
 
 - (void)dealloc {
     [goal release];    

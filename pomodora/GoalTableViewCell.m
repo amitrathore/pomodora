@@ -82,7 +82,7 @@
         [Goal release];
         goal = [newGoal retain];
 	}
-	nameLabel.text = goal.name;
+	nameLabel.text = [NSString stringWithFormat:@"%@ - %@",goal.name, goal.weekGoal];
 }
 
 
