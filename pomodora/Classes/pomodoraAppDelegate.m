@@ -7,14 +7,14 @@
 //
 
 #import "pomodoraAppDelegate.h"
-#import "MainViewController.h"
+#import "PomodoroViewController.h"
 #import "GoalsListTableViewController.h"
 #import "PomodoroTimerView.h"
 
 @implementation pomodoraAppDelegate
 
 @synthesize window;
-@synthesize mainViewController;
+@synthesize pomodoroContentController;
 @synthesize tabBarController;
 @synthesize goalsListController;
 
@@ -22,7 +22,7 @@
 #pragma mark Application lifecycle
 
 - (void)applicationDidFinishLaunching:(UIApplication *)application {
-    mainViewController.managedObjectContext = self.managedObjectContext;  
+    pomodoroContentController.managedObjectContext = self.managedObjectContext;  
     goalsListController.managedObjectContext = self.managedObjectContext;
     [window addSubview:tabBarController.view];
     [window makeKeyAndVisible];
@@ -165,7 +165,7 @@
     [managedObjectModel_ release];
     [persistentStoreCoordinator_ release];
     
-    [mainViewController release];
+    [pomodoroContentController release];
     [goalsListController release];
     [window release];
     [super dealloc];

@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
 
-@class MainViewController;
+@class PomodoroViewController;
 @class PomodoroTimerView;
 @class GoalsListTableViewController;
 
@@ -17,7 +17,7 @@
 	
     UIWindow *window;
     
-    MainViewController * mainViewController;
+    PomodoroViewController * pomodoroContentController;
 	UITabBarController *tabBarController;	
     GoalsListTableViewController * goalsListController;
     
@@ -28,7 +28,7 @@
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
-@property (nonatomic, retain) IBOutlet MainViewController *mainViewController;
+@property (nonatomic, retain) IBOutlet PomodoroViewController *pomodoroContentController;
 @property (nonatomic, retain) IBOutlet UITabBarController *tabBarController;
 @property (nonatomic, retain) IBOutlet GoalsListTableViewController * goalsListController;
 

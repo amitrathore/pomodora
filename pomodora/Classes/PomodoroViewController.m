@@ -6,17 +6,22 @@
 //  Copyright 2011 Thoughtworks. All rights reserved.
 //
 
-#import "MainViewController.h"
+#import "PomodoroViewController.h"
 
 NSTimer *timer;
 
-@implementation MainViewController
+@implementation PomodoroViewController
 
 @synthesize managedObjectContext;
 @synthesize user;
 @synthesize pomodoroTimerView;
 @synthesize todayCompletedTxtBox;
 @synthesize overallCompletedTxtBox;
+
+- (id)initWithPageNumber:(int)page
+{
+    return self;
+}
 
 #pragma mark Application lifecycle
 - (void)loadView

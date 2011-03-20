@@ -12,7 +12,7 @@
 #import <CoreData/CoreData.h>
 
 
-@interface MainViewController : UIViewController <FlipsideViewControllerDelegate , PomodoroTimerViewDelegate> {
+@interface PomodoroViewController : UIViewController <FlipsideViewControllerDelegate , PomodoroTimerViewDelegate> {
     NSManagedObjectContext *managedObjectContext;	
     User * user;	
 	PomodoroTimerView * pomodoroTimerView;
@@ -28,5 +28,7 @@
 @property (nonatomic, retain) UITextField *overallCompletedTxtBox;
 
 - (void)updateStatsInfo;
+
+- (id)initWithPageNumber:(int)page;
 
 @end
