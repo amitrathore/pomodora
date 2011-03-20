@@ -17,7 +17,7 @@
 	
     UIWindow *window;
     
-    PomodoroViewController * pomodoroContentController;
+    PomodoroViewController * pomodoroViewController;
 	UITabBarController *tabBarController;	
     GoalsListTableViewController * goalsListController;
     
@@ -28,7 +28,7 @@
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
-@property (nonatomic, retain) IBOutlet PomodoroViewController *pomodoroContentController;
+@property (nonatomic, retain) IBOutlet PomodoroViewController *pomodoroViewController;
 @property (nonatomic, retain) IBOutlet UITabBarController *tabBarController;
 @property (nonatomic, retain) IBOutlet GoalsListTableViewController * goalsListController;
 

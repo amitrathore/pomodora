@@ -14,7 +14,7 @@
 @implementation pomodoraAppDelegate
 
 @synthesize window;
-@synthesize pomodoroContentController;
+@synthesize pomodoroViewController;
 @synthesize tabBarController;
 @synthesize goalsListController;
 
@@ -22,7 +22,7 @@
 #pragma mark Application lifecycle
 
 - (void)applicationDidFinishLaunching:(UIApplication *)application {
-    pomodoroContentController.managedObjectContext = self.managedObjectContext;  
+    pomodoroViewController.managedObjectContext = self.managedObjectContext;  
     goalsListController.managedObjectContext = self.managedObjectContext;
     [window addSubview:tabBarController.view];
     [window makeKeyAndVisible];
@@ -165,7 +165,7 @@
     [managedObjectModel_ release];
     [persistentStoreCoordinator_ release];
     
-    [pomodoroContentController release];
+    [pomodoroViewController release];
     [goalsListController release];
     [window release];
     [super dealloc];
