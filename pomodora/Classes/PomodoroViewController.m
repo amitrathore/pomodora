@@ -20,17 +20,22 @@ NSTimer *timer;
 
 - (id)initWithPageNumber:(int)page
 {
+    PomodoroTimerView * aPomodoroTimerView = [[PomodoroTimerView alloc] initWithFrame:[[UIScreen mainScreen] applicationFrame] 
+                                                                             delegate:self];
+	self.view = aPomodoroTimerView; 
+	self.pomodoroTimerView = aPomodoroTimerView;
+	[aPomodoroTimerView release];
     return self;
 }
 
 #pragma mark Application lifecycle
 - (void)loadView
 {
-	PomodoroTimerView * aPomodoroTimerView = [[PomodoroTimerView alloc] initWithFrame:[[UIScreen mainScreen] applicationFrame] 
-																		   delegate:self];
-	self.view = aPomodoroTimerView; 
-	self.pomodoroTimerView = aPomodoroTimerView;
-	[aPomodoroTimerView release];
+//	PomodoroTimerView * aPomodoroTimerView = [[PomodoroTimerView alloc] initWithFrame:[[UIScreen mainScreen] applicationFrame] 
+//																		   delegate:self];
+//	self.view = aPomodoroTimerView; 
+//	self.pomodoroTimerView = aPomodoroTimerView;
+//	[aPomodoroTimerView release];
 }
 
  // Implement viewWillAppear: to do additional setup before the view is presented. You might, for example, fetch objects from the managed object context if necessary.

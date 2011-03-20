@@ -23,7 +23,6 @@
 #pragma mark UIViewController overrides
 
 - (void)viewDidLoad {
-    NSLog(@"Starting to do Goals Tab");
     // Configure the navigation bar
     self.title = @"Goals";
     

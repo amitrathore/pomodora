@@ -26,6 +26,4 @@
 @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
 @property (nonatomic, retain) NSMutableArray *viewControllers;
 
-- (IBAction)changePage:(id)sender;
-
 @end
