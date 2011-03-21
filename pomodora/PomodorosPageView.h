@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <CoreData/CoreData.h>
 
-
-@interface PomodorosPageView : UIViewController  {
+@interface PomodorosPageView : UIViewController <UIScrollViewDelegate> {
+    
+    NSManagedObjectContext *managedObjectContext;
+    
     UIScrollView* scrollView;
     UIPageControl* pageControl;
     
@@ -18,6 +22,8 @@
 
 @property (nonatomic, retain) IBOutlet UIScrollView* scrollView;
 @property (nonatomic, retain) IBOutlet UIPageControl* pageControl;
+@property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
+@property (nonatomic, retain) NSMutableArray *viewControllers;
 
 - (IBAction)changePage;
 

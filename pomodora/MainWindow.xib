@@ -73,9 +73,9 @@
 				</object>
 				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 				<bool key="IBUIHorizontal">NO</bool>
-				<object class="IBUIViewController" key="IBUISelectedViewController" id="570575397">
-					<object class="IBUITabBarItem" key="IBUITabBarItem" id="873097706">
-						<string key="IBUITitle">Item</string>
+				<object class="IBUIViewController" key="IBUISelectedViewController" id="151992160">
+					<object class="IBUITabBarItem" key="IBUITabBarItem" id="632655916">
+						<string key="IBUITitle">Pomodoros</string>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 					</object>
 					<reference key="IBUIParentViewController" ref="90427144"/>
@@ -89,7 +89,7 @@
 				</object>
 				<object class="NSMutableArray" key="IBUIViewControllers">
 					<bool key="EncodedWithXMLCoder">YES</bool>
-					<reference ref="570575397"/>
+					<reference ref="151992160"/>
 					<object class="IBUINavigationController" id="268325641">
 						<object class="IBUITabBarItem" key="IBUITabBarItem" id="215560835">
 							<string key="IBUITitle">Goals</string>
@@ -129,20 +129,6 @@
 								<bool key="IBUIHorizontal">NO</bool>
 							</object>
 						</object>
-					</object>
-					<object class="IBUIViewController" id="872593240">
-						<object class="IBUITabBarItem" key="IBUITabBarItem" id="392402836">
-							<string key="IBUITitle">Item</string>
-							<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						</object>
-						<reference key="IBUIParentViewController" ref="90427144"/>
-						<object class="IBUISimulatedStatusBarMetrics" key="IBUISimulatedStatusBarMetrics"/>
-						<object class="IBUISimulatedOrientationMetrics" key="IBUISimulatedOrientationMetrics">
-							<int key="IBUIInterfaceOrientation">1</int>
-							<int key="interfaceOrientation">1</int>
-						</object>
-						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<bool key="IBUIHorizontal">NO</bool>
 					</object>
 					<object class="IBUIViewController" id="329070185">
 						<object class="IBUITabBarItem" key="IBUITabBarItem" id="235209737">
@@ -201,19 +187,19 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">pomodoroContentController</string>
-						<reference key="source" ref="664661524"/>
-						<reference key="destination" ref="872593240"/>
-					</object>
-					<int key="connectionID">70</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">window</string>
 						<reference key="source" ref="664661524"/>
 						<reference key="destination" ref="380026005"/>
 					</object>
 					<int key="connectionID">73</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">pomodorosPageView</string>
+						<reference key="source" ref="664661524"/>
+						<reference key="destination" ref="151992160"/>
+					</object>
+					<int key="connectionID">76</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -256,9 +242,8 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="132569853"/>
 							<reference ref="329070185"/>
-							<reference ref="872593240"/>
 							<reference ref="268325641"/>
-							<reference ref="570575397"/>
+							<reference ref="151992160"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -317,32 +302,18 @@
 						<reference key="parent" ref="268325641"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">68</int>
-						<reference key="object" ref="872593240"/>
-						<object class="NSMutableArray" key="children">
-							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="392402836"/>
-						</object>
-						<reference key="parent" ref="90427144"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">69</int>
-						<reference key="object" ref="392402836"/>
-						<reference key="parent" ref="872593240"/>
-					</object>
-					<object class="IBObjectRecord">
 						<int key="objectID">74</int>
-						<reference key="object" ref="570575397"/>
+						<reference key="object" ref="151992160"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="873097706"/>
+							<reference ref="632655916"/>
 						</object>
 						<reference key="parent" ref="90427144"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">75</int>
-						<reference key="object" ref="873097706"/>
-						<reference key="parent" ref="570575397"/>
+						<reference key="object" ref="632655916"/>
+						<reference key="parent" ref="151992160"/>
 					</object>
 				</object>
 			</object>
@@ -367,9 +338,6 @@
 					<string>52.CustomClassName</string>
 					<string>52.IBPluginDependency</string>
 					<string>54.IBPluginDependency</string>
-					<string>68.CustomClassName</string>
-					<string>68.IBPluginDependency</string>
-					<string>69.IBPluginDependency</string>
 					<string>74.CustomClassName</string>
 					<string>74.IBPluginDependency</string>
 					<string>75.IBPluginDependency</string>
@@ -397,9 +365,6 @@
 					<string>GoalsListTableViewController</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-					<string>PomodoroContentController</string>
-					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>PomodorosPageView</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -417,7 +382,7 @@
 				<reference key="dict.values" ref="0"/>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">75</int>
+			<int key="maxID">76</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes"/>
 		<int key="IBDocument.localizationMode">0</int>

@@ -11,8 +11,7 @@
 
 @implementation PomodorosPageView
 
-@synthesize scrollView;
-@synthesize pageControl;
+@synthesize scrollView ,pageControl , managedObjectContext, viewControllers;
 
 - (void)viewDidLoad {
     [super viewDidLoad];

@@ -11,13 +11,13 @@
 
 @class PomodoroTimerView;
 @class GoalsListTableViewController;
-@class PomodoroContentController;
+@class PomodorosPageView;
 
 @interface pomodoraAppDelegate : NSObject <UIApplicationDelegate> {
 	
     UIWindow *window;
     
-    PomodoroContentController * pomodoroContentController;
+    PomodorosPageView * pomodorosPageView;
 	UITabBarController *tabBarController;	
     GoalsListTableViewController * goalsListController;
     
@@ -28,7 +28,7 @@
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
-@property (nonatomic, retain) IBOutlet PomodoroContentController *pomodoroContentController;
+@property (nonatomic, retain) IBOutlet PomodorosPageView *pomodorosPageView;
 @property (nonatomic, retain) IBOutlet UITabBarController *tabBarController;
 @property (nonatomic, retain) IBOutlet GoalsListTableViewController * goalsListController;
 
