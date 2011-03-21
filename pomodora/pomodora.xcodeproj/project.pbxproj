@@ -45,7 +45,7 @@
 		84D3A1D3130235D80001C5CA /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D3A1CD130235D80001C5CA /* User.m */; };
 		84D3A1D4130235D80001C5CA /* Pomodoro.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D3A1CF130235D80001C5CA /* Pomodoro.m */; };
 		84D3A1D5130235D80001C5CA /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D3A1D1130235D80001C5CA /* Event.m */; };
-		84EAFDE613367754005DF14C /* PomodorosPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EAFDE41336774D005DF14C /* PomodorosPageView.m */; };
+		84EAFDE613367754005DF14C /* PomodorosPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EAFDE41336774D005DF14C /* PomodorosPageViewController.m */; };
 		84EAFDE713367754005DF14C /* PomodorosPageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84EAFDE513367750005DF14C /* PomodorosPageView.xib */; };
 /* End PBXBuildFile section */
 
@@ -106,8 +106,8 @@
 		84D3A1CF130235D80001C5CA /* Pomodoro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pomodoro.m; sourceTree = "<group>"; };
 		84D3A1D0130235D80001C5CA /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
 		84D3A1D1130235D80001C5CA /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
-		84EAFDE31336774C005DF14C /* PomodorosPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PomodorosPageView.h; sourceTree = "<group>"; };
-		84EAFDE41336774D005DF14C /* PomodorosPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PomodorosPageView.m; sourceTree = "<group>"; };
+		84EAFDE31336774C005DF14C /* PomodorosPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; path = PomodorosPageViewController.h; sourceTree = "<group>"; };
+		84EAFDE41336774D005DF14C /* PomodorosPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PomodorosPageViewController.m; sourceTree = "<group>"; };
 		84EAFDE513367750005DF14C /* PomodorosPageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PomodorosPageView.xib; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* pomodora-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "pomodora-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -225,8 +225,8 @@
 				848E4C53132DEF4300DE2FBE /* GoalDetailViewController.m */,
 				848E4C771334911500DE2FBE /* PomodoroContentController.h */,
 				848E4C781334911A00DE2FBE /* PomodoroContentController.m */,
-				84EAFDE31336774C005DF14C /* PomodorosPageView.h */,
-				84EAFDE41336774D005DF14C /* PomodorosPageView.m */,
+				84EAFDE31336774C005DF14C /* PomodorosPageViewController.h */,
+				84EAFDE41336774D005DF14C /* PomodorosPageViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -410,7 +410,7 @@
 				848E4C55132DEF4500DE2FBE /* GoalDetailViewController.m in Sources */,
 				848E4C63132DF9E100DE2FBE /* GoalTableViewCell.m in Sources */,
 				848E4C791334912A00DE2FBE /* PomodoroContentController.m in Sources */,
-				84EAFDE613367754005DF14C /* PomodorosPageView.m in Sources */,
+				84EAFDE613367754005DF14C /* PomodorosPageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
