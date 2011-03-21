@@ -6,3 +6,5 @@ profile
 *#*
 pomodora/pomodora.xcodeproj/*.mode1v3
 pomodora/pomodora.xcodeproj/*.pbxuser
+pomodora/pomodora.xcodeproj/project.xcworkspace/
+pomodora/pomodora.xcodeproj/xcuserdata/
