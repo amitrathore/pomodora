@@ -16,12 +16,14 @@
     NSManagedObjectContext *managedObjectContext;	
     User * user;	
 	PomodoroTimerView * pomodoroTimerView;
+    Goal * goal;
 	
 	IBOutlet UITextField *todayCompletedTxtBox;
 	IBOutlet UITextField *overallCompletedTxtBox;
 }
 
 @property (nonatomic, retain) User *user;
+@property (nonatomic, retain) Goal *goal;
 @property (nonatomic, retain) PomodoroTimerView *pomodoroTimerView;
 @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
 @property (nonatomic, retain) UITextField *todayCompletedTxtBox;
@@ -29,6 +31,6 @@
 
 - (void)updateStatsInfo;
 
-- (id)initWithPageNumber:(int)page;
+- (id)initWithGoal:(Goal *)goal;
 
 @end

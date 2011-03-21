@@ -195,8 +195,7 @@
 		840EACF11311D2AA00E3A14F /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				1D3623240D0F684500981E51 /* pomodoraAppDelegate.h */,
-				1D3623250D0F684500981E51 /* pomodoraAppDelegate.m */,
+				84EAFDED1337201D005DF14C /* Delegates */,
 				840EACF31311D2D600E3A14F /* Views */,
 				840EACF21311D2BC00E3A14F /* Controllers */,
 				8447A17412FE395300DCC0F2 /* Models */,
@@ -209,10 +208,10 @@
 			isa = PBXGroup;
 			children = (
 				289233A80DB2D0DB0083E9F9 /* PomodoroViewController.h */,
+				289233A90DB2D0DB0083E9F9 /* PomodoroViewController.m */,
 				289233AC0DB2D0DB0083E9F9 /* FlipsideViewController.h */,
 				289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.m */,
 				848E4C34132DB9DB00DE2FBE /* GoalsListTableViewController.m */,
-				289233A90DB2D0DB0083E9F9 /* PomodoroViewController.m */,
 				848E4C33132DB9DB00DE2FBE /* GoalsListTableViewController.h */,
 				848E4C43132DDFFB00DE2FBE /* GoalAddViewController.h */,
 				848E4C44132DDFFB00DE2FBE /* GoalAddViewController.m */,
@@ -263,6 +262,15 @@
 				84C9EE1F13081F470044677E /* CalendarHelper.m */,
 			);
 			name = Helper;
+			sourceTree = "<group>";
+		};
+		84EAFDED1337201D005DF14C /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				1D3623250D0F684500981E51 /* pomodoraAppDelegate.m */,
+				1D3623240D0F684500981E51 /* pomodoraAppDelegate.h */,
+			);
+			name = Delegates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

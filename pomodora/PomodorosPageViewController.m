@@ -60,7 +60,7 @@ static NSUInteger kNumberOfPages = 6;
     PomodoroViewController *controller = [viewControllers objectAtIndex:page];
     if ((NSNull *)controller == [NSNull null])
     {
-        controller = [[PomodoroViewController alloc] initWithPageNumber:page];
+        controller = [[PomodoroViewController alloc] initWithGoal:nil];
         [viewControllers replaceObjectAtIndex:page withObject:controller];
         [controller release];
     }

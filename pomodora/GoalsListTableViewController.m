@@ -63,6 +63,7 @@
     addController.delegate = self;
 	
 	Goal *newGoal = [NSEntityDescription insertNewObjectForEntityForName:@"Goal" inManagedObjectContext:self.managedObjectContext];
+    newGoal.completed = NO;
     newGoal.user = [User findOrCreateUser:self.managedObjectContext];
     newGoal.createdAt = [NSDate date];
 	addController.goal = newGoal;
@@ -192,10 +193,19 @@
         [fetchRequest setEntity:entity];
         
         // Edit the sort key as appropriate.
-        NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"name" ascending:YES];
+        NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"createdAt" ascending:NO];
         NSArray *sortDescriptors = [[NSArray alloc] initWithObjects:sortDescriptor, nil];
         
+//        NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc]
+//                                            initWithKey:@"createdAt" ascending:NO];
+//        [request setSortDescriptors:[NSArray arrayWithObject:sortDescriptor]];
+//        [sortDescriptor release];
+        
         [fetchRequest setSortDescriptors:sortDescriptors];
+        
+//        NSPredicate * predicate = [NSPredicate predicateWithFormat:@"(completed == %@)", NO];
+//        [fetchRequest setPredicate:predicate];
+//        [predicate release];
         
         // Edit the section name key path and cache name if appropriate.
         // nil for section name key path means "no sections".

@@ -14,14 +14,15 @@ NSTimer *timer;
 
 @synthesize managedObjectContext;
 @synthesize user;
+@synthesize goal;
 @synthesize pomodoroTimerView;
 @synthesize todayCompletedTxtBox;
 @synthesize overallCompletedTxtBox;
 
-- (id)initWithPageNumber:(int)page
-{
+- (id)initWithGoal:(Goal *)_goal{
     PomodoroTimerView * aPomodoroTimerView = [[PomodoroTimerView alloc] initWithFrame:[[UIScreen mainScreen] applicationFrame] 
                                                                              delegate:self];
+    self.goal = _goal;
 	self.view = aPomodoroTimerView; 
 	self.pomodoroTimerView = aPomodoroTimerView;
 	[aPomodoroTimerView release];
@@ -156,8 +157,8 @@ NSTimer *timer;
     [self dismissModalViewControllerAnimated:YES];
 }
 
-- (void)setWeeklyGoal:(int)goal{
-	user.currentWeekGoal = (NSNumber *)[NSNumber numberWithInt:goal];
+- (void)setWeeklyGoal:(int)_goal{
+	user.currentWeekGoal = (NSNumber *)[NSNumber numberWithInt:_goal];
 }
 
 - (int)getWeeklyGoal {
