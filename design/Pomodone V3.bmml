@@ -277,12 +277,12 @@
         <text>1</text>
       </controlProperties>
     </control>
-    <control controlID="64" controlTypeID="com.balsamiq.mockups::CallOut" x="417" y="482" w="41" h="45" measuredW="41" measuredH="45" zOrder="32" locked="false" isInGroup="-1">
+    <control controlID="64" controlTypeID="com.balsamiq.mockups::CallOut" x="417" y="482" w="41" h="45" measuredW="41" measuredH="40" zOrder="32" locked="false" isInGroup="-1">
       <controlProperties>
         <text>1a</text>
       </controlProperties>
     </control>
-    <control controlID="65" controlTypeID="com.balsamiq.mockups::CallOut" x="753" y="479" w="38" h="39" measuredW="37" measuredH="39" zOrder="33" locked="false" isInGroup="-1">
+    <control controlID="65" controlTypeID="com.balsamiq.mockups::CallOut" x="753" y="479" w="38" h="39" measuredW="37" measuredH="40" zOrder="33" locked="false" isInGroup="-1">
       <controlProperties>
         <text>2</text>
       </controlProperties>
