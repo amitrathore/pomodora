@@ -19,16 +19,8 @@
 @synthesize fetchedResultsController;
 @synthesize goals;
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    
-    NSError *error = nil;
-    if (![[self fetchedResultsController] performFetch:&error]) {
-        NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
-		abort();
-	}		
-    
-    self.goals = fetchedResultsController.fetchedObjects;
+- (void) initializeView {
+  self.goals = fetchedResultsController.fetchedObjects;
    
     // view controllers are created lazily
     // in the meantime, load the array with placeholders which will be replaced on demand
@@ -49,14 +41,30 @@
     scrollView.delegate = self;
     
     pageControl.numberOfPages = [goals count];
-    pageControl.currentPage = 0;
+    //pageControl.currentPage = 0;
     
     [self loadScrollViewWithPage:0];
     [self loadScrollViewWithPage:1];
+
+}
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    NSError *error = nil;
+    if (![[self fetchedResultsController] performFetch:&error]) {
+        NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
+		abort();
+	}		
+    
+    [self initializeView];
+
 }
 
 - (void)loadScrollViewWithPage:(int)page
 {
+    
+    NSLog(@"Loading scroll view for Page : %d" , page);
+    
     if (page < 0)
         return;
     if (page >= [goals count])
@@ -182,18 +190,22 @@
 	switch(type) {
 		case NSFetchedResultsChangeInsert:
 			NSLog(@"NSFetchedResultsChangeInsert");
+            [self initializeView];
 			break;
 			
 		case NSFetchedResultsChangeDelete:
 			NSLog(@"NSFetchedResultsChangeDelete");
+            [self initializeView];
 			break;
 			
 		case NSFetchedResultsChangeUpdate:
 			NSLog(@"NSFetchedResultsChangeUpdate");
+            [self initializeView];
 			break;
 			
 		case NSFetchedResultsChangeMove:
 			NSLog(@"NSFetchedResultsChangeMove");
+            [self initializeView];
             break;
 	}
 }
