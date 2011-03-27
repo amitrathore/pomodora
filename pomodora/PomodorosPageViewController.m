@@ -9,8 +9,6 @@
 #import "PomodorosPageViewController.h"
 #import "PomodoroViewController.h"
 
-static NSUInteger kNumberOfPages = 6;
-
 @interface PomodorosPageViewController (PrivateMethods)
 - (void)loadScrollViewWithPage:(int)page;
 @end
@@ -18,16 +16,24 @@ static NSUInteger kNumberOfPages = 6;
 @implementation PomodorosPageViewController
 
 @synthesize scrollView ,pageControl , managedObjectContext, viewControllers;
+@synthesize fetchedResultsController;
+@synthesize goals;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSLog(@"View did load!!");
+    NSError *error = nil;
+    if (![[self fetchedResultsController] performFetch:&error]) {
+        NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
+		abort();
+	}		
     
+    self.goals = fetchedResultsController.fetchedObjects;
+   
     // view controllers are created lazily
     // in the meantime, load the array with placeholders which will be replaced on demand
     NSMutableArray *controllers = [[NSMutableArray alloc] init];
-    for (unsigned i = 0; i < kNumberOfPages; i++)
+    for (unsigned i = 0; i < [goals count] ; i++)
     {
 		[controllers addObject:[NSNull null]];
     }
@@ -36,13 +42,13 @@ static NSUInteger kNumberOfPages = 6;
     
     // a page is the width of the scroll view
     scrollView.pagingEnabled = YES;
-    scrollView.contentSize = CGSizeMake(scrollView.frame.size.width * kNumberOfPages, scrollView.frame.size.height);
+    scrollView.contentSize = CGSizeMake(scrollView.frame.size.width * [goals count], scrollView.frame.size.height);
     scrollView.showsHorizontalScrollIndicator = NO;
     scrollView.showsVerticalScrollIndicator = NO;
     scrollView.scrollsToTop = NO;
     scrollView.delegate = self;
     
-    pageControl.numberOfPages = kNumberOfPages;
+    pageControl.numberOfPages = [goals count];
     pageControl.currentPage = 0;
     
     [self loadScrollViewWithPage:0];
@@ -53,14 +59,15 @@ static NSUInteger kNumberOfPages = 6;
 {
     if (page < 0)
         return;
-    if (page >= kNumberOfPages)
+    if (page >= [goals count])
         return;
     
     // replace the placeholder if necessary
     PomodoroViewController *controller = [viewControllers objectAtIndex:page];
     if ((NSNull *)controller == [NSNull null])
     {
-        controller = [[PomodoroViewController alloc] initWithGoal:nil];
+        controller = [[PomodoroViewController alloc] initWithGoal:[fetchedResultsController objectAtIndexPath:[NSIndexPath indexPathForRow:page inSection:0]]];
+        
         [viewControllers replaceObjectAtIndex:page withObject:controller];
         [controller release];
     }
@@ -73,10 +80,6 @@ static NSUInteger kNumberOfPages = 6;
         frame.origin.y = 0;
         controller.view.frame = frame;
         [scrollView addSubview:controller.view];
-        
-//        NSDictionary *numberItem = [self.contentList objectAtIndex:page];
-//        controller.numberImage.image = [UIImage imageNamed:[numberItem valueForKey:ImageKey]];
-//        controller.numberTitle.text = [numberItem valueForKey:NameKey];
     }
 }
 
@@ -99,9 +102,7 @@ static NSUInteger kNumberOfPages = 6;
 
 - (IBAction)changePage {
     int page = pageControl.currentPage;
-    
-    NSLog(@"Moving Page NO : %d", page);
-	
+ 
     // load the visible page and the page on either side of it (to avoid flashes when the user starts scrolling)
     [self loadScrollViewWithPage:page - 1];
     [self loadScrollViewWithPage:page];
@@ -125,7 +126,86 @@ static NSUInteger kNumberOfPages = 6;
     pageControlBeingUsed = NO;
 }
 
+#pragma mark -
+#pragma mark Fetched results controller
+
+- (NSFetchedResultsController *)fetchedResultsController {
+    // Set up the fetched results controller if needed.
+    if (fetchedResultsController == nil) {
+        // Create the fetch request for the entity.
+        NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+        // Edit the entity name as appropriate.
+        
+        NSEntityDescription *entity = [NSEntityDescription
+                                       entityForName:@"Goal" 
+                                       inManagedObjectContext:managedObjectContext];
+        
+        [fetchRequest setEntity:entity];
+        
+        // Edit the sort key as appropriate.
+        NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"createdAt" ascending:NO];
+        NSArray *sortDescriptors = [[NSArray alloc] initWithObjects:sortDescriptor, nil];
+        
+        [fetchRequest setSortDescriptors:sortDescriptors];
+        
+        NSPredicate * predicate = [NSPredicate predicateWithFormat:@"(completed == %@)", [NSNumber numberWithBool:NO]];
+        [fetchRequest setPredicate:predicate];
+        [predicate release];
+        
+        // Edit the section name key path and cache name if appropriate.
+        // nil for section name key path means "no sections".
+        NSFetchedResultsController *aFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:managedObjectContext sectionNameKeyPath:nil cacheName:@"Goals"];
+        aFetchedResultsController.delegate = self;
+        self.fetchedResultsController = aFetchedResultsController;
+        
+        [aFetchedResultsController release];
+        [fetchRequest release];
+        [sortDescriptor release];
+        [sortDescriptors release];
+    }
+	
+	return fetchedResultsController;
+}    
+
+
+/**
+ Delegate methods of NSFetchedResultsController to respond to additions, removals and so on.
+ */
+
+- (void)controllerWillChangeContent:(NSFetchedResultsController *)controller {
+	NSLog(@"controllerWillChangeContent");
+}
+
+
+- (void)controller:(NSFetchedResultsController *)controller didChangeObject:(id)anObject atIndexPath:(NSIndexPath *)indexPath forChangeType:(NSFetchedResultsChangeType)type newIndexPath:(NSIndexPath *)newIndexPath {
+	
+	switch(type) {
+		case NSFetchedResultsChangeInsert:
+			NSLog(@"NSFetchedResultsChangeInsert");
+			break;
+			
+		case NSFetchedResultsChangeDelete:
+			NSLog(@"NSFetchedResultsChangeDelete");
+			break;
+			
+		case NSFetchedResultsChangeUpdate:
+			NSLog(@"NSFetchedResultsChangeUpdate");
+			break;
+			
+		case NSFetchedResultsChangeMove:
+			NSLog(@"NSFetchedResultsChangeMove");
+            break;
+	}
+}
+
+
+- (void)controllerDidChangeContent:(NSFetchedResultsController *)controller {
+	NSLog(@"controllerDidChangeContent");
+}
+
 - (void)dealloc {
+    [goals release];
+    [fetchedResultsController release];
     [viewControllers release];
     [scrollView release];
     [pageControl release];

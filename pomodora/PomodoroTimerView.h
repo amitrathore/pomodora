@@ -39,5 +39,6 @@ static inline double radians(double degrees) { return degrees * M_PI / 180; }
 - (void)putInInterruptedMode;
 - (void)putInRestMode;
 
+- (void)setGoalName:(NSString *)goalName;
 @end
 

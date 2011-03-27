@@ -227,10 +227,10 @@
 			isa = PBXGroup;
 			children = (
 				849A4C4B130A6A20001CF8D9 /* PomodoroTimerView.h */,
+				849A4C4C130A6A20001CF8D9 /* PomodoroTimerView.m */,
 				280E754A0DD40C5E005A515E /* FlipsideView.xib */,
 				280E754C0DD40C5E005A515E /* MainWindow.xib */,
 				848E4C54132DEF4400DE2FBE /* GoalDetailHeaderView.xib */,
-				849A4C4C130A6A20001CF8D9 /* PomodoroTimerView.m */,
 				848E4C45132DDFFB00DE2FBE /* GoalAddView.xib */,
 				848E4C61132DF9E100DE2FBE /* GoalTableViewCell.h */,
 				848E4C62132DF9E100DE2FBE /* GoalTableViewCell.m */,

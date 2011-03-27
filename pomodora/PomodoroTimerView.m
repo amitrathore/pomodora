@@ -217,6 +217,10 @@
 	[timerLabel setText:@"Start"];
 }
 
+- (void)setGoalName:(NSString *)goalName{
+    [timerLabel setText:goalName];
+}
+
 - (void)putInRunningMode {
 }
 

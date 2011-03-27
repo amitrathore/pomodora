@@ -23,6 +23,7 @@ NSTimer *timer;
     PomodoroTimerView * aPomodoroTimerView = [[PomodoroTimerView alloc] initWithFrame:[[UIScreen mainScreen] applicationFrame] 
                                                                              delegate:self];
     self.goal = _goal;
+    [aPomodoroTimerView setGoalName:[self.goal name]];
 	self.view = aPomodoroTimerView; 
 	self.pomodoroTimerView = aPomodoroTimerView;
 	[aPomodoroTimerView release];
