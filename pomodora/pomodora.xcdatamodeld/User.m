@@ -164,7 +164,7 @@
 }	
 
 - (int)pomodoroTimerValue{
-	int defaultPomodorTime = 3;
+	int defaultPomodorTime = 25 * 60;
 	int lapsedTime = (int)[[NSDate date] timeIntervalSinceDate:self.currentPomodoro.createdAt];
 	return defaultPomodorTime - lapsedTime + [currentPomodoro.pausedTime intValue];
 }
@@ -179,7 +179,7 @@
 }
 
 - (int)pauseTimerValue{
-	int defaultPauseTime = 5;
+	int defaultPauseTime = 45;
 	int pauseTimer = defaultPauseTime - [self pausedTime];
 	if (pauseTimer < 0) {
 		return 0;
@@ -198,8 +198,8 @@
 }
 
 - (int)restTime {
-	int shortRestTime = 5;
-	int longRestTime = 10;
+	int shortRestTime = 5 * 60;
+	int longRestTime = 10 * 60;
 	
 	int completed = (int)[self todayCompleted] % 4;
 	
