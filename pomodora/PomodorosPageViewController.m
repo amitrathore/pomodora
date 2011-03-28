@@ -70,11 +70,12 @@
     if (page >= [goals count])
         return;
     
-    // replace the placeholder if necessary
     PomodoroViewController *controller = [viewControllers objectAtIndex:page];
     if ((NSNull *)controller == [NSNull null])
     {
-        controller = [[PomodoroViewController alloc] initWithGoal:[fetchedResultsController objectAtIndexPath:[NSIndexPath indexPathForRow:page inSection:0]]];
+        controller = [[PomodoroViewController alloc] 
+                        initWithGoal:[fetchedResultsController objectAtIndexPath:[NSIndexPath indexPathForRow:page inSection:0]]
+                        andManagedObjectContext:self.managedObjectContext];
         
         [viewControllers replaceObjectAtIndex:page withObject:controller];
         [controller release];

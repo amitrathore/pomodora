@@ -19,6 +19,7 @@
 		288765590DF743DE002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765580DF743DE002DB57D /* CoreGraphics.framework */; };
 		289233AE0DB2D0DB0083E9F9 /* PomodoroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 289233A90DB2D0DB0083E9F9 /* PomodoroViewController.m */; };
 		289233B00DB2D0DB0083E9F9 /* FlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.m */; };
+		84229860133FBD9900683F63 /* PomodoroView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8422985F133FBD9900683F63 /* PomodoroView.xib */; };
 		848E4C35132DB9DB00DE2FBE /* GoalsListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848E4C34132DB9DB00DE2FBE /* GoalsListTableViewController.m */; };
 		848E4C46132DDFFC00DE2FBE /* GoalAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848E4C44132DDFFB00DE2FBE /* GoalAddViewController.m */; };
 		848E4C47132DDFFC00DE2FBE /* GoalAddView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 848E4C45132DDFFB00DE2FBE /* GoalAddView.xib */; };
@@ -65,6 +66,7 @@
 		289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FlipsideViewController.m; path = Classes/FlipsideViewController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* pomodora_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pomodora_Prefix.pch; sourceTree = "<group>"; };
+		8422985F133FBD9900683F63 /* PomodoroView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PomodoroView.xib; sourceTree = "<group>"; };
 		848E4C33132DB9DB00DE2FBE /* GoalsListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoalsListTableViewController.h; sourceTree = "<group>"; };
 		848E4C34132DB9DB00DE2FBE /* GoalsListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoalsListTableViewController.m; sourceTree = "<group>"; };
 		848E4C43132DDFFB00DE2FBE /* GoalAddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoalAddViewController.h; sourceTree = "<group>"; };
@@ -235,6 +237,7 @@
 				848E4C61132DF9E100DE2FBE /* GoalTableViewCell.h */,
 				848E4C62132DF9E100DE2FBE /* GoalTableViewCell.m */,
 				84EAFDE513367750005DF14C /* PomodorosPageView.xib */,
+				8422985F133FBD9900683F63 /* PomodoroView.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -360,6 +363,7 @@
 				848E4C47132DDFFC00DE2FBE /* GoalAddView.xib in Resources */,
 				848E4C56132DEF4500DE2FBE /* GoalDetailHeaderView.xib in Resources */,
 				84EAFDE713367754005DF14C /* PomodorosPageView.xib in Resources */,
+				84229860133FBD9900683F63 /* PomodoroView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,6 +10,7 @@
 
 @protocol GoalAddDelegate;
 @class Goal;
+@class User;
 
 @interface GoalAddViewController : UIViewController <UITextFieldDelegate, UIPickerViewDataSource, UIPickerViewDataSource> {
 @private
