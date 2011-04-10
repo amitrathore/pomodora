@@ -14,12 +14,13 @@
 		280E754D0DD40C5E005A515E /* FlipsideView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 280E754A0DD40C5E005A515E /* FlipsideView.xib */; };
 		280E754F0DD40C5E005A515E /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 280E754C0DD40C5E005A515E /* MainWindow.xib */; };
 		28193033112F806B00ECF9B4 /* pomodora.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 28193032112F806B00ECF9B4 /* pomodora.xcdatamodeld */; };
-		286736F912F6A03300B7864A /* pomodoro.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 286736F812F6A03300B7864A /* pomodoro.jpg */; };
 		2880DEA310926BF800CC57B2 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2880DEA210926BF800CC57B2 /* CoreData.framework */; };
 		288765590DF743DE002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765580DF743DE002DB57D /* CoreGraphics.framework */; };
 		289233AE0DB2D0DB0083E9F9 /* PomodoroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 289233A90DB2D0DB0083E9F9 /* PomodoroViewController.m */; };
 		289233B00DB2D0DB0083E9F9 /* FlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.m */; };
 		84229860133FBD9900683F63 /* PomodoroView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8422985F133FBD9900683F63 /* PomodoroView.xib */; };
+		8471090313512E7B00C1DD53 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 8471090213512E7B00C1DD53 /* Default.png */; };
+		847109051351555500C1DD53 /* Pomodone.png in Resources */ = {isa = PBXBuildFile; fileRef = 847109041351555500C1DD53 /* Pomodone.png */; };
 		848E4C35132DB9DB00DE2FBE /* GoalsListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848E4C34132DB9DB00DE2FBE /* GoalsListTableViewController.m */; };
 		848E4C46132DDFFC00DE2FBE /* GoalAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848E4C44132DDFFB00DE2FBE /* GoalAddViewController.m */; };
 		848E4C47132DDFFC00DE2FBE /* GoalAddView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 848E4C45132DDFFB00DE2FBE /* GoalAddView.xib */; };
@@ -56,7 +57,6 @@
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		280E754A0DD40C5E005A515E /* FlipsideView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlipsideView.xib; sourceTree = "<group>"; };
 		280E754C0DD40C5E005A515E /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
-		286736F812F6A03300B7864A /* pomodoro.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pomodoro.jpg; sourceTree = "<group>"; };
 		2880DEA010926BE500CC57B2 /* pomodora.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = pomodora.xcdatamodel; sourceTree = "<group>"; };
 		2880DEA210926BF800CC57B2 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		288765580DF743DE002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -67,6 +67,8 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* pomodora_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pomodora_Prefix.pch; sourceTree = "<group>"; };
 		8422985F133FBD9900683F63 /* PomodoroView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PomodoroView.xib; sourceTree = "<group>"; };
+		8471090213512E7B00C1DD53 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = images/Default.png; sourceTree = "<group>"; };
+		847109041351555500C1DD53 /* Pomodone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Pomodone.png; path = images/Pomodone.png; sourceTree = "<group>"; };
 		848E4C33132DB9DB00DE2FBE /* GoalsListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoalsListTableViewController.h; sourceTree = "<group>"; };
 		848E4C34132DB9DB00DE2FBE /* GoalsListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoalsListTableViewController.m; sourceTree = "<group>"; };
 		848E4C43132DDFFB00DE2FBE /* GoalAddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoalAddViewController.h; sourceTree = "<group>"; };
@@ -165,6 +167,8 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				847109041351555500C1DD53 /* Pomodone.png */,
+				8471090213512E7B00C1DD53 /* Default.png */,
 				849A4C29130A67E5001CF8D9 /* drips.png */,
 				849A4C2A130A67E5001CF8D9 /* flat.png */,
 				849A4C2B130A67E5001CF8D9 /* carrot.png */,
@@ -177,7 +181,6 @@
 				849A4C32130A67E5001CF8D9 /* uonion.png */,
 				849A4C34130A67E5001CF8D9 /* lcd.png */,
 				849A4C35130A67E5001CF8D9 /* WheelCover.png */,
-				286736F812F6A03300B7864A /* pomodoro.jpg */,
 				8D1107310486CEB800E47090 /* pomodora-Info.plist */,
 			);
 			name = Resources;
@@ -347,7 +350,6 @@
 			files = (
 				280E754D0DD40C5E005A515E /* FlipsideView.xib in Resources */,
 				280E754F0DD40C5E005A515E /* MainWindow.xib in Resources */,
-				286736F912F6A03300B7864A /* pomodoro.jpg in Resources */,
 				849A4C36130A67E5001CF8D9 /* drips.png in Resources */,
 				849A4C37130A67E5001CF8D9 /* flat.png in Resources */,
 				849A4C38130A67E5001CF8D9 /* carrot.png in Resources */,
@@ -364,6 +366,8 @@
 				848E4C56132DEF4500DE2FBE /* GoalDetailHeaderView.xib in Resources */,
 				84EAFDE713367754005DF14C /* PomodorosPageView.xib in Resources */,
 				84229860133FBD9900683F63 /* PomodoroView.xib in Resources */,
+				8471090313512E7B00C1DD53 /* Default.png in Resources */,
+				847109051351555500C1DD53 /* Pomodone.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
